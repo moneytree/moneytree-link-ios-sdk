@@ -1,0 +1,6 @@
+framework module MoneytreeIsshoTsucho {
+  umbrella header "MoneytreeIsshoTsucho.h"
+
+  export *
+  module * { export * }
+}
