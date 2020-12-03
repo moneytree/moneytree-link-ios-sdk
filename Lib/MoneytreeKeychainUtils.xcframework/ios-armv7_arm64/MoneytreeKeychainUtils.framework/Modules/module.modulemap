@@ -1,0 +1,6 @@
+framework module MoneytreeKeychainUtils {
+  umbrella header "MoneytreeKeychainUtils.h"
+
+  export *
+  module * { export * }
+}
