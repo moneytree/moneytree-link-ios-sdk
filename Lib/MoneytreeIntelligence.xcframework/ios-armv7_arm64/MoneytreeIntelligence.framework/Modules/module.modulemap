@@ -1,0 +1,6 @@
+framework module MoneytreeIntelligence {
+  umbrella header "MoneytreeIntelligence.h"
+
+  export *
+  module * { export * }
+}
