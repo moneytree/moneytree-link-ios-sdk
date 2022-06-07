@@ -16,5 +16,6 @@ FOUNDATION_EXPORT const unsigned char MoneytreeLinkKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <MoneytreeLinkKit/PublicHeader.h>
 
-#import "MTLinkKit.h"
+#import <MoneytreeLinkKit/MTLinkKit.h>
+#import <MoneytreeLinkCoreKit/MoneytreeLinkCoreKit.h>
 

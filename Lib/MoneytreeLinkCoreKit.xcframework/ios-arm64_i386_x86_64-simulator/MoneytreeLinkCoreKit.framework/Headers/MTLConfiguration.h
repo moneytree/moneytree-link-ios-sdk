@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import "MTLEnvironment.h"
+#import <MoneytreeLinkCoreKit/MTLEnvironment.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

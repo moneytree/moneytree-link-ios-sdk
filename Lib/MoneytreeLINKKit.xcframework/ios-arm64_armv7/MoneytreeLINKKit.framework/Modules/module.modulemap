@@ -4,3 +4,8 @@ framework module MoneytreeLINKKit {
   export *
   module * { export * }
 }
+
+module MoneytreeLINKKit.Swift {
+    header "MoneytreeLINKKit-Swift.h"
+    requires objc
+}

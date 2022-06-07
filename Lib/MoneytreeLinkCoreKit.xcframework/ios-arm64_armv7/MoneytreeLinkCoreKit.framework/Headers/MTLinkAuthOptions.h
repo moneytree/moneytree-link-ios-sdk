@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import "MTLAuthenticationOptions.h"
+#import <MoneytreeLinkCoreKit/MTLAuthenticationOptions.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

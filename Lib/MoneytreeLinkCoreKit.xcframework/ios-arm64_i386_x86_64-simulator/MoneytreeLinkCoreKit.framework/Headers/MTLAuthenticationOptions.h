@@ -7,7 +7,7 @@
 //
 
 @import Foundation;
-#import "MTAuthRegion.h"
+#import <MoneytreeLinkCoreKit/MTAuthRegion.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

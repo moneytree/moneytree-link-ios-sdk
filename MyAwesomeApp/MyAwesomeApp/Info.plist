@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.1.0</string>
+	<string>6.1.2</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>mtlinkaf84f</string>
+				<string>mtlink&lt;Your Moneytree Link Short Client Id for Production&gt;</string>
 			</array>
 		</dict>
 		<dict>
@@ -31,12 +31,12 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>mtlink1a53f</string>
+				<string>mtlink&lt;Your Moneytree Link Short Client Id for Development&gt;</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1605</string>
+	<string>1712</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>

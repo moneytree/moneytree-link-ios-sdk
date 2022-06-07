@@ -10,14 +10,14 @@
 @import UIKit;
 @class MTAPI;
 
-#import "MTLinkClientDelegate.h"
+#import <MoneytreeLinkCoreKit/MTLinkClientDelegate.h>
 
-#import "MTAPIComponents.h"
-#import "MTLConfiguration.h"
-#import "MTLCompletions.h"
-#import "MTLAuthenticationOptions.h"
-#import "MTLinkAuthorizationType.h"
-#import "MTMagicLinkDestination.h"
+#import <MoneytreeLinkCoreKit/MTAPIComponents.h>
+#import <MoneytreeLinkCoreKit/MTLConfiguration.h>
+#import <MoneytreeLinkCoreKit/MTLCompletions.h>
+#import <MoneytreeLinkCoreKit/MTLAuthenticationOptions.h>
+#import <MoneytreeLinkCoreKit/MTLinkAuthorizationType.h>
+#import <MoneytreeLinkCoreKit/MTMagicLinkDestination.h>
 
 
 

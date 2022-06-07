@@ -1,9 +1,28 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoneytreeLinkCoreKit
 import Foundation
 @_exported import MoneytreeLinkCoreKit
 import Swift
-@objc extension MTWebUrlOpenerHandler {
-  @objc(runActionFrom:parameters:) dynamic public func runAction(from viewController: UIKit.UIViewController, parameters: [Swift.String : Any])
+import WebKit
+import _Concurrency
+@objc public class NativeActionUrlHandler : ObjectiveC.NSObject {
+  @objc public var closeHandler: (() -> Swift.Void)?
+  @objc public var logoutHandler: (() -> Swift.Void)?
+  @objc public var completion: (() -> Swift.Void)?
+  @objc(initWithViewControllerForPresentation:accessToken:) public init(viewController: UIKit.UIViewController, accessToken: Swift.String)
+  @objc deinit
+}
+@objc extension MoneytreeLinkCoreKit.NativeActionUrlHandler : MoneytreeLinkCoreKit.MTUrlHandler {
+  @objc dynamic public func mt_urlHandlerCanHandle(_ url: Foundation.URL) -> Swift.Bool
+  @objc dynamic public func mt_urlHandler(toHandle url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:], completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc dynamic public func mt_urlHandlerUserCancelled()
+  @objc dynamic public func mt_urlHandlerCanHandleUniversalLink(_ url: Foundation.URL?) -> Swift.Bool
+  @objc dynamic public func mt_urlHandler(toHandleUniversalLink url: Foundation.URL?, originalState: Swift.String?, presentFrom viewController: UIKit.UIViewController, completion: @escaping MoneytreeLinkCoreKit.MTLinkCompletionBlock)
+}
+extension MoneytreeLinkCoreKit.NativeActionUrlHandler : WebKit.WKNavigationDelegate {
+  @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+}
+extension MoneytreeLinkCoreKit.NativeActionUrlHandler : WebKit.WKScriptMessageHandler {
+  @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
 }

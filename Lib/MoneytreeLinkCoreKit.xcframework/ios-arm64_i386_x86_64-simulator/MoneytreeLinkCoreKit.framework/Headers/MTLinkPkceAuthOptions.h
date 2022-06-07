@@ -7,8 +7,8 @@
 //
 
 @import Foundation;
-#import "MTLinkAuthOptions.h"
-#import "MTOAuthCodeVerifier.h"
+#import <MoneytreeLinkCoreKit/MTLinkAuthOptions.h>
+#import <MoneytreeLinkCoreKit/MTOAuthCodeVerifier.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

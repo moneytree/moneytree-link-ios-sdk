@@ -2,6 +2,19 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.1.2
+
+- Support running the sample app with Xcode 13.
+- Cleaned up some unnecessary files and configuration from the sample app.
+
+## v6.1.1
+
+- Improved documentation around Settings feature, fixed broken documentation link
+- Fixes an issue with token storage when using LINK API
+- Fixes an issue with OAuth including unnecessary parameters
+- Fixes an issue with token storage when migrating from an earlier version of the SDK
+- Discontinued unused Cocoapods distribution.
+
 ## v6.1.0
 
 - Improved documentation

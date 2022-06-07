@@ -5,7 +5,7 @@
 //  Created by Moneytree on 03/06/2020.
 //  Copyright © 2012-present Moneytree. All rights reserved.
 
-#import "MTLinkClientStatus.h"
+#import <MoneytreeLinkCoreKit/MTLinkClientStatus.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

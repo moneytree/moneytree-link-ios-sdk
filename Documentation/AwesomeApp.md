@@ -8,7 +8,7 @@ First, configure AwesomeApp's `Info.plist` to use your client ID. Please see [Co
 
 The Moneytree Link SDK is configured in `ViewController.swift`. 
 
-It uses PKCE for authorization by default. You can change `demoMode` to `.authCodeGrant` if you need to test the Code Grant authorization flow.  
+It uses PKCE for authorization by default. You can change `authMode` to `.authCodeGrant` if you need to test the Code Grant authorization flow.  
 
 You can edit `Constants.configuration` to change other configuration settings to match your use case.
 

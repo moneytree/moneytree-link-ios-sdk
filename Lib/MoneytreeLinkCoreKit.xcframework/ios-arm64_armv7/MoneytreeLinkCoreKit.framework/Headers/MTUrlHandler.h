@@ -1,5 +1,5 @@
 //
-//  MTUrlOpenerHandler.h
+//  MTUrlHandler.h
 //  MoneytreeLinkCoreKit
 //
 //  Created by Moneytree KK on 23/5/17.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-#import "MTLCompletions.h"
+#import <MoneytreeLinkCoreKit/MTLCompletions.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  `canOpenURL:` is called prior to determine whether the conformed instance can
  handle a URL and then the `handleURL:options:` is called to handle the Url.
  */
-@protocol MTUrlOpenerHandler <NSObject>
+@protocol MTUrlHandler <NSObject>
 
 /**
  Called whether conformed instance is able to handle the URL.
@@ -98,48 +98,48 @@ Called to handle the `universal link url`.
 @end
 
 /** Url Opener Handler Related Error. */
-static NSString *const MTUrlOpenerHandlerErrorDomain = @"MTUrlOpenerHandlerError";
+static NSString *const MTUrlHandlerErrorDomain = @"MTUrlHandlerError";
 
-typedef NS_ENUM(NSUInteger, MTUrlOpenerHandlerError) {
+typedef NS_ENUM(NSUInteger, MTUrlHandlerError) {
   /**
    An unknown error
    */
-  MTUrlOpenerHandlerErrorUnknown,
+  MTUrlHandlerErrorUnknown,
 
   /**
    Tried to handle an URL that can not be handled by this handler
    */
-  MTUrlOpenerHandlerErrorCanNotHandleUrl,
+  MTUrlHandlerErrorCanNotHandleUrl,
 
   /**
    Tried to handle an URL while no handler is available
   */
-  MTUrlOpenerHandlerErrorNoHandlerAvailable,
+  MTUrlHandlerErrorNoHandlerAvailable,
 
   /**
    Tried to handle a universal link without platform or SDK version
   */
-  MTUrlOpenerHandlerErrorNoSdkOrPlatformInformation,
+  MTUrlHandlerErrorNoSdkOrPlatformInformation,
 
   /**
    Tried to handle a universal link while the state value in the link differs from the one that is cached in the SDK
   */
-  MTUrlOpenerHandlerErrorInconsistentStateValue,
+  MTUrlHandlerErrorInconsistentStateValue,
 
   /**
    Tried to handle a universal link while the continue value in the link differs from the one that is cached in the SDK
   */
-  MTUrlOpenerHandlerErrorInconsistentContinue,
+  MTUrlHandlerErrorInconsistentContinue,
 
   /**
    Received a callback URL with error
   */
-  MTUrlOpenerHandlerErrorUrlWithError,
+  MTUrlHandlerErrorUrlWithError,
 
   /**
    The current url handler cannot handle a Login Link operation
   */
-  MTUrlOpenerHandlerErrorUnexpectedHandlerForMagicLink
+  MTUrlHandlerErrorUnexpectedHandlerForMagicLink
 };
 
 NS_ASSUME_NONNULL_END
