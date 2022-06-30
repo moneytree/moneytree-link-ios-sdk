@@ -14,4 +14,4 @@ FOUNDATION_EXPORT double KeychainVersionNumber;
 //! Project version string for Keychain.
 FOUNDATION_EXPORT const unsigned char KeychainVersionString[];
 
-#import "MTKeychain.h"
+#import <MoneytreeKeychainUtils/MTKeychain.h>

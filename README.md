@@ -13,7 +13,6 @@ The SDK provides ways to authenticate, store tokens, and launch Moneytree web se
   - [Integration Guide](#integration-guide)
     - [Getting the SDK](#getting-the-sdk)
       - [Using Swift Package Manager](#using-swift-package-manager)
-      - [Using CocoaPods](#using-cocoapods)
       - [Installing the SDK manually](#installing-the-sdk-manually)
     - [Configuring your project](#configuring-your-project)
     - [Initializing the SDK](#initializing-the-sdk)
@@ -53,19 +52,6 @@ We strongly recommend using Swift Package Manager. There are several other insta
 1. In Xcode, select `File > Swift Packages > Add Package Dependency`.
 1. The package URL is `https://github.com/moneytree/moneytree-link-ios-sdk`. Use a minimum version of `6.0.0`.
     - If you want to use a beta version, select `Rules: Commit` and copy the full SHA of the beta release commit.
-
-#### Using CocoaPods
-
-1. At the root of your project, run `pod init`. This creates a `Podfile`.
-1. Add the following to your `Podfile`.
-
-        pod 'MoneytreeLinkSDK' , '~> 6.0'
-
-1. Run the following command at the root of your project
-
-        pod install --repo-update
-
-1. Open `<project>`.xcworkspace.
 
 #### Installing the SDK manually
 
@@ -216,13 +202,19 @@ func application(
   continue userActivity: NSUserActivity,
   restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void
 ) -> Bool {
-  let canMoneytreeHandleUserActivity = MTLApplicationDelegate.shared.application(application, userActivity: userActivity) { error in
+  let canMoneytreeHandleUserActivity = MTLApplicationDelegate.shared.application(
+    application, 
+    userActivity: userActivity, 
+    presentFrom: viewController
+  ) { error in
     // Handle universal link handling result/error if necessary
   }
   // If Moneytree cannot handle this user activity, check if other party can
   return canMoneytreeHandleUserActivity
 }
 ```
+
+> :warning: For Passwordless Login, it should present from the same `viewController` that you initiated the signup and login flow with.
 
 ### Additional configuration for Passwordless Sign Up/Login and Login Link
 

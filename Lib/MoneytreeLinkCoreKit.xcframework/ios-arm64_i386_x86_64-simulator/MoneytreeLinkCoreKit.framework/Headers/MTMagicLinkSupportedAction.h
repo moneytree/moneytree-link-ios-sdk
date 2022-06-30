@@ -5,7 +5,7 @@
 //  Created by Moneytree on 07/09/2020.
 //  Copyright © 2012-present Moneytree. All rights reserved.
 
-#import "MTCurrentAction.h"
+#import <MoneytreeLinkCoreKit/MTCurrentAction.h>
 
 @protocol MTMagicLinkSupportedAction <MTCurrentAction>
 

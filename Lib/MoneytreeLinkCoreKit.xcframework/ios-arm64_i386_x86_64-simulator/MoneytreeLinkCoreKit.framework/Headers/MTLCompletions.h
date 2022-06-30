@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-#import "MTOAuthCredential.h"
+#import <MoneytreeLinkCoreKit/MTOAuthCredential.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -10,7 +10,7 @@
 
 @class MTOAuthCodeVerifier;
 @class MTOAuthCredential;
-#import "MTMagicLinkSupportedAction.h"
+#import <MoneytreeLinkCoreKit/MTMagicLinkSupportedAction.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

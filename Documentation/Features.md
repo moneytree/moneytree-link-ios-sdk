@@ -84,7 +84,7 @@ You must inform Moneytree's integration team if you want to support either or bo
 
 Once Moneytree completes the configuration of your app, your users will see the new registration and login screens. Note that these screens still provide the option to register or log in with a password if they prefer.
 
-> :warning: Configuring universal link support is required for these features. Please refer to [the documentation for universal link configuration](../../README.md#configuring-universal-links-for-navigation).
+> :warning: Configuring universal link support is required for these features. Please refer to [the documentation for universal link configuration](../README.md#configuring-universal-links-for-navigation).
 
 #### Passwordless Sign Up/Login
 
@@ -238,6 +238,8 @@ MTLinkClient.shared.openSettings(from: self, animated: true) { error in
   // Handle the error, if any.
 }
 ```
+
+> :warning: Please note that users are required to re-authenticate in order to access Account Settings. This can be by re-entering their email and password or via Login Link, described below.
 
 ### Navigate to settings using Login Link
 

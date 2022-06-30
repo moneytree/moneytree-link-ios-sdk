@@ -9,7 +9,7 @@
 @import Foundation;
 @import UIKit;
 
-#import "MTLCompletions.h"
+#import <MoneytreeLinkCoreKit/MTLCompletions.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

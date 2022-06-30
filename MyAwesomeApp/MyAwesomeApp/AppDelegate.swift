@@ -7,9 +7,6 @@
 //
 
 import CoreData
-#if !(DEBUG)
-import Firebase
-#endif
 import MoneytreeLinkCoreKit
 import UIKit
 
@@ -24,8 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    configureThirdPartyDependenciesIfPossible()
-
     let mtLinkClient = MTLinkClient(configuration: Constants.configuration)
     mtLinkClient.delegate = self
 

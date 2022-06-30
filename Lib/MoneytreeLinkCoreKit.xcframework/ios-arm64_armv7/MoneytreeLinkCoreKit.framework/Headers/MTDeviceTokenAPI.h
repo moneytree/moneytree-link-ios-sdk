@@ -6,7 +6,7 @@
 //  Copyright © 2012-present Moneytree KK. All rights reserved.
 //
 
-#import "MTAPIComponents.h"
+#import <MoneytreeLinkCoreKit/MTAPIComponents.h>
 
 typedef NSData * MTDeviceToken;
 

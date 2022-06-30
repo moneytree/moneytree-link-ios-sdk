@@ -9,9 +9,9 @@
 @import Foundation;
 @class MTOAuthCodeVerifier;
 
-#import "MTLConfiguration.h"
-#import "MTLinkPkceAuthOptions.h"
-#import "MTAuthRegion.h"
+#import <MoneytreeLinkCoreKit/MTLConfiguration.h>
+#import <MoneytreeLinkCoreKit/MTLinkPkceAuthOptions.h>
+#import <MoneytreeLinkCoreKit/MTAuthRegion.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

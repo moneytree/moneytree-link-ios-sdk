@@ -7,67 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		231BBA2D24693869007B0ADE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2C24693869007B0ADE /* StoreKit.framework */; };
-		231BBA3024693A9C007B0ADE /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2F24693A9C007B0ADE /* libc++.tbd */; };
-		231BBA3124693AA5007B0ADE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2B24693858007B0ADE /* libsqlite3.tbd */; };
-		23A20F9925DF5010009918EE /* MoneytreeKeychainUtils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; };
-		23A20F9A25DF5011009918EE /* MoneytreeKeychainUtils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		23A20F9B25DF5012009918EE /* MoneytreeLinkCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; };
-		23A20F9C25DF5012009918EE /* MoneytreeLinkCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		23A20F9D25DF5013009918EE /* MoneytreeLINKKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; };
-		23A20F9E25DF5013009918EE /* MoneytreeLINKKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		23A669262637B0C0006AE055 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477A13A211A9E730088232B /* Extensions.swift */; };
 		23A669272637B0C0006AE055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* ViewController.swift */; };
-		23A669282637B0C0006AE055 /* MyAwesomeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87451EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld */; };
 		23A669292637B0C0006AE055 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */; };
 		23A6692A2637B0C0006AE055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD873E1EC931F800F2A510 /* AppDelegate.swift */; };
-		23A6692B2637B0C0006AE055 /* AppDelegate+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2968CAE324CEBA8A008CEC54 /* AppDelegate+Dependencies.swift */; };
-		23A6692D2637B0C0006AE055 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2B24693858007B0ADE /* libsqlite3.tbd */; };
-		23A6692E2637B0C0006AE055 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2F24693A9C007B0ADE /* libc++.tbd */; };
-		23A6692F2637B0C0006AE055 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9F82469371C007B0ADE /* FirebaseAnalytics.framework */; };
-		23A669302637B0C0006AE055 /* FirebaseCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FC2469371C007B0ADE /* FirebaseCore.xcframework */; };
-		23A669312637B0C0006AE055 /* FirebaseCoreDiagnostics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9F92469371C007B0ADE /* FirebaseCoreDiagnostics.xcframework */; };
-		23A669342637B0C0006AE055 /* GoogleDataTransport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FE2469371C007B0ADE /* GoogleDataTransport.xcframework */; };
-		23A669352637B0C0006AE055 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9F62469371C007B0ADE /* GoogleAppMeasurement.framework */; };
-		23A669362637B0C0006AE055 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9F72469371C007B0ADE /* PromisesObjC.xcframework */; };
-		23A669372637B0C0006AE055 /* FirebaseInstallations.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FA2469371C007B0ADE /* FirebaseInstallations.xcframework */; };
-		23A669382637B0C0006AE055 /* GoogleDataTransportCCTSupport.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FD2469371C007B0ADE /* GoogleDataTransportCCTSupport.xcframework */; };
-		23A669392637B0C0006AE055 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA022469371C007B0ADE /* GoogleUtilities.xcframework */; };
-		23A6693B2637B0C0006AE055 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9F52469371C007B0ADE /* nanopb.xcframework */; };
-		23A6693C2637B0C0006AE055 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BBA2C24693869007B0ADE /* StoreKit.framework */; };
-		23A6693D2637B0C0006AE055 /* FIRAnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FF2469371C007B0ADE /* FIRAnalyticsConnector.framework */; };
-		23A6693E2637B0C0006AE055 /* FirebaseCrashlytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231BB9FB2469371C007B0ADE /* FirebaseCrashlytics.xcframework */; };
 		23A669402637B0C0006AE055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */; };
-		23A669412637B0C0006AE055 /* 5to6.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C7A256CE093005C3D37 /* 5to6.md */; };
 		23A669422637B0C0006AE055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87481EC931F800F2A510 /* Assets.xcassets */; };
-		23A669432637B0C0006AE055 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 663C23B81FED03FA0006ACFE /* README.md */; };
-		23A669442637B0C0006AE055 /* Features.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C85256CE093005C3D37 /* Features.md */; };
 		23A669452637B0C0006AE055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87421EC931F800F2A510 /* Main.storyboard */; };
-		23A669462637B0C0006AE055 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C97256CE10C005C3D37 /* CHANGELOG.md */; };
-		23A669472637B0C0006AE055 /* import-xcframeworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 92990C7C256CE093005C3D37 /* import-xcframeworks.png */; };
 		23A669482637B0C0006AE055 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231BBA35246A230B007B0ADE /* GoogleService-Info.plist */; };
 		23A669582637B0ED006AE055 /* MoneytreeKeychainUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669552637B0ED006AE055 /* MoneytreeKeychainUtils.framework */; };
-		23A669592637B0ED006AE055 /* MoneytreeKeychainUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669552637B0ED006AE055 /* MoneytreeKeychainUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A6695A2637B0ED006AE055 /* MoneytreeLinkCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669562637B0ED006AE055 /* MoneytreeLinkCoreKit.framework */; };
-		23A6695B2637B0ED006AE055 /* MoneytreeLinkCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669562637B0ED006AE055 /* MoneytreeLinkCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A6695C2637B0ED006AE055 /* MoneytreeLINKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669572637B0ED006AE055 /* MoneytreeLINKKit.framework */; };
-		23A6695D2637B0ED006AE055 /* MoneytreeLINKKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669572637B0ED006AE055 /* MoneytreeLINKKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2477A13B211A9E730088232B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477A13A211A9E730088232B /* Extensions.swift */; };
 		24BD873F1EC931F800F2A510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD873E1EC931F800F2A510 /* AppDelegate.swift */; };
 		24BD87411EC931F800F2A510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* ViewController.swift */; };
 		24BD87441EC931F800F2A510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87421EC931F800F2A510 /* Main.storyboard */; };
-		24BD87471EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87451EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld */; };
 		24BD87491EC931F800F2A510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87481EC931F800F2A510 /* Assets.xcassets */; };
 		24BD874C1EC931F800F2A510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */; };
 		24BD87571EC931F800F2A510 /* MyAwesomeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87561EC931F800F2A510 /* MyAwesomeAppTests.swift */; };
 		24BD87621EC931F800F2A510 /* MyAwesomeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87611EC931F800F2A510 /* MyAwesomeAppUITests.swift */; };
 		24BEAC1B1F73A0A7007C3E66 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */; };
-		2968CAE424CEBA8A008CEC54 /* AppDelegate+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2968CAE324CEBA8A008CEC54 /* AppDelegate+Dependencies.swift */; };
-		663C23B91FED03FA0006ACFE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 663C23B81FED03FA0006ACFE /* README.md */; };
-		92990C87256CE093005C3D37 /* 5to6.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C7A256CE093005C3D37 /* 5to6.md */; };
-		92990C88256CE093005C3D37 /* import-xcframeworks.png in Resources */ = {isa = PBXBuildFile; fileRef = 92990C7C256CE093005C3D37 /* import-xcframeworks.png */; };
-		92990C90256CE093005C3D37 /* Features.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C85256CE093005C3D37 /* Features.md */; };
-		92990C98256CE10C005C3D37 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 92990C97256CE10C005C3D37 /* CHANGELOG.md */; };
+		CA1FF37C27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; };
+		CA1FF37D27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA1FF37E27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; };
+		CA1FF37F27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CA1FF38027B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; };
+		CA1FF38127B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,28 +53,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		23A20F8D25DF500F009918EE /* Embed Frameworks */ = {
+		CA1FF38227B4962F00EA8F31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A20F9A25DF5011009918EE /* MoneytreeKeychainUtils.xcframework in Embed Frameworks */,
-				23A20F9E25DF5013009918EE /* MoneytreeLINKKit.xcframework in Embed Frameworks */,
-				23A20F9C25DF5012009918EE /* MoneytreeLinkCoreKit.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		23A6695E2637B0ED006AE055 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				23A669592637B0ED006AE055 /* MoneytreeKeychainUtils.framework in Embed Frameworks */,
-				23A6695D2637B0ED006AE055 /* MoneytreeLINKKit.framework in Embed Frameworks */,
-				23A6695B2637B0ED006AE055 /* MoneytreeLinkCoreKit.framework in Embed Frameworks */,
+				CA1FF37F27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Embed Frameworks */,
+				CA1FF37D27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Embed Frameworks */,
+				CA1FF38127B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,7 +82,6 @@
 		24BD873E1EC931F800F2A510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24BD87401EC931F800F2A510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24BD87431EC931F800F2A510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		24BD87461EC931F800F2A510 /* MyAwesomeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyAwesomeApp.xcdatamodel; sourceTree = "<group>"; };
 		24BD87481EC931F800F2A510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24BD874B1EC931F800F2A510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24BD874D1EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,7 +93,6 @@
 		24BD87631EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		24BEAC1C1F73A9E2007C3E66 /* MyAwesomeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAwesomeApp.entitlements; sourceTree = "<group>"; };
-		2968CAE324CEBA8A008CEC54 /* AppDelegate+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Dependencies.swift"; sourceTree = "<group>"; };
 		2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoneytreeKeychainUtils.xcframework; sourceTree = "<group>"; };
 		2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoneytreeLinkCoreKit.xcframework; sourceTree = "<group>"; };
 		663C23B81FED03FA0006ACFE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
@@ -155,41 +105,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23A6692C2637B0C0006AE055 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23A6692D2637B0C0006AE055 /* libsqlite3.tbd in Frameworks */,
-				23A6692E2637B0C0006AE055 /* libc++.tbd in Frameworks */,
-				23A6692F2637B0C0006AE055 /* FirebaseAnalytics.framework in Frameworks */,
-				23A669302637B0C0006AE055 /* FirebaseCore.xcframework in Frameworks */,
-				23A669312637B0C0006AE055 /* FirebaseCoreDiagnostics.xcframework in Frameworks */,
-				23A669582637B0ED006AE055 /* MoneytreeKeychainUtils.framework in Frameworks */,
-				23A669342637B0C0006AE055 /* GoogleDataTransport.xcframework in Frameworks */,
-				23A669352637B0C0006AE055 /* GoogleAppMeasurement.framework in Frameworks */,
-				23A669362637B0C0006AE055 /* PromisesObjC.xcframework in Frameworks */,
-				23A669372637B0C0006AE055 /* FirebaseInstallations.xcframework in Frameworks */,
-				23A669382637B0C0006AE055 /* GoogleDataTransportCCTSupport.xcframework in Frameworks */,
-				23A6695A2637B0ED006AE055 /* MoneytreeLinkCoreKit.framework in Frameworks */,
-				23A669392637B0C0006AE055 /* GoogleUtilities.xcframework in Frameworks */,
-				23A6693B2637B0C0006AE055 /* nanopb.xcframework in Frameworks */,
-				23A6693C2637B0C0006AE055 /* StoreKit.framework in Frameworks */,
-				23A6693D2637B0C0006AE055 /* FIRAnalyticsConnector.framework in Frameworks */,
-				23A6695C2637B0ED006AE055 /* MoneytreeLINKKit.framework in Frameworks */,
-				23A6693E2637B0C0006AE055 /* FirebaseCrashlytics.xcframework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24BD87381EC931F800F2A510 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				231BBA3124693AA5007B0ADE /* libsqlite3.tbd in Frameworks */,
-				231BBA3024693A9C007B0ADE /* libc++.tbd in Frameworks */,
-				23A20F9B25DF5012009918EE /* MoneytreeLinkCoreKit.xcframework in Frameworks */,
-				23A20F9925DF5010009918EE /* MoneytreeKeychainUtils.xcframework in Frameworks */,
-				23A20F9D25DF5013009918EE /* MoneytreeLINKKit.xcframework in Frameworks */,
-				231BBA2D24693869007B0ADE /* StoreKit.framework in Frameworks */,
+				CA1FF37C27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Frameworks */,
+				CA1FF38027B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Frameworks */,
+				CA1FF37E27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +179,12 @@
 				92990C97256CE10C005C3D37 /* CHANGELOG.md */,
 				24BD874D1EC931F800F2A510 /* Info.plist */,
 				24BD873E1EC931F800F2A510 /* AppDelegate.swift */,
-				2968CAE324CEBA8A008CEC54 /* AppDelegate+Dependencies.swift */,
 				2477A13A211A9E730088232B /* Extensions.swift */,
 				24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */,
 				24BD87401EC931F800F2A510 /* ViewController.swift */,
 				24BD87481EC931F800F2A510 /* Assets.xcassets */,
 				24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */,
 				24BD87421EC931F800F2A510 /* Main.storyboard */,
-				24BD87451EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld */,
 			);
 			path = MyAwesomeApp;
 			sourceTree = "<group>";
@@ -329,25 +249,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23A669242637B0C0006AE055 /* MyAwesomeAppInternal */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 23A6694E2637B0C0006AE055 /* Build configuration list for PBXNativeTarget "MyAwesomeAppInternal" */;
-			buildPhases = (
-				23A669252637B0C0006AE055 /* Sources */,
-				23A6692C2637B0C0006AE055 /* Frameworks */,
-				23A6693F2637B0C0006AE055 /* Resources */,
-				23A6695E2637B0ED006AE055 /* Embed Frameworks */,
-				23A6696C2637BC19006AE055 /* Check configuration just in case */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MyAwesomeAppInternal;
-			productName = MyAwesomeApp;
-			productReference = 23A669512637B0C0006AE055 /* MyAwesomeAppInternal.app */;
-			productType = "com.apple.product-type.application";
-		};
 		24BD873A1EC931F800F2A510 /* MyAwesomeApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24BD87661EC931F800F2A510 /* Build configuration list for PBXNativeTarget "MyAwesomeApp" */;
@@ -355,7 +256,7 @@
 				24BD87371EC931F800F2A510 /* Sources */,
 				24BD87381EC931F800F2A510 /* Frameworks */,
 				24BD87391EC931F800F2A510 /* Resources */,
-				23A20F8D25DF500F009918EE /* Embed Frameworks */,
+				CA1FF38227B4962F00EA8F31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -409,7 +310,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = Moneytree;
 				TargetAttributes = {
 					24BD873A1EC931F800F2A510 = {
@@ -454,40 +355,18 @@
 				24BD873A1EC931F800F2A510 /* MyAwesomeApp */,
 				24BD87511EC931F800F2A510 /* MyAwesomeAppTests */,
 				24BD875C1EC931F800F2A510 /* MyAwesomeAppUITests */,
-				23A669242637B0C0006AE055 /* MyAwesomeAppInternal */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		23A6693F2637B0C0006AE055 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23A669402637B0C0006AE055 /* LaunchScreen.storyboard in Resources */,
-				23A669412637B0C0006AE055 /* 5to6.md in Resources */,
-				23A669422637B0C0006AE055 /* Assets.xcassets in Resources */,
-				23A669432637B0C0006AE055 /* README.md in Resources */,
-				23A669442637B0C0006AE055 /* Features.md in Resources */,
-				23A669452637B0C0006AE055 /* Main.storyboard in Resources */,
-				23A669462637B0C0006AE055 /* CHANGELOG.md in Resources */,
-				23A669472637B0C0006AE055 /* import-xcframeworks.png in Resources */,
-				23A669482637B0C0006AE055 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24BD87391EC931F800F2A510 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				24BD874C1EC931F800F2A510 /* LaunchScreen.storyboard in Resources */,
-				92990C87256CE093005C3D37 /* 5to6.md in Resources */,
 				24BD87491EC931F800F2A510 /* Assets.xcassets in Resources */,
-				663C23B91FED03FA0006ACFE /* README.md in Resources */,
-				92990C90256CE093005C3D37 /* Features.md in Resources */,
 				24BD87441EC931F800F2A510 /* Main.storyboard in Resources */,
-				92990C98256CE10C005C3D37 /* CHANGELOG.md in Resources */,
-				92990C88256CE093005C3D37 /* import-xcframeworks.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,51 +386,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		23A6696C2637BC19006AE055 /* Check configuration just in case */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Check configuration just in case";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  echo \"This scheme is only for internal debugging.\"\n  exit 1\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		23A669252637B0C0006AE055 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23A669262637B0C0006AE055 /* Extensions.swift in Sources */,
-				23A669272637B0C0006AE055 /* ViewController.swift in Sources */,
-				23A669282637B0C0006AE055 /* MyAwesomeApp.xcdatamodeld in Sources */,
-				23A669292637B0C0006AE055 /* PushViewController.swift in Sources */,
-				23A6692A2637B0C0006AE055 /* AppDelegate.swift in Sources */,
-				23A6692B2637B0C0006AE055 /* AppDelegate+Dependencies.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24BD87371EC931F800F2A510 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2477A13B211A9E730088232B /* Extensions.swift in Sources */,
 				24BD87411EC931F800F2A510 /* ViewController.swift in Sources */,
-				24BD87471EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld in Sources */,
 				24BEAC1B1F73A0A7007C3E66 /* PushViewController.swift in Sources */,
 				24BD873F1EC931F800F2A510 /* AppDelegate.swift in Sources */,
-				2968CAE424CEBA8A008CEC54 /* AppDelegate+Dependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +457,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1605;
+				CURRENT_PROJECT_VERSION = 1712;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -648,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1605;
+				CURRENT_PROJECT_VERSION = 1712;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -700,6 +543,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -763,6 +607,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -801,7 +646,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1605;
+				CURRENT_PROJECT_VERSION = 1712;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -835,7 +680,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1605;
+				CURRENT_PROJECT_VERSION = 1712;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -930,15 +775,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23A6694E2637B0C0006AE055 /* Build configuration list for PBXNativeTarget "MyAwesomeAppInternal" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				23A6694F2637B0C0006AE055 /* Debug */,
-				23A669502637B0C0006AE055 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		24BD87361EC931F800F2A510 /* Build configuration list for PBXProject "MyAwesomeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -976,19 +812,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		24BD87451EC931F800F2A510 /* MyAwesomeApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				24BD87461EC931F800F2A510 /* MyAwesomeApp.xcdatamodel */,
-			);
-			currentVersion = 24BD87461EC931F800F2A510 /* MyAwesomeApp.xcdatamodel */;
-			path = MyAwesomeApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 24BD87331EC931F800F2A510 /* Project object */;
 }
