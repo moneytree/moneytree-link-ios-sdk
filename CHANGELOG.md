@@ -2,6 +2,10 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.2.0
+- Support upgrading from Issho Tsucho (SDKs v4, v5) to LINK Kit without user needing to log in again. It will only ask for the new consent scopes required.
+- Small improvements to documentation and sample app
+
 ## v6.1.2
 
 - Support running the sample app with Xcode 13.

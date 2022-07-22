@@ -35,6 +35,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSString *redirectUrlForAuth;
 
 /**
+ Provides URL to open the upgrade authorization page for LinkKit.
+
+ @param codeVerifier to configure url
+ @param mtToken The MT token (from previous ISTC use) to upgrade.
+ @return An absolute url that can be used for any browsers
+ */
+- (NSURL *)upgradeTokenURL:(MTOAuthCodeVerifier *)codeVerifier
+                   mtToken:(NSString *)mtToken;
+
+/**
  Provides URL to open the authorization page with a specific grant type
 
  @param codeVerifier to configure url
