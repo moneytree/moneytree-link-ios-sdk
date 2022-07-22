@@ -94,6 +94,11 @@ A delegate object which provides some changes that you might be interest in insi
                       animated:(BOOL)animated
                     completion:(MTLinkClientCredentialFetchCompletionBlock)completion;
 
+/// This is currently reserved for internal usage. Please do not use it as it may be deprecated without warning.
+- (void)upgradeTokenFrom:(UIViewController *)viewController
+             authOptions:(id<AuthenticationOptions>)authOptions
+                animated:(BOOL)animated
+              completion:(MTLinkClientCredentialFetchCompletionBlock)completion;
 
 /**
  @abstract
