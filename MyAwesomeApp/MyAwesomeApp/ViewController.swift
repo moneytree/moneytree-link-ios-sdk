@@ -91,7 +91,7 @@ final class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     let currentEnv = MTLinkClient.shared.currentConfiguration.environment.rawValue == 1 ? "Staging" : "Production"
-    title = "AwesomeApp - \(currentEnv) - \(authMode)"
+    title = "AwesomeApp - \(Bundle.mt_sdkVersion!) - \(currentEnv) - \(authMode)"
     update()
   }
 
@@ -480,6 +480,7 @@ private extension ViewController {
       }
       alert.addAction(alertAction)
     }
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
     present(alert, animated: true)
   }
 }

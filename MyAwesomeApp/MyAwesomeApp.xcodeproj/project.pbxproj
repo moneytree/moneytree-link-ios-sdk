@@ -69,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		19B6D27A28D009900073DB50 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Configuration/Config.xcconfig; sourceTree = "<group>"; };
 		231BBA2B24693858007B0ADE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		231BBA2C24693869007B0ADE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		231BBA2F24693A9C007B0ADE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -174,6 +175,7 @@
 		24BD873D1EC931F800F2A510 /* MyAwesomeApp */ = {
 			isa = PBXGroup;
 			children = (
+				19B6D27A28D009900073DB50 /* Config.xcconfig */,
 				24BEAC1C1F73A9E2007C3E66 /* MyAwesomeApp.entitlements */,
 				663C23B81FED03FA0006ACFE /* README.md */,
 				92990C97256CE10C005C3D37 /* CHANGELOG.md */,
@@ -457,7 +459,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1730;
+				CURRENT_PROJECT_VERSION = 1761;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -469,7 +471,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
-				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -491,7 +492,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1730;
+				CURRENT_PROJECT_VERSION = 1761;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -503,7 +504,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
-				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -519,6 +519,7 @@
 		};
 		24BD87641EC931F800F2A510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B6D27A28D009900073DB50 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -583,6 +584,7 @@
 		};
 		24BD87651EC931F800F2A510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B6D27A28D009900073DB50 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -646,7 +648,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1730;
+				CURRENT_PROJECT_VERSION = 1761;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -658,7 +660,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
-				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -680,7 +681,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1730;
+				CURRENT_PROJECT_VERSION = 1761;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -692,7 +693,6 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
-				MARKETING_VERSION = 5.3.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
