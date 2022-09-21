@@ -2,9 +2,13 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.2.1
+- Remove unnecessary Core Data model file from sample app.
+- Fix an issue where passwordless features would not be enabled for applications built with Xcode 13.
+
 ## v6.2.0
 - Support upgrading from Issho Tsucho (SDKs v4, v5) to LINK Kit without user needing to log in again. It will only ask for the new consent scopes required.
-- Small improvements to documentation and sample app
+- Small improvements to documentation and sample app.
 
 ## v6.1.2
 
@@ -13,10 +17,10 @@ All notable changes to the Moneytree Link iOS SDK will be documented in this fil
 
 ## v6.1.1
 
-- Improved documentation around Settings feature, fixed broken documentation link
-- Fixes an issue with token storage when using LINK API
-- Fixes an issue with OAuth including unnecessary parameters
-- Fixes an issue with token storage when migrating from an earlier version of the SDK
+- Improved documentation around Settings feature, fixed broken documentation link.
+- Fixes an issue with token storage when using LINK API.
+- Fixes an issue with OAuth including unnecessary parameters.
+- Fixes an issue with token storage when migrating from an earlier version of the SDK.
 - Discontinued unused Cocoapods distribution.
 
 ## v6.1.0
@@ -48,7 +52,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 
 - Please use Xcode 12.0 or above.
 - The SDK is now packaged using `xcframework`. It is no longer necessary to strip framework architectures built for the simulator from the SDK.
-- The SDK is now distributed through `Swift Package Manager` and `Cocoapods`. Please refer to [readme](README.md#getting-the-sdk) for the updated integration guide.
+- The SDK is now distributed through `Swift Package Manager` and `Cocoapods`. Please refer to the README file for the updated integration guide.
 - Discontinued the  `MoneytreeIsshoTsucho` framework in favor of a new framework, `MoneytreeLINKKit`. The class `MTIsshoTsucho` has similarly been renamed to `MTLinkKit`.
 
 ### Removed
@@ -74,7 +78,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 
 ### Added
 
-- Added support for our new product, LINK Kit, which replaces Issho Tsucho. Please refer to the [LINK Kit documentation](Documentation/Features/LinkKit.md).
+- Added support for our new product, LINK Kit, which replaces Issho Tsucho. Please refer to the LINK Kit documentation.
 - Added additional `MTLClientScope`s, listed here:
   - MTLClientScopeGuestRead
   - MTLClientScopeAccountsRead
@@ -87,7 +91,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
   - MTLClientScopePointsRead
   - MTLClientScopePointTransactionsRead
   - MTLClientScopeNotificationsRead
-- Added [Onboarding and Magic Link features](Documentation/Features/Authorization.md#authorizing-with-onboarding-and-magic-link) to simplify the sign up and login process.
+- Added Onboarding and Magic Link features to simplify the sign up and login process.
 
 ## v5.3.1
 
@@ -125,7 +129,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 ### Breaking changes
 
 - Changed the type of `completion` in `openVaultFromViewController:animated:completion:` from `MTLinkClientCredentialFetchCompletionBlock` to `MTLinkCompletionBlock`. In case the `access token` is needed, please call `getTokenAndRefreshAsNeeded`.
-- Changed the behavior of the completion handler of `openVaultFromViewController:animated:completion:`. It now triggers when the vault is `opened` rather than `closed`. Please utilise [MTLinkClientDelegate](readme/common.md##sdk-status-change) if your application needs to be notified when the vault is closed.
+- Changed the behavior of the completion handler of `openVaultFromViewController:animated:completion:`. It now triggers when the vault is `opened` rather than `closed`. Please utilise MTLinkClientDelegate if your application needs to be notified when the vault is closed.
 - A login state at the new Account Settings page depends on cookies Safari has. So guests might see login screen when Safari doesn't have a valid session cookie.
 - Use `MTLAuthenticationOptions` instead of `MTLinkAuthOptions`. This class adds support for:
   - Pre-selecting a user's country
@@ -162,7 +166,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 
 ### Added
 
-- Supported [Authorization code grant](readme/authorizationcode.md) flow
+- Supported Authorization code grant flow.
 
 ### Breaking changes for clients using PKCE
 
