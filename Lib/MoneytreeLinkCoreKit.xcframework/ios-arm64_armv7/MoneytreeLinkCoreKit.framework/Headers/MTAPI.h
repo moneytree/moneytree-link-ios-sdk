@@ -12,41 +12,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/**
- MTAPI acts as a client to the Moneytree Link API. It ensures that any necessary authorization is performed before
- getting any resources from the Moneytree Link API.
-
- Any services that need to be implemented against the Moneytree Link API must subclass MTAPIRequest. 
- */
-@interface MTAPI: NSObject
-
-- (instancetype)init __attribute__((unavailable("Call initWithConfiguration:")));
-
-- (instancetype)initWithConfiguration:(MTAPIConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
-
-/**
- Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
- from the Moneytree Link API.
-
- This method is unavailable to Swift clients because `MTAPIRequest` has associated generics that do not work in Swift.
- Use `sendAuthenticatedRequestForSwift:` instead.
-
- @param apiRequest The API Request object.
- */
-- (void)sendAuthenticatedRequest:(MTAPIRequest *)apiRequest NS_SWIFT_UNAVAILABLE("Not Available");
-
-/**
- Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
- from the Moneytree Link API.
-
- Use this method only if you are using Swift.
-
- @param genericRequest The API Request object.
- */
-- (void)sendAuthenticatedRequestForSwift:(id)genericRequest NS_SWIFT_NAME(sendAuthenticatedRequest(_:));
-
-@end
-
 /** 'Authorization' key for the HTTP Request Header */
 extern NSString *const MTHTTPHeaderAuthorizationKey;
 
@@ -77,5 +42,68 @@ typedef NS_ENUM(NSUInteger, MTAPIError) {
    */
   MTAPIUnauthorized = 401
 };
+
+/**
+ MTAPI acts as a client to the Moneytree Link API. It ensures that any necessary authorization is performed before
+ getting any resources from the Moneytree Link API.
+
+ Any services that need to be implemented against the Moneytree Link API must subclass MTAPIRequest. 
+ */
+@interface MTAPI: NSObject
+
+- (instancetype)init __attribute__((unavailable("Call initWithConfiguration:")));
+
+- (instancetype)initWithConfiguration:(MTAPIConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
+
+/**
+ Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
+ from the Moneytree Link API.
+
+ This method is unavailable to Swift clients because `MTAPIRequest` has associated generics that do not work in Swift.
+ Use `sendRequestForSwift:` instead.
+
+ @param apiRequest The API Request object.
+ */
+- (void)sendRequest:(MTAPIRequest *)apiRequest NS_SWIFT_UNAVAILABLE("Not Available");
+
+/**
+ Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
+ from the Moneytree Link API.
+
+ Use this method only if you are using Swift.
+
+ @param genericRequest The API Request object.
+ */
+- (void)sendRequestForSwift:(id)genericRequest NS_SWIFT_NAME(sendRequest(_:));
+
+
+#pragma mark - Deprecated
+
+/**
+ Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
+ from the Moneytree Link API.
+
+ This method is unavailable to Swift clients because `MTAPIRequest` has associated generics that do not work in Swift.
+ Use `sendAuthenticatedRequestForSwift:` instead.
+
+ @param apiRequest The API Request object.
+ */
+- (void)sendAuthenticatedRequest:(MTAPIRequest *)apiRequest
+NS_SWIFT_UNAVAILABLE("Not Available")
+DEPRECATED_MSG_ATTRIBUTE("Use sendRequest: instead.");
+
+/**
+ Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
+ from the Moneytree Link API.
+
+ Use this method only if you are using Swift.
+
+ @param genericRequest The API Request object.
+ */
+- (void)sendAuthenticatedRequestForSwift:(id)genericRequest
+NS_SWIFT_NAME(sendAuthenticatedRequest(_:))
+DEPRECATED_MSG_ATTRIBUTE("Use sendRequestForSwift: instead.");
+
+@end
 
 NS_ASSUME_NONNULL_END

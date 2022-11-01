@@ -69,11 +69,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19B6D27A28D009900073DB50 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = ../../../Configuration/Config.xcconfig; sourceTree = "<group>"; };
+		19B6D27A28D009900073DB50 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		231BBA2B24693858007B0ADE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		231BBA2C24693869007B0ADE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		231BBA2F24693A9C007B0ADE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		23A669512637B0C0006AE055 /* MyAwesomeAppInternal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAwesomeAppInternal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A669552637B0ED006AE055 /* MoneytreeKeychainUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeKeychainUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A669562637B0ED006AE055 /* MoneytreeLinkCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeLinkCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A669572637B0ED006AE055 /* MoneytreeLINKKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeLINKKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,9 +88,7 @@
 		24BD87521EC931F800F2A510 /* MyAwesomeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BD87561EC931F800F2A510 /* MyAwesomeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeAppTests.swift; sourceTree = "<group>"; };
 		24BD87581EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24BD875D1EC931F800F2A510 /* MyAwesomeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAwesomeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BD87611EC931F800F2A510 /* MyAwesomeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeAppUITests.swift; sourceTree = "<group>"; };
-		24BD87631EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		24BEAC1C1F73A9E2007C3E66 /* MyAwesomeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAwesomeApp.entitlements; sourceTree = "<group>"; };
 		2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoneytreeKeychainUtils.xcframework; sourceTree = "<group>"; };
@@ -123,13 +120,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24BD875A1EC931F800F2A510 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -153,7 +143,6 @@
 				24BD873D1EC931F800F2A510 /* MyAwesomeApp */,
 				24BD87761EC94BDF00F2A510 /* Lib */,
 				24BD87551EC931F800F2A510 /* MyAwesomeAppTests */,
-				24BD87601EC931F800F2A510 /* MyAwesomeAppUITests */,
 				24BD873C1EC931F800F2A510 /* Products */,
 				244CE5AC1F6B8A3C000F7723 /* Frameworks */,
 			);
@@ -166,8 +155,6 @@
 			children = (
 				24BD873B1EC931F800F2A510 /* MyAwesomeApp.app */,
 				24BD87521EC931F800F2A510 /* MyAwesomeAppTests.xctest */,
-				24BD875D1EC931F800F2A510 /* MyAwesomeAppUITests.xctest */,
-				23A669512637B0C0006AE055 /* MyAwesomeAppInternal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,15 +185,6 @@
 				24BD87581EC931F800F2A510 /* Info.plist */,
 			);
 			path = MyAwesomeAppTests;
-			sourceTree = "<group>";
-		};
-		24BD87601EC931F800F2A510 /* MyAwesomeAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				24BD87611EC931F800F2A510 /* MyAwesomeAppUITests.swift */,
-				24BD87631EC931F800F2A510 /* Info.plist */,
-			);
-			path = MyAwesomeAppUITests;
 			sourceTree = "<group>";
 		};
 		24BD87761EC94BDF00F2A510 /* Lib */ = {
@@ -287,24 +265,6 @@
 			productReference = 24BD87521EC931F800F2A510 /* MyAwesomeAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		24BD875C1EC931F800F2A510 /* MyAwesomeAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 24BD876C1EC931F800F2A510 /* Build configuration list for PBXNativeTarget "MyAwesomeAppUITests" */;
-			buildPhases = (
-				24BD87591EC931F800F2A510 /* Sources */,
-				24BD875A1EC931F800F2A510 /* Frameworks */,
-				24BD875B1EC931F800F2A510 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				24BD875F1EC931F800F2A510 /* PBXTargetDependency */,
-			);
-			name = MyAwesomeAppUITests;
-			productName = MyAwesomeAppUITests;
-			productReference = 24BD875D1EC931F800F2A510 /* MyAwesomeAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -356,7 +316,6 @@
 			targets = (
 				24BD873A1EC931F800F2A510 /* MyAwesomeApp */,
 				24BD87511EC931F800F2A510 /* MyAwesomeAppTests */,
-				24BD875C1EC931F800F2A510 /* MyAwesomeAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -373,13 +332,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		24BD87501EC931F800F2A510 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		24BD875B1EC931F800F2A510 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,14 +360,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24BD87591EC931F800F2A510 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				24BD87621EC931F800F2A510 /* MyAwesomeAppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -423,11 +367,6 @@
 			isa = PBXTargetDependency;
 			target = 24BD873A1EC931F800F2A510 /* MyAwesomeApp */;
 			targetProxy = 24BD87531EC931F800F2A510 /* PBXContainerItemProxy */;
-		};
-		24BD875F1EC931F800F2A510 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 24BD873A1EC931F800F2A510 /* MyAwesomeApp */;
-			targetProxy = 24BD875E1EC931F800F2A510 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1761;
+				CURRENT_PROJECT_VERSION = 1809;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -492,7 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1761;
+				CURRENT_PROJECT_VERSION = 1809;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -647,9 +586,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1761;
-				DEVELOPMENT_TEAM = LHGBD77CL3;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1809;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -668,7 +607,7 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.getmoneytree.sdk.MyAwesomeApp";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -680,9 +619,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1761;
-				DEVELOPMENT_TEAM = LHGBD77CL3;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1809;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -700,7 +639,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.getmoneytree.sdk.MyAwesomeApp";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -798,15 +737,6 @@
 			buildConfigurations = (
 				24BD876A1EC931F800F2A510 /* Debug */,
 				24BD876B1EC931F800F2A510 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		24BD876C1EC931F800F2A510 /* Build configuration list for PBXNativeTarget "MyAwesomeAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				24BD876D1EC931F800F2A510 /* Debug */,
-				24BD876E1EC931F800F2A510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -75,7 +75,7 @@ class PushViewController: UIViewController {
         self?.present(alert, animated: true)
       }
     }
-    MTLinkClient.shared.api?.sendAuthenticatedRequest(deviceTokenRequest)
+    MTLinkClient.shared.api?.sendRequest(deviceTokenRequest)
   }
 
   @IBAction func deregisterFromServer_() {
@@ -111,7 +111,7 @@ class PushViewController: UIViewController {
         self?.present(alert, animated: true)
       }
     }
-    MTLinkClient.shared.api?.sendAuthenticatedRequest(deregisterRequest)
+    MTLinkClient.shared.api?.sendRequest(deregisterRequest)
   }
 
   @IBAction func enablePush_() {
