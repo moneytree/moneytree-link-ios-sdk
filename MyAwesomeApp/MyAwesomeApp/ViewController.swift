@@ -10,14 +10,8 @@ import MoneytreeLINKKit
 import MoneytreeLinkCoreKit
 import UIKit
 
-enum AuthMode {
-  case pkce, codeGrant
-}
-
-// Change to valid AuthMode to play around various flow SDK Offers.
-let authMode: AuthMode = .pkce
 // You can set default email address here
-let defaultEmail: String = "test@example.com"
+let defaultEmail: String = ""
 
 struct Constants {
 
@@ -38,16 +32,7 @@ struct Constants {
   ]
 
   static var configuration: MTLConfiguration = {
-    let configuration: MTLConfiguration
-    switch authMode {
-    case .pkce:
-      configuration = MTLConfiguration()
-    case .codeGrant:
-      configuration = MTLConfiguration(
-        // The example remote server you will host on yourself.
-        redirectUri: "https://wf3kkdzcog.execute-api.ap-northeast-1.amazonaws.com/staging/external_client_server.json"
-      )
-    }
+    let configuration = MTLConfiguration()
     configuration.environment = .staging
     configuration.scopes = Constants.defaultScopes
     configuration.stayLoggedIn = true
@@ -91,7 +76,7 @@ final class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     let currentEnv = MTLinkClient.shared.currentConfiguration.environment.rawValue == 1 ? "Staging" : "Production"
-    title = "AwesomeApp - \(Bundle.mt_sdkVersion!) - \(currentEnv) - \(authMode)"
+    title = "AwesomeApp - \(Bundle.mt_sdkVersion!) - \(currentEnv)"
     update()
   }
 
@@ -109,58 +94,18 @@ final class ViewController: UIViewController {
   }
 
   @IBAction func onboardButtonTapped(_ sender: Any) {
-    switch authMode {
-    case .pkce:
-      presentPKCEOnboard()
-    case .codeGrant:
-      presentAuthCodeGrantOnboard()
-    }
-  }
-
-  private func presentPKCEOnboard() {
     alertWithTextField(
-      title: "Onboard via PKCE",
+      title: "Passwordless Signup",
       message: "Please enter your email",
       placeholder: defaultEmail
     ) { input in
       guard !input.isEmpty else { return }
-      MTLinkClient.shared.onboard(
-        from: self,
-        authorizationType: .PKCE,
-        email: input,
-        state: nil,
-        region: .japan,
-        animated: true
-      ) { credential, error in
+      MTLinkClient.shared.onboard(self, email: input, animated: true) { credential, error in
         guard let credential = credential else {
           self.handle(error)
           return
         }
         self.update(with: credential)
-      }
-    }
-  }
-
-  private func presentAuthCodeGrantOnboard() {
-    alertWithTextField(
-      title: "Onboard via Code Grant",
-      message: "Please enter your email",
-      placeholder: defaultEmail
-    ) { input in
-      guard !input.isEmpty else { return }
-      MTLinkClient.shared.onboard(
-        from: self,
-        authorizationType: .codeGrant,
-        email: input,
-        state: self.codeGrantState,
-        region: .japan,
-        animated: true
-      ) { _, error in
-        if error != nil {
-          self.handle(error)
-        } else {
-          self.tokenLabel.text = "Seems the server gets a token successfully."
-        }
       }
     }
   }
@@ -187,10 +132,6 @@ final class ViewController: UIViewController {
   }
 
   @IBAction func linkKitButtonTapped() {
-    guard authMode == .pkce else {
-      message = Message(main: "LINK Kit is available only on PKCE mode.")
-      return
-    }
     MTLinkKit.shared.makeViewController { viewController, error in
       guard let linkKitViewController = viewController else {
         self.handle(error)
@@ -283,50 +224,18 @@ final class ViewController: UIViewController {
   }
 
   @IBAction func authForTokenButtonTapped() {
-    switch authMode {
-    case .pkce:
-      presentPKCEAuthorize()
-    case .codeGrant:
-      presentAuthCodeGrantAuthorize()
-    }
-  }
-
-  private func presentPKCEAuthorize() {
-    let authOption = MTLinkAuthOptions.authOption(
-      showSignUp: true,
-      guestEmail: defaultEmail
-    )
-    authOption.useForceLogout = true
-    MTLinkClient.shared.authorizeUsingPkce(
-      from: self,
-      authOptions: authOption,
-      animated: true
-    ) { credential, error in
-      guard let credential = credential else {
-        self.handle(error)
-        return
-      }
-      self.update(with: credential)
-    }
-  }
-
-  private func presentAuthCodeGrantAuthorize() {
     let authOption = MTLinkAuthOptions.authOption(
       showSignUp: false,
       guestEmail: defaultEmail
     )
     authOption.useForceLogout = true
-    MTLinkClient.shared.authorizeUsingCodeGrant(
-      from: self,
-      state: codeGrantState,
-      authOptions: authOption,
-      animated: true
-    ) { error in
-      if error != nil {
+
+    MTLinkClient.shared.authorize(self, options: authOption, animated: true) { credential, error in
+      guard let credential = credential else {
         self.handle(error)
-      } else {
-        self.message = Message(main: "Seems the server gets a token successfully.")
+        return
       }
+      self.update(with: credential)
     }
   }
 
@@ -359,12 +268,6 @@ final class ViewController: UIViewController {
   }
 
   private func update(with newToken: MTOAuthCredential? = nil) {
-    guard authMode == .pkce else {
-      // SDK Doesn't manage token in this authorization code grant mode
-      tokenLabel.text = nil
-      expiresInLabel.text = nil
-      return
-    }
     guard let token = newToken?.accessToken else {
       message = Message(main: "Tap `Authorize` or `Get Token` (if already authorized) to grab token from SDK.")
       return

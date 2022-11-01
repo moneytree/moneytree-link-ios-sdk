@@ -8,7 +8,7 @@ Please make sure you have followed the steps in the [integration guide](../READM
   - [Authorization](#authorization)
     - [Authorizing your app](#authorizing-your-app)
       - [PKCE](#pkce)
-      - [Code Grant](#code-grant)
+      - [Code Grant (Deprecated)](#code-grant-deprecated)
     - [Authorizing with Passwordless Sign Up/Login and Login Link](#authorizing-with-passwordless-sign-uplogin-and-login-link)
       - [Passwordless Sign Up/Login](#passwordless-sign-uplogin)
     - [Login Link](#login-link)
@@ -44,20 +44,22 @@ let authOption = MTLinkAuthOptions.authOption(showSignUp: false, guestEmail: "yo
 authOption.useForceLogout = true
 ```
 
-You can authorize your app to connect to the Moneytree LINK API server via PKCE or Code Grant OAuth flows. This enables you to retrieve the guest's account information, their registered financial institutions, and transaction data via Moneytree LINK REST APIs.
+You can authorize your app to connect to the Moneytree LINK API server. This enables you to retrieve the guest's account information, their registered financial institutions, and transaction data via Moneytree LINK REST APIs.
+
+Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
 
 The OAuth flow is presented in an `SFSafariViewController`.
 
-#### PKCE
-
 ```swift
-MTLinkClient.shared.authorizeUsingPkce(from: self, authOptions: authOption, animated: true) { credential, error in
+MTLinkClient.shared.authorize(self, authOptions: authOption, animated: true) { credential, error in
   // Store the credential, if available.
   // Handle the error, if any.
 }
 ```
 
-#### Code Grant
+#### Code Grant (Deprecated)
+
+Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
 
 Similar to PKCE flow above, but the authorization method also requires a state string for the OAuth process. This state needs to be unique per request. For more information refer to [the OAuth guidelines](https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/).
 
@@ -94,18 +96,17 @@ Passwordless Sign Up/Login is similar to [authorizing your app normally](#author
 
 ```swift
 MTLinkClient.shared.onboard(
-  from: self,
-  authorizationType: .PKCE,
+  self,
   email: "guest's email",
-  state: nil,
-  region: .japan,
   animated: true
 ) { credential, error in
   // Handle credential or error if necessary
 }
 ```
 
-- Code Grant
+- Code Grant (Deprecated)
+
+Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
 
 ```swift
 MTLinkClient.shared.onboard(
@@ -128,7 +129,7 @@ Your users may choose to use the Login Link to log into an existing account afte
 
 ## Getting an Access Token
 
-> :warning: This functionality is only available when using the PKCE OAuth flow.
+> :warning: This functionality is only available when using the PKCE OAuth flow. From the next major version of the SDK, this will be the only OAuth flow available.
 
 Once you have authorized via PKCE, you can obtain an access token to query data from the Moneytree LINK REST API depending on what scopes you have configured.
 
@@ -265,7 +266,7 @@ MTLinkClient.shared.requestForLoginLink(forEmail: "email@addr.ess", to: .setting
 
 ## LINK Kit
 
-LINK Kit is hosted in a UIViewController that you can present in your app. If you are using LINK Kit, [you must be using PKCE for authorization](./Authorization.md/#pkce).
+LINK Kit is hosted in a UIViewController that you can present in your app. If you are using LINK Kit, [you must be using PKCE for authorization](#authorization).
 
 Import `MoneytreeLinkKit` in the file responsible for presenting it.
 

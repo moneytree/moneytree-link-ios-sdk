@@ -115,6 +115,7 @@ Initialize the configuration object as appropriate for your authorization type. 
 // PKCE requires no arguments.
 let configuration = MTLConfiguration()
 
+// Note: Code Grant without PKCE is not supported anymore. Will be removed in the next major version. Migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
 // Code Grant requires the redirect URI of your code grant server.
 let configuration = MTLConfiguration(redirectUri: "https://your.server.com/token-exchange-endpoint")
 

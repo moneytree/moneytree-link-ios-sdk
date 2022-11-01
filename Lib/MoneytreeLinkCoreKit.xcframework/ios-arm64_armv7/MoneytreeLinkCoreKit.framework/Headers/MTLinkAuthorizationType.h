@@ -10,12 +10,12 @@
 
 typedef NS_ENUM(NSUInteger, MTLinkAuthorizationType) {
   /**
-   Authorize via PKCE
+   Authorize via Code Grant with PKCE
    */
   MTLinkAuthorizationTypePKCE = 0,
 
   /**
-   Authorize via Code Grant
+   Authorize via Code Grant without PKCE
    */
   MTLinkAuthorizationTypeCodeGrant = 1
-};
+} __deprecated_enum_msg("Code Grant without PKCE is not supported anymore. This enum will be removed in the next major version. Migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce");

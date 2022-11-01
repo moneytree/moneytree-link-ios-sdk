@@ -2,6 +2,25 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.3.0
+
+- Code Grant without PKCE is not supported anymore. It will be removed in the next major version. Please see the migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce  
+
+### Added
+
+`MTLinkClient -authorizeFrom:options:animated:completion:`
+`MTLinkClient -onboardFrom:email:animated:completion:`
+`MTAPI -sendRequest:`
+`MTAPI -sendRequestForSwift:`
+
+### Deprecated
+
+`MTLinkClient -authorizeUsingPkceFrom:options:animated:completion:`
+`MTLinkClient -authorizeUsingCodeGrantFrom:options:animated:completion:`
+`MTLinkClient -onboardFrom:authorizationType:email:state:region:animated:completion:`
+`MTAPI -sendAuthenticatedRequest:`
+`MTAPI -sendAuthenticatedRequestForSwift:`
+
 ## v6.2.1
 - Remove unnecessary Core Data model file from sample app.
 - Fix an issue where passwordless features would not be enabled for applications built with Xcode 13.
