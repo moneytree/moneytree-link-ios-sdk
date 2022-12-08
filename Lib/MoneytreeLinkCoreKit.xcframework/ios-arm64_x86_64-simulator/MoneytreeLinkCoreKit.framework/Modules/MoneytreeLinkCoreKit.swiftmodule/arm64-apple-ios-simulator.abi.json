@@ -1,0 +1,1009 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLinkCoreKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLinkCoreKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NativeActionUrlHandler",
+        "printedName": "NativeActionUrlHandler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "closeHandler",
+            "printedName": "closeHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(py)closeHandler",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC05closeH0yycSgvp",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)closeHandler",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC05closeH0yycSgvg",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)setCloseHandler:",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC05closeH0yycSgvs",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MoneytreeLinkCoreKit22NativeActionUrlHandlerC05closeH0yycSgvM",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC05closeH0yycSgvM",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logoutHandler",
+            "printedName": "logoutHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(py)logoutHandler",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06logoutH0yycSgvp",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)logoutHandler",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06logoutH0yycSgvg",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)setLogoutHandler:",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06logoutH0yycSgvs",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06logoutH0yycSgvM",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06logoutH0yycSgvM",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "completion",
+            "printedName": "completion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(py)completion",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC10completionyycSgvp",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)completion",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC10completionyycSgvg",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(() -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "() -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)setCompletion:",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC10completionyycSgvs",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:20MoneytreeLinkCoreKit22NativeActionUrlHandlerC10completionyycSgvM",
+                "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC10completionyycSgvM",
+                "moduleName": "MoneytreeLinkCoreKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewController:accessToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeActionUrlHandler",
+                "printedName": "MoneytreeLinkCoreKit.NativeActionUrlHandler",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)initWithViewControllerForPresentation:accessToken:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC14viewController11accessTokenACSo06UIViewJ0C_SStcfc",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "initWithViewControllerForPresentation:accessToken:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeActionUrlHandler",
+                "printedName": "MoneytreeLinkCoreKit.NativeActionUrlHandler",
+                "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)init",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerCACycfc",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "mt_urlHandlerCanHandle",
+            "printedName": "mt_urlHandlerCanHandle(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)mt_urlHandlerCanHandleUrl:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06mt_urlH9CanHandleySb10Foundation3URLVF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "mt_urlHandlerCanHandleUrl:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mt_urlHandler",
+            "printedName": "mt_urlHandler(toHandle:options:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[UIKit.UIApplication.OpenURLOptionsKey : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpenURLOptionsKey",
+                    "printedName": "UIKit.UIApplication.OpenURLOptionsKey",
+                    "usr": "c:@T@UIApplicationOpenURLOptionsKey"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)mt_urlHandlerToHandleUrl:options:completion:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06mt_urlH08toHandle7options10completiony10Foundation3URLV_SDySo30UIApplicationOpenURLOptionsKeyaypGySbctF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "mt_urlHandlerToHandleUrl:options:completion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mt_urlHandlerUserCancelled",
+            "printedName": "mt_urlHandlerUserCancelled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)mt_urlHandlerUserCancelled",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06mt_urlH13UserCancelledyyF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "mt_urlHandlerUserCancelled",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mt_urlHandlerCanHandleUniversalLink",
+            "printedName": "mt_urlHandlerCanHandleUniversalLink(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)mt_urlHandlerCanHandleUniversalLink:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06mt_urlh18CanHandleUniversalB0ySb10Foundation3URLVSgF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "mt_urlHandlerCanHandleUniversalLink:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mt_urlHandler",
+            "printedName": "mt_urlHandler(toHandleUniversalLink:originalState:presentFrom:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Error?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)mt_urlHandlerToHandleUniversalLink:originalState:presentFrom:completion:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC06mt_urlH0017toHandleUniversalB013originalState11presentFrom10completiony10Foundation3URLVSg_SSSgSo16UIViewControllerCys5Error_pSgctF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "mt_urlHandlerToHandleUniversalLink:originalState:presentFrom:completion:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "webView",
+            "printedName": "webView(_:decidePolicyFor:decisionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKNavigationAction",
+                "printedName": "WebKit.WKNavigationAction",
+                "usr": "c:objc(cs)WKNavigationAction"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WebKit.WKNavigationActionPolicy) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WKNavigationActionPolicy",
+                    "printedName": "WebKit.WKNavigationActionPolicy",
+                    "usr": "c:@E@WKNavigationActionPolicy"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)webView:decidePolicyForNavigationAction:decisionHandler:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC7webView_15decidePolicyFor08decisionH0ySo05WKWebJ0C_So012WKNavigationF0CySo0pfL0VctF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "webView:decidePolicyForNavigationAction:decisionHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler(im)userContentController:didReceiveScriptMessage:",
+            "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC21userContentController_10didReceiveySo06WKUserjK0C_So15WKScriptMessageCtF",
+            "moduleName": "MoneytreeLinkCoreKit",
+            "objc_name": "userContentController:didReceiveScriptMessage:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoneytreeLinkCoreKit@objc(cs)NativeActionUrlHandler",
+        "mangledName": "$s20MoneytreeLinkCoreKit22NativeActionUrlHandlerC",
+        "moduleName": "MoneytreeLinkCoreKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLinkCoreKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLinkCoreKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 421,
+      "length": 22,
+      "value": "\"MoneytreeLinkCoreKit.NativeActionUrlHandler\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "Dictionary",
+      "offset": 1197,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 16,
+      "value": "\"delete_account\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 16,
+      "value": "\"delete_account\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 1979,
+      "length": 8,
+      "value": "\"action\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 2010,
+      "length": 6,
+      "value": "\"path\""
+    }
+  ]
+}

@@ -398,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1809;
+				CURRENT_PROJECT_VERSION = 1819;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -431,7 +431,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1809;
+				CURRENT_PROJECT_VERSION = 1819;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -587,7 +587,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1809;
+				CURRENT_PROJECT_VERSION = 1819;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -620,7 +620,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1809;
+				CURRENT_PROJECT_VERSION = 1819;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";

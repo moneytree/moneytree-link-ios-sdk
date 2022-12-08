@@ -1,0 +1,181 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLINKKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoneytreeLinkCoreKit",
+        "printedName": "MoneytreeLinkCoreKit",
+        "declKind": "Import",
+        "moduleName": "MoneytreeLINKKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MTLConfiguration",
+        "printedName": "MTLConfiguration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "linkKitConfiguration",
+            "printedName": "linkKitConfiguration(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MTLConfiguration",
+                "printedName": "MoneytreeLinkCoreKit.MTLConfiguration",
+                "usr": "c:objc(cs)MTLConfiguration"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MTLConfiguration",
+                "printedName": "MoneytreeLinkCoreKit.MTLConfiguration",
+                "usr": "c:objc(cs)MTLConfiguration"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@MoneytreeLINKKit@@objc(cs)MTLConfiguration(cm)linkKitConfigurationFrom:",
+            "mangledName": "$sSo16MTLConfigurationC16MoneytreeLINKKitE20linkKitConfigurationyA2BFZ",
+            "moduleName": "MoneytreeLINKKit",
+            "static": true,
+            "objc_name": "linkKitConfigurationFrom:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hasLinkKitScopes",
+            "printedName": "hasLinkKitScopes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@MoneytreeLINKKit@@objc(cs)MTLConfiguration(py)hasLinkKitScopes",
+            "mangledName": "$sSo16MTLConfigurationC16MoneytreeLINKKitE16hasLinkKitScopesSbvp",
+            "moduleName": "MoneytreeLINKKit",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@MoneytreeLINKKit@@objc(cs)MTLConfiguration(im)hasLinkKitScopes",
+                "mangledName": "$sSo16MTLConfigurationC16MoneytreeLINKKitE16hasLinkKitScopesSbvg",
+                "moduleName": "MoneytreeLINKKit",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)MTLConfiguration",
+        "moduleName": "MoneytreeLinkCoreKit",
+        "isOpen": true,
+        "objc_name": "MTLConfiguration",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
