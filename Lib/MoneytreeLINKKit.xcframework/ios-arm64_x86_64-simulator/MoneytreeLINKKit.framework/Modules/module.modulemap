@@ -1,0 +1,11 @@
+framework module MoneytreeLINKKit {
+  umbrella header "MoneytreeLINKKit.h"
+
+  export *
+  module * { export * }
+}
+
+module MoneytreeLINKKit.Swift {
+  header "MoneytreeLINKKit-Swift.h"
+  requires objc
+}

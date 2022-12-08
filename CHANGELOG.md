@@ -2,6 +2,10 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.3.1
+
+- Improved handling of app revocation for LINK Kit. If an end user has revoked authorization for your application, instead of returning an error, LINK Kit will automatically give the user an opportunity to re-authenticate and re-authorize. This reduces the need for error handling for LINK Kit implementations.
+
 ## v6.3.0
 
 - Code Grant without PKCE is not supported anymore. It will be removed in the next major version. Please see the migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce  
