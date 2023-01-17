@@ -28,7 +28,8 @@ struct Constants {
     MTLClientScopeTransactionsWrite,
     MTLClientScopePointsRead,
     MTLClientScopeInvestmentAccountsRead,
-    MTLClientScopeInvestmentTransactionsRead
+    MTLClientScopeInvestmentTransactionsRead,
+    MTLClientScopeRequestRefresh
   ]
 
   static var configuration: MTLConfiguration = {

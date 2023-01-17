@@ -396,10 +396,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1819;
+				CURRENT_PROJECT_VERSION = 1828;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -416,9 +417,10 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match Development com.getmoneytree.sdk.MyAwesomeApp";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.getmoneytree.sample.awesomeapp.development";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -431,7 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1819;
+				CURRENT_PROJECT_VERSION = 1828;
 				DEVELOPMENT_TEAM = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
@@ -448,9 +450,9 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.getmoneytree.sdk.MyAwesomeApp";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -585,10 +587,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1819;
+				CURRENT_PROJECT_VERSION = 1828;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -605,9 +608,10 @@
 					"-ObjC",
 				);
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.getmoneytree.sample.awesomeapp.development";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -619,9 +623,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1819;
+				CURRENT_PROJECT_VERSION = 1828;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -637,9 +643,10 @@
 					"-all_load",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sdk.MyAwesomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -656,7 +663,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.MyAwesomeAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAwesomeApp.app/MyAwesomeApp";
 			};
@@ -673,7 +680,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.MyAwesomeAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyAwesomeApp.app/MyAwesomeApp";
 			};
@@ -689,7 +696,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.MyAwesomeAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MyAwesomeApp;
 			};
@@ -705,7 +712,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.MyAwesomeAppUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MyAwesomeApp;
 			};
