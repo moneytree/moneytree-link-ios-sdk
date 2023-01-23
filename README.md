@@ -160,7 +160,7 @@ Required scopes for features
 
 | Feature  | Required Scopes                                                                                                                                                                                                                |
 | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| LINK Kit | MTLClientScopeGuestRead, MTLClientScopeAccountsRead, MTLClientScopeTransactionsRead, MTLClientScopeTransactionsWrite, MTLClientScopePointsRead, MTLClientScopeInvestmentAccountsRead, MTLClientScopeInvestmentTransactionsRead |
+| LINK Kit | MTLClientScopeGuestRead, MTLClientScopeAccountsRead, MTLClientScopeTransactionsRead, MTLClientScopeTransactionsWrite, MTLClientScopePointsRead, MTLClientScopeInvestmentAccountsRead, MTLClientScopeInvestmentTransactionsRead, MTLClientScopeRequestRefresh |
 
 ### Starting the SDK
 
