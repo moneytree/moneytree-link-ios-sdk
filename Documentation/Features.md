@@ -33,15 +33,20 @@ The first step to using the SDK is for your user to authorize your app to access
 
 ### Authorizing your app
 
-First, create an instance of `MTLinkAuthOptions`. Here you decide whether you want to show the sign up or log in page, and can provide your customer's email address to help speed up the process.
+First, create an instance of `MTLAuthenticationOptions`. Here you decide whether you want to show the sign up or log in page, and can provide your customer's email address to help speed up the process.
 
 You can also optionally force a log out of all existing sessions before logging in the user, if you are encountering caching issues.
 
-```swift
-let authOption = MTLinkAuthOptions.authOption(showSignUp: false, guestEmail: "your-email@example.com")
+You should also choose your authentication method here. See [Choosing your Authentication method](#choosing-your-authentication-method) below. We support `nil` here for backwards compatibility but we strongly recommend explicitly specifying the authentication method you wish to use.
 
-// Optional:
-authOption.useForceLogout = true
+```swift
+let options = MTLAuthenticationOptions.options(
+      authenticationMethod: .credentials, // .passwordless, .singleSignOn
+      mode: .signup, // .login
+      allowModeChange: true,
+      email: "your-email@example.com",
+      forceLogout: false
+    )
 ```
 
 You can authorize your app to connect to the Moneytree LINK API server. This enables you to retrieve the guest's account information, their registered financial institutions, and transaction data via Moneytree LINK REST APIs.
@@ -51,11 +56,16 @@ Please note that Code Grant without PKCE is not supported anymore. It will be re
 The OAuth flow is presented in an `SFSafariViewController`.
 
 ```swift
-MTLinkClient.shared.authorize(self, authOptions: authOption, animated: true) { credential, error in
+MTLinkClient.shared.authorize(self, authOptions: options, animated: true) { credential, error in
   // Store the credential, if available.
   // Handle the error, if any.
 }
 ```
+
+> :warning: The `authorize()` flow has some combinations that force specific flows.
+> Specifically:
+> - When `mode` is `.signup` and `authenticationMethod` is `.passwordless`, `authenticationMethod` is disregarded and you will still get the credentials screen. Passwordless Signup is handled by the `onboard()` entry point.
+> - When `authenticationMethod` is `.singleSignOn`, then `authorize()` disregards `mode`, as there is no concept of Signup or Login in the SSO method.
 
 #### Code Grant (Deprecated)
 
@@ -78,15 +88,21 @@ MTLinkClient.shared.authorizeUsingCodeGrant(
 
 _Passwordless Sign Up/Login and Login Link_ are new secure, passwordless registration and login features offered from v6 in order to allow your customers easier access to Moneytree services. These features are email based. When _Passwordless Sign Up/Login_ is requested, the user will receive a one-time url capable of creating an account. When a _Login Link_ is requested, the user will receive a one-time url that can log them in or navigate to their account settings.
 
-> :warning: Passwordless Sign Up/Login is currently available _only_ for Core services. Login Link is available for _all_ services, including LINK Kit.
->
-> :warning: Please complete [Configuring Universal Links for navigation](../README.md#configuring-universal-links-for-navigation) first.
+> :warning: Please make sure to complete [Configuring Universal Links for navigation](../README.md#configuring-universal-links-for-navigation) steps first.
 
-You must inform Moneytree's integration team if you want to support either or both Passwordless Sign Up/Login and Login Link. When doing so, please provide your client ID, the bundle ID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
+You must inform Moneytree's customer success team if you want to support either or both Passwordless Sign Up/Login and Login Link. When doing so, please provide your client ID, the app ID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
+
+> :warning: The app ID can be found by following these instructions from [Apple documentation]( https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+>
+> The value of the appID key is the team ID or app ID prefix, followed by the bundle ID. (The appID value is the same value that’s associated with the “application-identifier” key in your app’s entitlements after you build it.)
 
 Once Moneytree completes the configuration of your app, your users will see the new registration and login screens. Note that these screens still provide the option to register or log in with a password if they prefer.
 
 > :warning: Configuring universal link support is required for these features. Please refer to [the documentation for universal link configuration](../README.md#configuring-universal-links-for-navigation).
+
+> :warning: Passwordless Sign Up/Login requires further configuration and implementation. Specifically for signup, a different SDK API call is being used. 
+>
+> That makes it incompatible with the spirit of direct access of LINK Kit. However, if you want to use it with LINK Kit you can implement the required authorization flows manually and then call LINK Kit, to open it on top of the finished authorization.
 
 #### Passwordless Sign Up/Login
 
@@ -272,10 +288,8 @@ Import `MoneytreeLinkKit` in the file responsible for presenting it.
 
 Please make sure the scope configuration matches what is mentioned [here](../../README.md#configuring-scopes).
 
-> :warning: Currently LINK Kit **does not** support Passwordless Sign Up/Login.
-
 ```swift
-MTLinkKit.shared.makeLinkKitViewController { viewController, error in
+MTLinkKit.shared.makeViewController { viewController, error in
   guard let viewController = viewController else {
     // Handle the error, if any.
     return

@@ -16,6 +16,7 @@
 #import <MoneytreeLinkCoreKit/MTLinkClient.h>
 #import <MoneytreeLinkCoreKit/MTLinkAuthOptions.h>
 #import <MoneytreeLinkCoreKit/MTLAuthenticationOptions.h>
+#import <MoneytreeLinkCoreKit/MTLAuthenticationMethod.h>
 #import <MoneytreeLinkCoreKit/MTLinkPkceAuthOptions.h>
 #import <MoneytreeLinkCoreKit/MTLinkClientError.h>
 #import <MoneytreeLinkCoreKit/MTLResources.h>

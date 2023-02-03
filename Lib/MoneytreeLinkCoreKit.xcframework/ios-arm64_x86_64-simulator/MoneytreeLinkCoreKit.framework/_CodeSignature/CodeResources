@@ -28,9 +28,13 @@
 		<data>
 		ffaoyhCM5RDe2nFCfULwmqEEA/g=
 		</data>
+		<key>Headers/MTLAuthenticationMethod.h</key>
+		<data>
+		zAAKOe9bGivwP+hY3nUc7pbuETw=
+		</data>
 		<key>Headers/MTLAuthenticationOptions.h</key>
 		<data>
-		oPW5I1YUWnSFMVXygrJe1cc14TE=
+		vs+qi9Hv+2zHykiAdQ6M7GnITw8=
 		</data>
 		<key>Headers/MTLCompletions.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/MTLConfiguration.h</key>
 		<data>
-		2dnenc5ZFhEr8vt74dsO/DzzTxQ=
+		lWJOUw6+Ep5jAsBzBfp7pMTiHHs=
 		</data>
 		<key>Headers/MTLConstants.h</key>
 		<data>
@@ -50,11 +54,11 @@
 		</data>
 		<key>Headers/MTLResources.h</key>
 		<data>
-		YlEZ+lBZvDZSK/GrMrrHnAUwV8k=
+		AFaaCmY1mHqypyYxgK4LSzZTBAE=
 		</data>
 		<key>Headers/MTLinkAuthOptions.h</key>
 		<data>
-		ctRBuikHDukU9tESYEOvnSQ6rMk=
+		hEji0etO9vB8lieGl8ZCU1HEEw0=
 		</data>
 		<key>Headers/MTLinkAuthorizationType.h</key>
 		<data>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Headers/MoneytreeLinkCoreKit.h</key>
 		<data>
-		VkRZbCqQTH7bzRIN+T+OQNdVCQI=
+		8shjpiRgEBxfF5LQoNxXgBWxN9A=
 		</data>
 		<key>Headers/NSBundle+Version.h</key>
 		<data>
@@ -134,7 +138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4KbjBS6B9jEb6Aim8JINqXTDFM4=
+		Lak5hlenj9x48gXGI3nvUpaN4Cc=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -257,15 +261,26 @@
 			jWAwCxWrZdHG7jhF9iKxLSVMdbw5x5ylwTsFaaoGHb4=
 			</data>
 		</dict>
+		<key>Headers/MTLAuthenticationMethod.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zAAKOe9bGivwP+hY3nUc7pbuETw=
+			</data>
+			<key>hash2</key>
+			<data>
+			QZxOfX5Tjs8FFcQmc4seilHOoXA+OKuZ6t49zUyJVzA=
+			</data>
+		</dict>
 		<key>Headers/MTLAuthenticationOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oPW5I1YUWnSFMVXygrJe1cc14TE=
+			vs+qi9Hv+2zHykiAdQ6M7GnITw8=
 			</data>
 			<key>hash2</key>
 			<data>
-			jz0qduEhXQkeWUV+TdGoYoZ6llU2EkwJEjt+bBSTMjA=
+			GwDxDUFpvEi1xN2mLAcwZXoEfknm1GlqsXZ7ZVSk56U=
 			</data>
 		</dict>
 		<key>Headers/MTLCompletions.h</key>
@@ -283,11 +298,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2dnenc5ZFhEr8vt74dsO/DzzTxQ=
+			lWJOUw6+Ep5jAsBzBfp7pMTiHHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			dVZj7fRQpCrcNoLMiMtxzQTuSG+TPZpnPpMG0kYpwQE=
+			kKmnv5mD3eP4cWSrKrn6ni+gD25WJ+vfuWTDaWwjjKk=
 			</data>
 		</dict>
 		<key>Headers/MTLConstants.h</key>
@@ -316,22 +331,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YlEZ+lBZvDZSK/GrMrrHnAUwV8k=
+			AFaaCmY1mHqypyYxgK4LSzZTBAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			lMPIUb4gLYjnvPSyqAsXVS5T0CIOkIEU/hBYLhwlnO0=
+			pDoUXYUhNMPhSzXTjTx3x6886wSwnzHroJrQPZppUmo=
 			</data>
 		</dict>
 		<key>Headers/MTLinkAuthOptions.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ctRBuikHDukU9tESYEOvnSQ6rMk=
+			hEji0etO9vB8lieGl8ZCU1HEEw0=
 			</data>
 			<key>hash2</key>
 			<data>
-			wULwx/q8krONuoNiMzqv7pzhKm+VAWLC5sCzGfj2/Yo=
+			2gHkzu3wNSdJE7u2M1Aw2L8lYXJG9Y3/DROmUeXj6h0=
 			</data>
 		</dict>
 		<key>Headers/MTLinkAuthorizationType.h</key>
@@ -514,11 +529,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VkRZbCqQTH7bzRIN+T+OQNdVCQI=
+			8shjpiRgEBxfF5LQoNxXgBWxN9A=
 			</data>
 			<key>hash2</key>
 			<data>
-			8brIfT+ZR6xS14llGShx/u5K5HR7pVysxCxm+QjUxZc=
+			RLKpMKdooXUHklxID7323HwWxxT2KoCPf9l5N6KPeX8=
 			</data>
 		</dict>
 		<key>Headers/NSBundle+Version.h</key>

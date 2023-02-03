@@ -48,23 +48,21 @@ NS_ASSUME_NONNULL_BEGIN
  Provides URL to open the authorization page with a specific grant type
 
  @param codeVerifier to configure url
- @param region An extensible enum that represents the region of the authorization process
+ @param authOptions to configure parameters of the authorization flow
  @return An absolute url that can be used for any browsers
  */
 - (NSURL *)authorizationUrlWithCodeVerifier:(MTOAuthCodeVerifier *)codeVerifier
-                                     region:(MTAuthRegion _Nullable)region;
+                                authOptions:(id<AuthenticationOptions>)authOptions;
 
 /**
  Provides URL to open the fastonboarding page with PKCE authorization
 
  @param codeVerifier to configure url
  @param email the user's email to be pre-filled on the onboarding page
- @param region An extensible enum that represents the region of the authorization process
  @return An absolute url that can take the user to the onboarding flow
 */
 - (NSURL *)onboardUrlWithCodeVerifier:(MTOAuthCodeVerifier *_Nonnull)codeVerifier
-                                email:(NSString *_Nonnull)email
-                               region:(MTAuthRegion _Nonnull)region;
+                                email:(NSString *_Nonnull)email;
 
 /**
  Provides URL to open the vault
@@ -97,16 +95,13 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param state to append to url, state helps mitigate CSRF attacks
  @param email the user's email to be pre-filled on the onboarding page
- @param region An extensible enum that represents the region of the authorization process
  @return An absolute url that can take the user to the onboarding flow
 */
 - (NSURL *)onboardUrlWithState:(NSString *_Nonnull)state
-                         email:(NSString *_Nonnull)email
-                        region:(MTAuthRegion _Nonnull)region;
+                         email:(NSString *_Nonnull)email;
 
 - (NSURL *_Nullable)authUrlWithBaseUrl:(NSURL *)baseUrl
-                          codeVerifier:(MTOAuthCodeVerifier *)code
-                           authOptions:(id<AuthenticationOptions>)authOptions;
+                          codeVerifier:(MTOAuthCodeVerifier *)code;
 
 /// Checks if the url is an account service url based on the current environment
 /// @param url the url to be checked

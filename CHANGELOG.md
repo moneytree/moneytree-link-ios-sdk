@@ -2,6 +2,28 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.4.0
+
+We have introduced a new authentication configuration parameter that will allow you to choose your authentication method (Authentication, Passwordless, Single Sign On) when the Moneytree authentication web page shows. This configuration does _not_ guarantee that the selected mode will be the one presented as the feature relies on the configuration of the client ID provided to you.
+
+If you do not provide the new configuration, the default order of available methods configured in you client ID will be used.
+
+For more on the feature and how it works, please refer to [Choosing your Authentication method](./Documentation/Features.md#choosing-your-authentication-method).
+
+### Added
+
+- `MTLAuthenticationMethod`
+- `MTLConfiguration.authenticationMethod`
+
+### Deprecated
+
+`MTLinkAuthOptions` - Please use MTLAuthenticationOptions instead, which supports new features, including setting your authentication method.
+
+`MTLAuthenticationOptions.options(mode:allowModeChange:region:email:forceLogout:)`
+`MTLAuthenticationOptions.options(mode:allowModeChange:regionType:email:forceLogout:)`
+
+Please use `MTLAuthenticationOptions.options(mode:allowModeChange:email:forceLogout:)` instead. Setting the region is no longer necessary.
+
 ## v6.3.2
 
 - Added additional scope, MTLClientScopeRequestRefresh, to LINK Kit.

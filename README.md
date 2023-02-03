@@ -17,6 +17,7 @@ The SDK provides ways to authenticate, store tokens, and launch Moneytree web se
     - [Configuring your project](#configuring-your-project)
     - [Initializing the SDK](#initializing-the-sdk)
       - [Creating the SDK Configuration](#creating-the-sdk-configuration)
+      - [Choosing Your Authentication Method](#choosing-your-authentication-method)
       - [Configuring Scopes](#configuring-scopes)
     - [Starting the SDK](#starting-the-sdk)
     - [Configuring Deep Links for authorization](#configuring-deep-links-for-authorization)
@@ -129,7 +130,26 @@ configuration.scopes = [
   MTLClientScopeAccountsRead,
   MTLClientScopeTransactionsRead
 ]
+
+// Select the authentication flow you want to use before authorization
+configuration.authenticationMethod = .credentials
 ```
+
+#### Choosing Your Authentication Method
+
+The `authenticationMethod` determines which Moneytree authentication page will appear. We provide three (3) authentication methods:
+- Credentials: You will see the usual page where you can sign up or log in using your email and password.
+- Passwordless: For log-in, the user needs to enter their email address where they will receive their authentication link. For sign-up the flow is executed by calling `onboard()` (see [Authorizing with Passwordless Sign Up/Login and Login Link](./Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link)).
+- Single Sign On (SSO): When configured, your users will authenticate to Moneytree via the Identity Provider (IdP) that you have specified.
+
+> :warning: SSO requires configuration of the Identity Provider (IdP) you want to use, so that our system can connect to it. If you want to use SSO please contact our customer success team and they will work with you to get the needed configuration done.
+
+> :information_source: As this is global SDK configuration the selection you make will take effect over all flows that have the potential to lead to an authentication flow. 
+> Those flows are:
+> - Authorization
+> - Opening the Moneytree Vault
+> - Opening the Moneytree Settings
+> - Starting LINK Kit
 
 #### Configuring Scopes
 

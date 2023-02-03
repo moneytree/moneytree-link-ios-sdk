@@ -7,32 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23A669262637B0C0006AE055 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477A13A211A9E730088232B /* Extensions.swift */; };
-		23A669272637B0C0006AE055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* ViewController.swift */; };
-		23A669292637B0C0006AE055 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */; };
+		23A669272637B0C0006AE055 /* OtherFunctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* OtherFunctionsViewController.swift */; };
 		23A6692A2637B0C0006AE055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD873E1EC931F800F2A510 /* AppDelegate.swift */; };
 		23A669402637B0C0006AE055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */; };
 		23A669422637B0C0006AE055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87481EC931F800F2A510 /* Assets.xcassets */; };
-		23A669452637B0C0006AE055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87421EC931F800F2A510 /* Main.storyboard */; };
-		23A669482637B0C0006AE055 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 231BBA35246A230B007B0ADE /* GoogleService-Info.plist */; };
 		23A669582637B0ED006AE055 /* MoneytreeKeychainUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669552637B0ED006AE055 /* MoneytreeKeychainUtils.framework */; };
 		23A6695A2637B0ED006AE055 /* MoneytreeLinkCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669562637B0ED006AE055 /* MoneytreeLinkCoreKit.framework */; };
 		23A6695C2637B0ED006AE055 /* MoneytreeLINKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A669572637B0ED006AE055 /* MoneytreeLINKKit.framework */; };
-		2477A13B211A9E730088232B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2477A13A211A9E730088232B /* Extensions.swift */; };
 		24BD873F1EC931F800F2A510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD873E1EC931F800F2A510 /* AppDelegate.swift */; };
-		24BD87411EC931F800F2A510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* ViewController.swift */; };
-		24BD87441EC931F800F2A510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87421EC931F800F2A510 /* Main.storyboard */; };
+		24BD87411EC931F800F2A510 /* OtherFunctionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87401EC931F800F2A510 /* OtherFunctionsViewController.swift */; };
 		24BD87491EC931F800F2A510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BD87481EC931F800F2A510 /* Assets.xcassets */; };
 		24BD874C1EC931F800F2A510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */; };
 		24BD87571EC931F800F2A510 /* MyAwesomeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87561EC931F800F2A510 /* MyAwesomeAppTests.swift */; };
 		24BD87621EC931F800F2A510 /* MyAwesomeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BD87611EC931F800F2A510 /* MyAwesomeAppUITests.swift */; };
-		24BEAC1B1F73A0A7007C3E66 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */; };
 		CA1FF37C27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; };
 		CA1FF37D27B4962F00EA8F31 /* MoneytreeKeychainUtils.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA1FF37E27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; };
 		CA1FF37F27B4962F00EA8F31 /* MoneytreeLinkCoreKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA1FF38027B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; };
 		CA1FF38127B4962F00EA8F31 /* MoneytreeLINKKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 925AC22725748AEE00065C19 /* MoneytreeLINKKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D64B235B29358D8A0053FF46 /* LinkKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64B235A29358D8A0053FF46 /* LinkKitViewController.swift */; };
+		D64B235C29358DBA0053FF46 /* LinkKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64B235A29358D8A0053FF46 /* LinkKitViewController.swift */; };
+		D6837F032908F2DB0012BBAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6837F052908F2DB0012BBAB /* Localizable.strings */; };
+		D6837F072908F4E50012BBAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6837F052908F2DB0012BBAB /* Localizable.strings */; };
+		D6A576612924971F00A0E602 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A576602924971F00A0E602 /* ServicesViewController.swift */; };
+		D6A57662292497CD00A0E602 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A576602924971F00A0E602 /* ServicesViewController.swift */; };
+		D6A57664292622A300A0E602 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57663292622A300A0E602 /* UIComponents.swift */; };
+		D6A57665292622F100A0E602 /* UIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57663292622A300A0E602 /* UIComponents.swift */; };
+		D6A576672926244700A0E602 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A576662926244700A0E602 /* ConsoleView.swift */; };
+		D6A576682926283C00A0E602 /* ConsoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A576662926244700A0E602 /* ConsoleView.swift */; };
+		D6A5766A292632D000A0E602 /* DebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57669292632D000A0E602 /* DebugConsole.swift */; };
+		D6A5766B2926330000A0E602 /* DebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57669292632D000A0E602 /* DebugConsole.swift */; };
+		D6BC2A3628FE827D00B92E9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC2A3528FE827D00B92E9C /* MainViewController.swift */; };
+		D6F0CE7628FE87A900478E02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC2A3528FE827D00B92E9C /* MainViewController.swift */; };
+		D6F0CE7828FE89C500478E02 /* MoneytreeIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */; };
+		D6F0CE7928FE89DB00478E02 /* MoneytreeIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,19 +78,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19B6D27A28D009900073DB50 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Config.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		231BBA2B24693858007B0ADE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		231BBA2C24693869007B0ADE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		231BBA2F24693A9C007B0ADE /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		23A669552637B0ED006AE055 /* MoneytreeKeychainUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeKeychainUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A669562637B0ED006AE055 /* MoneytreeLinkCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeLinkCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A669572637B0ED006AE055 /* MoneytreeLINKKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoneytreeLINKKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		245FCBE11EDF89FC00C72BEF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
-		2477A13A211A9E730088232B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		24BD873B1EC931F800F2A510 /* MyAwesomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAwesomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BD873E1EC931F800F2A510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24BD87401EC931F800F2A510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24BD87431EC931F800F2A510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24BD87401EC931F800F2A510 /* OtherFunctionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherFunctionsViewController.swift; sourceTree = "<group>"; };
 		24BD87481EC931F800F2A510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24BD874B1EC931F800F2A510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24BD874D1EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +94,6 @@
 		24BD87561EC931F800F2A510 /* MyAwesomeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeAppTests.swift; sourceTree = "<group>"; };
 		24BD87581EC931F800F2A510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24BD87611EC931F800F2A510 /* MyAwesomeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAwesomeAppUITests.swift; sourceTree = "<group>"; };
-		24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
 		24BEAC1C1F73A9E2007C3E66 /* MyAwesomeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAwesomeApp.entitlements; sourceTree = "<group>"; };
 		2986297324EBAA4C002FA9E6 /* MoneytreeKeychainUtils.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoneytreeKeychainUtils.xcframework; sourceTree = "<group>"; };
 		2986297924EBAD28002FA9E6 /* MoneytreeLinkCoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoneytreeLinkCoreKit.xcframework; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 		92990C85256CE093005C3D37 /* Features.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Features.md; sourceTree = "<group>"; };
 		92990C97256CE10C005C3D37 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../../CHANGELOG.md; sourceTree = "<group>"; };
 		92A5DD0A2574C28A0047FD5E /* AwesomeApp.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AwesomeApp.md; sourceTree = "<group>"; };
+		D64B235A29358D8A0053FF46 /* LinkKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkKitViewController.swift; sourceTree = "<group>"; };
+		D6837F042908F2DB0012BBAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D6837F062908F3060012BBAB /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D6A576602924971F00A0E602 /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		D6A57663292622A300A0E602 /* UIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponents.swift; sourceTree = "<group>"; };
+		D6A576662926244700A0E602 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
+		D6A57669292632D000A0E602 /* DebugConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugConsole.swift; sourceTree = "<group>"; };
+		D6BC2A3528FE827D00B92E9C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneytreeIdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,18 +175,22 @@
 		24BD873D1EC931F800F2A510 /* MyAwesomeApp */ = {
 			isa = PBXGroup;
 			children = (
-				19B6D27A28D009900073DB50 /* Config.xcconfig */,
 				24BEAC1C1F73A9E2007C3E66 /* MyAwesomeApp.entitlements */,
 				663C23B81FED03FA0006ACFE /* README.md */,
 				92990C97256CE10C005C3D37 /* CHANGELOG.md */,
 				24BD874D1EC931F800F2A510 /* Info.plist */,
 				24BD873E1EC931F800F2A510 /* AppDelegate.swift */,
-				2477A13A211A9E730088232B /* Extensions.swift */,
-				24BEAC1A1F73A0A7007C3E66 /* PushViewController.swift */,
-				24BD87401EC931F800F2A510 /* ViewController.swift */,
+				D6A576662926244700A0E602 /* ConsoleView.swift */,
+				D6A57669292632D000A0E602 /* DebugConsole.swift */,
+				D64B235A29358D8A0053FF46 /* LinkKitViewController.swift */,
+				D6BC2A3528FE827D00B92E9C /* MainViewController.swift */,
+				D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */,
+				24BD87401EC931F800F2A510 /* OtherFunctionsViewController.swift */,
+				D6A576602924971F00A0E602 /* ServicesViewController.swift */,
+				D6A57663292622A300A0E602 /* UIComponents.swift */,
 				24BD87481EC931F800F2A510 /* Assets.xcassets */,
 				24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */,
-				24BD87421EC931F800F2A510 /* Main.storyboard */,
+				D6837F052908F2DB0012BBAB /* Localizable.strings */,
 			);
 			path = MyAwesomeApp;
 			sourceTree = "<group>";
@@ -277,7 +294,6 @@
 				TargetAttributes = {
 					24BD873A1EC931F800F2A510 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = LHGBD77CL3;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -295,7 +311,6 @@
 					24BD875C1EC931F800F2A510 = {
 						CreatedOnToolsVersion = 8.3.2;
 						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
 						TestTargetID = 24BD873A1EC931F800F2A510;
 					};
 				};
@@ -325,9 +340,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6837F032908F2DB0012BBAB /* Localizable.strings in Resources */,
 				24BD874C1EC931F800F2A510 /* LaunchScreen.storyboard in Resources */,
 				24BD87491EC931F800F2A510 /* Assets.xcassets in Resources */,
-				24BD87441EC931F800F2A510 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,10 +360,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2477A13B211A9E730088232B /* Extensions.swift in Sources */,
-				24BD87411EC931F800F2A510 /* ViewController.swift in Sources */,
-				24BEAC1B1F73A0A7007C3E66 /* PushViewController.swift in Sources */,
+				D6A5766A292632D000A0E602 /* DebugConsole.swift in Sources */,
+				D6A57664292622A300A0E602 /* UIComponents.swift in Sources */,
+				24BD87411EC931F800F2A510 /* OtherFunctionsViewController.swift in Sources */,
+				D6F0CE7828FE89C500478E02 /* MoneytreeIdViewController.swift in Sources */,
+				D6A576672926244700A0E602 /* ConsoleView.swift in Sources */,
+				D6A576612924971F00A0E602 /* ServicesViewController.swift in Sources */,
+				D64B235B29358D8A0053FF46 /* LinkKitViewController.swift in Sources */,
 				24BD873F1EC931F800F2A510 /* AppDelegate.swift in Sources */,
+				D6BC2A3628FE827D00B92E9C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,21 +391,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		24BD87421EC931F800F2A510 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24BD87431EC931F800F2A510 /* Base */,
-				245FCBE11EDF89FC00C72BEF /* ja */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		24BD874A1EC931F800F2A510 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				24BD874B1EC931F800F2A510 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D6837F052908F2DB0012BBAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6837F042908F2DB0012BBAB /* en */,
+				D6837F062908F3060012BBAB /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,12 +417,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1833;
-				DEVELOPMENT_TEAM = LHGBD77CL3;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 52339;
+				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,6 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -419,7 +439,7 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.getmoneytree.sample.awesomeapp.development";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -432,11 +452,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1833;
-				DEVELOPMENT_TEAM = LHGBD77CL3;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 52339;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +464,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -452,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -460,7 +480,6 @@
 		};
 		24BD87641EC931F800F2A510 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B6D27A28D009900073DB50 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -511,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -525,7 +544,6 @@
 		};
 		24BD87651EC931F800F2A510 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B6D27A28D009900073DB50 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -570,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -589,11 +607,10 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1833;
+				CURRENT_PROJECT_VERSION = 52339;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -602,6 +619,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -610,7 +628,6 @@
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.getmoneytree.sample.awesomeapp.development";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -625,11 +642,10 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1833;
+				CURRENT_PROJECT_VERSION = 52339;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../LibExternal/**";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,6 +654,7 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				MARKETING_VERSION = 2.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-all_load",
@@ -645,7 +662,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore com.getmoneytree.sample.awesomeapp.staging";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -690,14 +706,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LHGBD77CL3;
 				INFOPLIST_FILE = MyAwesomeAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development com.getmoneytree.sample.awesomeapp.uitests";
 				TEST_TARGET_NAME = MyAwesomeApp;
 			};
 			name = Debug;
@@ -712,7 +733,6 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.getmoneytree.sample.awesomeapp.staging.uitests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = MyAwesomeApp;
 			};
