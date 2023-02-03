@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  This class will be deprecated in favor of MTLAuthenticationOptions in a future release.
  */
+__deprecated_msg("Please use MTLAuthenticationOptions instead.")
 @interface MTLinkAuthOptions: NSObject <NSCopying>
 
 /**
