@@ -2,35 +2,64 @@
 //  AppDelegate.swift
 //  MyAwesomeApp
 //
-//  Created by Moneytree KK on 15/5/17.
-//  Copyright © 2012-present Moneytree KK. All rights reserved.
+//  Created by Moneytree on 15/5/17.
+//  Copyright © 2012-present Moneytree. All rights reserved.
 //
 
 import CoreData
 import MoneytreeLinkCoreKit
 import UIKit
 
+// MARK: - Moneytree LINK SDK configuration
+
+struct LinkSDKScopes {
+
+  static let defaultScopes = [
+    MTLClientScopeGuestRead,
+    MTLClientScopeAccountsRead,
+    MTLClientScopeTransactionsRead
+  ]
+
+  static let linkKitScopes = [
+    MTLClientScopeGuestRead,
+    MTLClientScopeAccountsRead,
+    MTLClientScopeTransactionsRead,
+    MTLClientScopeTransactionsWrite,
+    MTLClientScopePointsRead,
+    MTLClientScopeInvestmentAccountsRead,
+    MTLClientScopeInvestmentTransactionsRead,
+    MTLClientScopeRequestRefresh
+  ]
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-  @objc dynamic private(set) var deviceToken: Data?
+  private let consoleView = ConsoleView(frame: .zero)
+  private lazy var rootViewController = MainViewController(consoleView: consoleView)
 
   func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
-    let mtLinkClient = MTLinkClient(configuration: Constants.configuration)
+    // Moneytree LINK SDK configuration
+    let configuration = MTLConfiguration()
+    configuration.environment = .staging
+    configuration.scopes = LinkSDKScopes.defaultScopes
+    configuration.stayLoggedIn = true
+    configuration.authenticationMethod = .credentials
+
+    // Moneytree LINK SDK initialization
+    let mtLinkClient = MTLinkClient(configuration: configuration)
     mtLinkClient.delegate = self
 
     UIApplication.shared.registerForRemoteNotifications()
 
-    return true
-  }
+    setupWindow()
 
-  func applicationWillTerminate(_ application: UIApplication) {
-    // Called when the application is about to terminate.
+    return true
   }
 
   func application(
@@ -38,7 +67,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     open url: URL,
     options: [UIApplication.OpenURLOptionsKey: Any] = [:]
   ) -> Bool {
-    // Check if a given URL is for the SDK
+    // Check if a given URL is for the LINK SDK
     guard url.scheme?.starts(with: "mtlink") ?? false else {
       // You may consume a given URL if you have other schemes.
       return true
@@ -50,28 +79,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       print("Detected user action: \(queryValue)")
       switch queryValue {
       case MTWebRunActionKeyActionRevokeApplication, // When user revokes any connected apps
-           MTWebRunActionKeyActionLogout, // When user gets logout from MyAccount website
-           MTWebRunActionKeyActionDeleteAccount: // When user deletes Moneytree Account
+        MTWebRunActionKeyActionLogout, // When user gets logout from MyAccount website
+      MTWebRunActionKeyActionDeleteAccount: // When user deletes Moneytree Account
         print("User left from MyAccount.")
       default:
         break
       }
     }
-    return MTLApplicationDelegate
-      .shared
-      .application(
-        app,
-        open: url,
-        options: options
-    )
-  }
-
-  func application(
-    _ application: UIApplication,
-    didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-  ) {
-    print("Device Token: \(deviceToken.hexEncodedString)")
-    self.deviceToken = deviceToken
+    return MTLApplicationDelegate.shared.application(app, open: url, options: options)
   }
 
   func application(
@@ -86,9 +101,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return MTLApplicationDelegate.shared.application(
       application,
       userActivity: userActivity,
-      presentFrom: viewController!
+      presentFrom: rootViewController
     ) { error in
-      if let error = error {
+      if let error {
         print(
           """
             Error handling universal link: \(String(describing: userActivity.webpageURL))
@@ -104,6 +119,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       }
     }
   }
+
+  private func setupWindow() {
+    window = UIWindow(frame: UIScreen.main.bounds)
+    window?.rootViewController = rootViewController
+    window?.makeKeyAndVisible()
+  }
 }
 
 // MARK: - MTLinkClientDelegate
@@ -111,15 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: MTLinkClientDelegate {
 
   func clientStatusDidChange(to status: MTLinkClientStatus, withError error: Error?) {
-    let message =
-      """
-      \(#function): {
-        status: \(status.caseName)
-        error: \(error?.localizedDescription ?? "nil")
-      }
-      """
-    NSLog(message)
-    viewController?.log(title: message, message: nil)
+    consoleView.log(message: "Status: \(status.caseName)\nError: \(error?.localizedDescription ?? "nil")")
   }
 }
 
@@ -129,26 +142,11 @@ extension MTLinkClientStatus {
     case .error:
       return "MTLinkClientStatusError"
     case .vaultDidClose:
-      return "MTLinkClientStatusVaultDidClose"
+      return NSLocalizedString("services.output.vault_closed", comment: "")
     case .newCredentialAddedViaThirdPartyOauth:
       return "MTLinkClientStatusNewCredentialAddedViaThirdPartyOauth"
     @unknown default:
       return "Unknown"
     }
-  }
-}
-
-// MARK: - Helpers
-
-private extension AppDelegate {
-
-  var viewController: ViewController? {
-    guard
-      let navigationController = window?.rootViewController as? UINavigationController,
-      let viewController = navigationController.viewControllers.first as? ViewController
-    else {
-      return nil
-    }
-    return viewController
   }
 }
