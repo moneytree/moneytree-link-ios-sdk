@@ -95,6 +95,9 @@ Called to handle the `universal link url`.
 /// This method is used to check if the url opener handler is awaiting Login Link.
 - (BOOL)mt_isAwaitingLoginLink;
 
+/// This method notifies that the user is returning from the Safari view controller
+- (void)mt_safariWillFinish;
+
 @end
 
 /** Url Opener Handler Related Error. */

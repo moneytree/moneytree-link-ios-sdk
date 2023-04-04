@@ -90,13 +90,25 @@ _Passwordless Sign Up/Login and Login Link_ are new secure, passwordless registr
 
 > :warning: Please make sure to complete [Configuring Universal Links for navigation](../README.md#configuring-universal-links-for-navigation) steps first.
 
-You must inform Moneytree's customer success team if you want to support either or both Passwordless Sign Up/Login and Login Link. When doing so, please provide your client ID, the app ID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
+You must inform Moneytree's customer success team if you want to support either or both Passwordless Sign Up/Login and Login Link. When doing so, please provide your client ID, the appID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
 
-> :warning: The app ID can be found by following these instructions from [Apple documentation]( https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html).
+> :warning: The appID can be found by following these instructions from [Apple documentation](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 >
-> The value of the appID key is the team ID or app ID prefix, followed by the bundle ID. (The appID value is the same value that’s associated with the “application-identifier” key in your app’s entitlements after you build it.)
+> The value of the appID key is the team ID or Application Identifier Prefix, followed by the Bundle Identifier. (The appID value is the same value that’s associated with the “application-identifier” key in your app’s entitlements after you build it.)
 
-Once Moneytree completes the configuration of your app, your users will see the new registration and login screens. Note that these screens still provide the option to register or log in with a password if they prefer.
+After Moneytree completes the configuration of your app, add the associated domains entitlement to your app as described in the [Apple Documentation](https://developer.apple.com/documentation/Xcode/supporting-associated-domains#Add-the-associated-domains-entitlement-to-your-app) for the following domains:
+
+For staging (test environment):
+```
+applinks:myaccount-staging.getmoneytree.com
+```
+
+For production:
+```
+applinks:myaccount.getmoneytree.com
+```
+
+Once this is setup in your app, your users will see the new registration and login screens. Note that these screens still provide the option to register or log in with a password if they prefer.
 
 > :warning: Configuring universal link support is required for these features. Please refer to [the documentation for universal link configuration](../README.md#configuring-universal-links-for-navigation).
 

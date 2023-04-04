@@ -9,4 +9,5 @@
 @import Foundation;
 
 @protocol MTCurrentAction <NSObject, NSCopying>
+@optional -(void) safariDismissed;
 @end

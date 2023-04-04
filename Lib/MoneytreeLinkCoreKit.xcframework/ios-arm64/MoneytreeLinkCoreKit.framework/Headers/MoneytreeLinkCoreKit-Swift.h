@@ -263,6 +263,7 @@ using UInt = size_t;
 /// Handles communication between the web and the native side by translating URLs into native actions.
 SWIFT_CLASS("_TtC20MoneytreeLinkCoreKit22NativeActionUrlHandler")
 @interface NativeActionUrlHandler : NSObject
+@property (nonatomic, copy) void (^ _Nullable vaultClosedHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable closeHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable logoutHandler)(void);
 @property (nonatomic, copy) void (^ _Nullable completion)(void);
