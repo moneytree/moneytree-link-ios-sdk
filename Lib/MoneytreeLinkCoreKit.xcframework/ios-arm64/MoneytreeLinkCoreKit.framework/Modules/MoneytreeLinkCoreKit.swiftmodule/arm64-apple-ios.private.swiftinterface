@@ -9,6 +9,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 @objc public class NativeActionUrlHandler : ObjectiveC.NSObject {
+  @objc public var vaultClosedHandler: (() -> Swift.Void)?
   @objc public var closeHandler: (() -> Swift.Void)?
   @objc public var logoutHandler: (() -> Swift.Void)?
   @objc public var completion: (() -> Swift.Void)?

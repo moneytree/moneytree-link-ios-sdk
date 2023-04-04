@@ -55,6 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let mtLinkClient = MTLinkClient(configuration: configuration)
     mtLinkClient.delegate = self
 
+
     UIApplication.shared.registerForRemoteNotifications()
 
     setupWindow()

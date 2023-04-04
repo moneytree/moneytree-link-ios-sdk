@@ -2,6 +2,10 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.4.1
+
+This version fixes an issue where exiting the Vault while using a LINK Kit session would not update the LINK Kit screen.
+
 ## v6.4.0
 
 We have introduced a new authentication configuration parameter that will allow you to choose your authentication method (Authentication, Passwordless, Single Sign On) when the Moneytree authentication web page shows. This configuration does _not_ guarantee that the selected mode will be the one presented as the feature relies on the configuration of the client ID provided to you.
