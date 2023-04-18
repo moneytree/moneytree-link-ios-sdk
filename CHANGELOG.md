@@ -2,6 +2,10 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.4.2
+
+Fixed an issue that generated network warning logs when fetching a token.
+
 ## v6.4.1
 
 This version fixes an issue where exiting the Vault while using a LINK Kit session would not update the LINK Kit screen.
