@@ -177,5 +177,20 @@
     ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLINKKit\/MoneytreeLINKKit\/MTLConfiguration+LinkKit.swift",
+      "kind": "Array",
+      "offset": 836,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLINKKit\/MoneytreeLINKKit\/MTLConfiguration+LinkKit.swift",
+      "kind": "Array",
+      "offset": 1393,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
 }

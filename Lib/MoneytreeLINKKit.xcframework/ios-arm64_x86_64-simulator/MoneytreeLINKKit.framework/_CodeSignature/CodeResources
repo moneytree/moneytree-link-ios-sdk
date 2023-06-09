@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/MoneytreeLINKKit-Swift.h</key>
 		<data>
-		pS6oNtx9EM4UKsh2E4S82nItDVk=
+		QXMDev3Hh9Z35BF/tVUz7vmC1is=
 		</data>
 		<key>Headers/MoneytreeLINKKit.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pD0Dj+V2cgxg0lOwUCbiSxwUrNQ=
+		+CAkcFcmKgovmoWdB3d4qPoZXvI=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		5gDZp8H4I4PmV6R6plS4zAVb9JU=
+		p74WWTyuPSMC8TAZWYnnGjlaR7Q=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7YYYE6ZG3jW/sUeOJ++DzUE1l1I=
+		nksbJZOm/DFGwZVj8cEiqV8vuGs=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		cQy8dGMNmEn2oDz0yE3o/ip4978=
+		lkGiwFbyAqW8lkJ9tNMqDbTMzBw=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7YYYE6ZG3jW/sUeOJ++DzUE1l1I=
+		nksbJZOm/DFGwZVj8cEiqV8vuGs=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MDrCT9rGvLyAa32VYZDPYR6uyuk=
+		QhDwcB06MT3iqXM2l80tcS2q72I=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		5gDZp8H4I4PmV6R6plS4zAVb9JU=
+		p74WWTyuPSMC8TAZWYnnGjlaR7Q=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7uXvkjrBFNVBwZyR1T108tcz1xk=
+		hG1EyVfyQsgkYhhwl7k3xyX2HHM=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Vit5tF2BEpM1MsJqxrA7JLDgkTM=
+		RhrgrAwMF71IzgJjIXMrO3nJmlI=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7uXvkjrBFNVBwZyR1T108tcz1xk=
+		hG1EyVfyQsgkYhhwl7k3xyX2HHM=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SwrTMksuzvhylsTUR+luvMDer5E=
+		uNy5CtQH/dnPk04Tuuqdn1me0Go=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,10 +69,6 @@
 	<dict>
 		<key>Headers/MTLinkKit.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wNRbMaltvGnOu9Xj8hhzlCFMOME=
-			</data>
 			<key>hash2</key>
 			<data>
 			87NQUE+KyusEH8za+YqD6wAKI9wEz//lw4zRSL+KNBg=
@@ -80,21 +76,13 @@
 		</dict>
 		<key>Headers/MoneytreeLINKKit-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pS6oNtx9EM4UKsh2E4S82nItDVk=
-			</data>
 			<key>hash2</key>
 			<data>
-			HaBZtLNNnrYZsjQ5gWT6Gol1pZgXTwxjY25SrWUa0/g=
+			ymR6BMW8l5KSTruRf/y29H5HnKdvliSZ1ay+kb7+85Y=
 			</data>
 		</dict>
 		<key>Headers/MoneytreeLINKKit.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OvmMjzUJKCsDtIGFDqH7yKnTgGg=
-			</data>
 			<key>hash2</key>
 			<data>
 			NmcoYb4iiBUXKnFWPL7YB/hZCO0PFrfrYdZD1651V1w=
@@ -102,120 +90,76 @@
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5gDZp8H4I4PmV6R6plS4zAVb9JU=
-			</data>
 			<key>hash2</key>
 			<data>
-			lx7AgZTnn8PB58PVw2DzKsH81A5fOxFHtv/LAzGlmWg=
+			DxJlnf6f9q7kefrUATjhb64ey33P/viJ3+bgFakjx24=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7YYYE6ZG3jW/sUeOJ++DzUE1l1I=
-			</data>
 			<key>hash2</key>
 			<data>
-			PLJS2inUXwq/AWcsWNSSTyZkUlfO9vqlYkThh6Kb0i0=
+			eWtKcX+ItjRklIG0PhTGrZ436KFucQiW4aHuApSpMIU=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cQy8dGMNmEn2oDz0yE3o/ip4978=
-			</data>
 			<key>hash2</key>
 			<data>
-			m3Ikqz2gBHd6SB5JfsHojjtRQZIoglWoT71DCOzQxQs=
+			S2fOwCq3Whchdn+kG8VoTuQ0ecHrtYlBXgjfye6n6LE=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7YYYE6ZG3jW/sUeOJ++DzUE1l1I=
-			</data>
 			<key>hash2</key>
 			<data>
-			PLJS2inUXwq/AWcsWNSSTyZkUlfO9vqlYkThh6Kb0i0=
+			eWtKcX+ItjRklIG0PhTGrZ436KFucQiW4aHuApSpMIU=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MDrCT9rGvLyAa32VYZDPYR6uyuk=
-			</data>
 			<key>hash2</key>
 			<data>
-			UkeQiTeZMCTx7c6reSTDzLHRja5YeDDzdZfLiFJlZqA=
+			2LXj/U0iK8FGVJNhdhXNmjMT7+bYtvvodX90QStiwic=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5gDZp8H4I4PmV6R6plS4zAVb9JU=
-			</data>
 			<key>hash2</key>
 			<data>
-			lx7AgZTnn8PB58PVw2DzKsH81A5fOxFHtv/LAzGlmWg=
+			DxJlnf6f9q7kefrUATjhb64ey33P/viJ3+bgFakjx24=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7uXvkjrBFNVBwZyR1T108tcz1xk=
-			</data>
 			<key>hash2</key>
 			<data>
-			o4IOrUV+ARC+h9LYr1vHg1okaWufU6NRpDFyftLIuGo=
+			aGhQBmdD7l7GaitVNfqxc6xql+ispiHJvl2PGziu6cs=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Vit5tF2BEpM1MsJqxrA7JLDgkTM=
-			</data>
 			<key>hash2</key>
 			<data>
-			QM3y6y1Jf0V66NWwXXV0/0Wi/X2fr0Bjw5PgyJMMK8M=
+			QZ4jaK2qOMDHeg6kLb78vwRg7WT4c5c3v1ET11So0tk=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7uXvkjrBFNVBwZyR1T108tcz1xk=
-			</data>
 			<key>hash2</key>
 			<data>
-			o4IOrUV+ARC+h9LYr1vHg1okaWufU6NRpDFyftLIuGo=
+			aGhQBmdD7l7GaitVNfqxc6xql+ispiHJvl2PGziu6cs=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			SwrTMksuzvhylsTUR+luvMDer5E=
-			</data>
 			<key>hash2</key>
 			<data>
-			M9js6OjddmPcrZrxv60o6vGGxt7uyY1l0lmX8q5rTpw=
+			c9K5JEK3Bn638HSSP2ikAUFEtxMhUykcjwAnEoBBNiI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mdJC8TNWPzDbhsl5EVSXwk7t4LU=
-			</data>
 			<key>hash2</key>
 			<data>
 			MjWyZUc5gAxZS7bmIOnFI1nadRwd03wvuwt7TQN0dKU=

@@ -1122,12 +1122,229 @@
     },
     {
       "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1116,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1129,
+      "length": 8,
+      "value": "\"mtlink\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
       "kind": "Dictionary",
       "offset": 1250,
       "length": 3,
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1360,
+      "length": 26,
+      "value": "\"Not understanding \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1385,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1422,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1578,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1808,
+      "length": 70,
+      "value": "\"The universal link url can not be handled \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1877,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2376,
+      "length": 32,
+      "value": "\"How is a URLRequest's URL nil?\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3031,
+      "length": 70,
+      "value": "\"Doesn't support message of type \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3079,
+      "length": 1,
+      "value": "\". Message: \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3100,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3211,
+      "length": 39,
+      "value": "\"Wrong type of message \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3249,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3338,
+      "length": 46,
+      "value": "\"Presenting view controller is not available.\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3631,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3691,
+      "length": 22,
+      "value": "\"Redirected to \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3712,
+      "length": 17,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3759,
+      "length": 22,
+      "value": "\"Redirected to \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 3780,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3865,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4500,
+      "length": 42,
+      "value": "\"Can't parse runAction with \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4541,
+      "length": 17,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4592,
+      "length": 41,
+      "value": "\"Can't parse runAction with\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4632,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4712,
+      "length": 35,
+      "value": "\"Running action with \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4746,
+      "length": 17,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4793,
+      "length": 35,
+      "value": "\"Running action with \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 4827,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5327,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/NativeActionUrlHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5734,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
       "kind": "StringLiteral",
       "offset": 518,
@@ -1140,6 +1357,34 @@
       "offset": 518,
       "length": 16,
       "value": "\"delete_account\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 1126,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 1163,
+      "length": 24,
+      "value": "\"http:\/\/placeholder.com\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "StringLiteral",
+      "offset": 1424,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
+      "kind": "Dictionary",
+      "offset": 1466,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Action.swift",
@@ -1154,6 +1399,13 @@
       "offset": 2010,
       "length": 6,
       "value": "\"path\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLinkCoreKit\/MoneytreeLinkCoreKit\/Url+MTAppCallbackHelpers.swift",
+      "kind": "BooleanLiteral",
+      "offset": 528,
+      "length": 4,
+      "value": "true"
     }
   ]
 }

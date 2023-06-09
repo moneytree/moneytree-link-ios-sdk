@@ -2,6 +2,11 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.4.3
+
+- No changes to the SDK.
+- Made corrections to text in our sample application, "AwesomeApp."
+
 ## v6.4.2
 
 Fixed an issue that generated network warning logs when fetching a token.
