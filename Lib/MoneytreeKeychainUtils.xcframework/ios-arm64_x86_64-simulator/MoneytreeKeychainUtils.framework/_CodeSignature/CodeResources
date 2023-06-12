@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		FYKxs5s29q99NUSCDUhrvZBVGe8=
+		a/lk4uuCNFjunGit4uOSOSSSVK4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/MTKeychain.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OAYVu7CAGCbhUgGwL1ZswDVL8Do=
-			</data>
 			<key>hash2</key>
 			<data>
 			smSsLYmthclAIw2M9l24oToB7IjLl5/OMYPLXAvNUps=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/MoneytreeKeychainUtils.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HqkSAoAbfjVpmqqV4I2cEq6vM/s=
-			</data>
 			<key>hash2</key>
 			<data>
 			JF1TOi3SKk3vmmaMCA5S7Ws+UkOypmfiBwlpbdP1u78=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+q/DqoKdwXp9goWxka2KngrTVew=
-			</data>
 			<key>hash2</key>
 			<data>
 			YxOYbD2RLBmUja48mJEZ8E5WGERjDJyPR+N9tDJIToI=

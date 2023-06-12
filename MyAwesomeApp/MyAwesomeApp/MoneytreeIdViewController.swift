@@ -172,7 +172,6 @@ private extension MoneytreeIdViewController {
       title: NSLocalizedString("moneytree_id.authorize.description", comment: "")
     )
 
-    let authenticationMethodLabel = UIComponents.descriptionLabel(title: "Select your authentication method")
     authenticationMethodSegmentedControl.addTarget(
       self,
       action: #selector(authenticationMethodChanged),
@@ -250,7 +249,6 @@ private extension MoneytreeIdViewController {
     stackView.setCustomSpacing(48.0, after: descriptionLabel)
     stackView.addArrangedSubview(authorizeLabel)
     stackView.addArrangedSubview(authorizeSubtitleLabel)
-    stackView.addArrangedSubview(authenticationMethodLabel)
     stackView.addArrangedSubview(authenticationMethodSegmentedControl)
     stackView.addArrangedSubview(authorizeTextField)
     stackView.addArrangedSubview(forceLogoutDescriptionLabel)
