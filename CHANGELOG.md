@@ -2,6 +2,10 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.4.5
+
+- Added Privacy Manifests to each SDK module, per [Apple's requirements for Spring 2024](https://developer.apple.com/news/?id=r1henawx) 
+
 ## v6.4.4
 
 - No changes to the SDK.

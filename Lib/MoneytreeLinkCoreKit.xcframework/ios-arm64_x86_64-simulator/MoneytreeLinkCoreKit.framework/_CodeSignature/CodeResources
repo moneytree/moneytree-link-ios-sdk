@@ -138,7 +138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QUAPe+bB/A7oHq6zFZt4kfx4Lao=
+		pwDlWWPZFq908kfy89iWrZwibxs=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -183,6 +183,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		X21zFeK8ZH9Pmy5S+Tmfy+1ktPs=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		MFLtedTNKLXyrAZNujzzvf7LuIU=
 		</data>
 		<key>PrivateHeaders/MTLoginLinkServiceManager_Internal.h</key>
 		<data>
@@ -501,6 +505,13 @@
 			<key>hash2</key>
 			<data>
 			vabS96xRRUJYZZYzb6nuWDDoBqPWSiY3ZNC3qsuHlEs=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dFSb3aX6uOmySYIvXBPWIx+UbgQAu8uUtza885prodw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/MTLoginLinkServiceManager_Internal.h</key>
