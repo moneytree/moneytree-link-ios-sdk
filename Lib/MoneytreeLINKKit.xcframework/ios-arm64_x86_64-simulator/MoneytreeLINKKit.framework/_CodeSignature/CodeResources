@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cZyt4YqyOVGg588tklIYMzomZUs=
+		/f1ZX4O2rltKqfO4XCBbOlV0gOM=
 		</data>
 		<key>Modules/MoneytreeLINKKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -63,6 +63,10 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		mdJC8TNWPzDbhsl5EVSXwk7t4LU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		FYYHBuuJJfOaeBmA0NAzkJxvgHY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -163,6 +167,13 @@
 			<key>hash2</key>
 			<data>
 			MjWyZUc5gAxZS7bmIOnFI1nadRwd03wvuwt7TQN0dKU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+wYYVR1Xp1Cr8IX+Yce0d1+FChZdiQtj5OL/z+baubY=
 			</data>
 		</dict>
 	</dict>
