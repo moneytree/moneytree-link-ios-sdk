@@ -49,7 +49,14 @@ struct UIComponents {
     button.layer.cornerRadius = 20.0
     button.setTitleColor(titleColor, for: .normal)
     button.backgroundColor = backgroundColor
-    button.contentEdgeInsets = .init(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
+    var configuration = UIButton.Configuration.plain()
+    configuration.contentInsets = NSDirectionalEdgeInsets(
+      top: 10.0,
+      leading: 10.0,
+      bottom: 10.0,
+      trailing: 10.0
+    )
+    button.configuration = configuration
     return button
   }
 }

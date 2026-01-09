@@ -350,7 +350,7 @@ private extension MoneytreeIdViewController {
   }
 }
 
-extension MTLAuthenticationMethod: CaseIterable {
+extension MTLAuthenticationMethod: @retroactive CaseIterable {
   public static var allCases: [MTLAuthenticationMethod] {
     [.credentials, .passwordless, .singleSignOn]
   }

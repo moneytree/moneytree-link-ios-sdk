@@ -2,9 +2,14 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.5.0
+
+- Ensured URL parsing stays consistent with pre-iOS 17 behaviour by dropping invalid characters rather than encoding them
+- Add support for Xcode 26 for our sample application, "AwesomeApp".
+
 ## v6.4.5
 
-- Added Privacy Manifests to each SDK module, per [Apple's requirements for Spring 2024](https://developer.apple.com/news/?id=r1henawx) 
+- Added Privacy Manifests to each SDK module, per [Apple's requirements for Spring 2024](https://developer.apple.com/news/?id=r1henawx)
 
 ## v6.4.4
 
@@ -56,7 +61,7 @@ Please use `MTLAuthenticationOptions.options(mode:allowModeChange:email:forceLog
 
 ## v6.3.0
 
-- Code Grant without PKCE is not supported anymore. It will be removed in the next major version. Please see the migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce  
+- Code Grant without PKCE is not supported anymore. It will be removed in the next major version. Please see the migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
 
 ### Added
 
@@ -74,10 +79,12 @@ Please use `MTLAuthenticationOptions.options(mode:allowModeChange:email:forceLog
 `MTAPI -sendAuthenticatedRequestForSwift:`
 
 ## v6.2.1
+
 - Remove unnecessary Core Data model file from sample app.
 - Fix an issue where passwordless features would not be enabled for applications built with Xcode 13.
 
 ## v6.2.0
+
 - Support upgrading from Issho Tsucho (SDKs v4, v5) to LINK Kit without user needing to log in again. It will only ask for the new consent scopes required.
 - Small improvements to documentation and sample app.
 
@@ -109,7 +116,7 @@ Please use `MTLAuthenticationOptions.options(mode:allowModeChange:email:forceLog
 
 ### Changed
 
-The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger`, to match the standard convention of error codes. 
+The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger`, to match the standard convention of error codes.
 
 ## v6.0.2
 
@@ -124,11 +131,11 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 - Please use Xcode 12.0 or above.
 - The SDK is now packaged using `xcframework`. It is no longer necessary to strip framework architectures built for the simulator from the SDK.
 - The SDK is now distributed through `Swift Package Manager` and `Cocoapods`. Please refer to the README file for the updated integration guide.
-- Discontinued the  `MoneytreeIsshoTsucho` framework in favor of a new framework, `MoneytreeLINKKit`. The class `MTIsshoTsucho` has similarly been renamed to `MTLinkKit`.
+- Discontinued the `MoneytreeIsshoTsucho` framework in favor of a new framework, `MoneytreeLINKKit`. The class `MTIsshoTsucho` has similarly been renamed to `MTLinkKit`.
 
 ### Removed
 
-- Removed `openVaultFromViewController:animated:completion:` in the MTLinkClient. 
+- Removed `openVaultFromViewController:animated:completion:` in the MTLinkClient.
   - Please call `openVaultFromViewController:animated:email:completion:` instead.
 - Removed `openServicesFromViewController:animated:options:completion:` in the MTLinkClient.
   - Please call `openServicesFromViewController:animated:email:options: completion:` instead.
@@ -223,7 +230,7 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 
 ### Added
 
-- Supports prefilling email for login or signup using ```MTLinkAuthOptions```
+- Supports prefilling email for login or signup using `MTLinkAuthOptions`
 
 ### Removed
 
@@ -241,14 +248,14 @@ The `MTLinkClientError` enum is now of type `NSInteger`, rather than `NSUInteger
 
 ### Breaking changes for clients using PKCE
 
-- SDK must be initialized using ```MTLinkClient.clientWithConfiguration```
-  - ```MTLinkClient.clientWithConfiguration``` must be called only once in a session.
-  - Use ```MTLinkClient.sharedClient``` afterwards
-- ```MTLinkClient.sharedClient.isLoggedIn``` only checks if the login session exists. It doesn't guarantee that the guest has successfully authorized.
-- ```MTLinkClient.sharedClient.delegate``` is no longer available.
-- ```MTLinkClient.sharedClient.datasource``` is no longer available.
-- ```MTLinkClient.sharedClient.removeAllTokens``` only removes all tokens from the Keychain that are stored by the SDK. It no longer deregisters the push notification token. Please deregister the push token before calling ````removeAllTokens```` using ```MTLinkClient.sharedClient.api```.
-- Since ```MTLinkClient.sharedClient.delegate``` is no longer available, Clients should always check login status inside closures, which are always called when Safari is dismissed. This is because the guest might logout while Safari is open.
+- SDK must be initialized using `MTLinkClient.clientWithConfiguration`
+  - `MTLinkClient.clientWithConfiguration` must be called only once in a session.
+  - Use `MTLinkClient.sharedClient` afterwards
+- `MTLinkClient.sharedClient.isLoggedIn` only checks if the login session exists. It doesn't guarantee that the guest has successfully authorized.
+- `MTLinkClient.sharedClient.delegate` is no longer available.
+- `MTLinkClient.sharedClient.datasource` is no longer available.
+- `MTLinkClient.sharedClient.removeAllTokens` only removes all tokens from the Keychain that are stored by the SDK. It no longer deregisters the push notification token. Please deregister the push token before calling `removeAllTokens` using `MTLinkClient.sharedClient.api`.
+- Since `MTLinkClient.sharedClient.delegate` is no longer available, Clients should always check login status inside closures, which are always called when Safari is dismissed. This is because the guest might logout while Safari is open.
 
 ```swift
     MTLinkClient.shared.openVault(from: self, animated: true) { _, _ in

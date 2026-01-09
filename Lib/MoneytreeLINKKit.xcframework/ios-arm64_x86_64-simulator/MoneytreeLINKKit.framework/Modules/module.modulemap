@@ -1,7 +1,7 @@
 framework module MoneytreeLINKKit {
   umbrella header "MoneytreeLINKKit.h"
-
   export *
+
   module * { export * }
 }
 

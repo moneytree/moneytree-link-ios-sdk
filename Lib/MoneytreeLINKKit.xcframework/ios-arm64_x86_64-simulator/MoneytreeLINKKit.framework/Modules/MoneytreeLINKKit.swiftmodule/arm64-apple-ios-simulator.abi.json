@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "MoneytreeLINKKit",
+    "printedName": "MoneytreeLINKKit",
     "children": [
       {
         "kind": "Import",
@@ -76,8 +76,8 @@
             "moduleName": "MoneytreeLINKKit",
             "declAttributes": [
               "Dynamic",
-              "ObjC",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "isFromExtension": true,
             "accessors": [
@@ -123,6 +123,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -181,14 +195,7 @@
     {
       "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLINKKit\/MoneytreeLINKKit\/MTLConfiguration+LinkKit.swift",
       "kind": "Array",
-      "offset": 836,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/distiller\/mt-link-ios-sdk\/MoneytreeLINKKit\/MoneytreeLINKKit\/MTLConfiguration+LinkKit.swift",
-      "kind": "Array",
-      "offset": 1393,
+      "offset": 1387,
       "length": 2,
       "value": "[]"
     }
