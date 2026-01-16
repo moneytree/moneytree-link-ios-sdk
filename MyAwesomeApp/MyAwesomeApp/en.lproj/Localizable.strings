@@ -19,9 +19,10 @@
 "link_kit.title" = "LINK Kit";
 "moneytree_id.authorize.authentication_method.credentials" = "Credentials";
 "moneytree_id.authorize.authentication_method.passwordless" = "Passwordless";
+"moneytree_id.authorize.authentication_method.otp" = "OTP";
 "moneytree_id.authorize.authentication_method.sso" = "Single Sign-On";
 "moneytree_id.authorize.create_moneytree_id" = "Create Moneytree ID";
-"moneytree_id.authorize.description" = "Select one of the following authentication methods.\n\nCredentials: authenticate with username and password\n\nPasswordless: log in with a link sent to your email address. To sign up with passwordless, use the Onboarding feature below instead.\n\nSingle Sign-on: Authenticate seamlessly via your client app.";
+"moneytree_id.authorize.description" = "Select one of the following authentication methods.\n\nCredentials: authenticate with username and password\n\nPasswordless: log in with a link sent to your email address. To sign up with passwordless, use the Onboarding feature below instead.\n\nOTP: log in with a one-time password sent to your email address. To sign up with OTP, use the Onboarding feature below instead.\n\nSingle Sign-on: Authenticate seamlessly via your client app.";
 "moneytree_id.authorize.email_optional_placeholder" = "Email (Optional)";
 "moneytree_id.authorize.force_logout" = "Force logout";
 "moneytree_id.authorize.force_logout.description" = "Enable this to log out automatically before logging in or creating a new account.";
