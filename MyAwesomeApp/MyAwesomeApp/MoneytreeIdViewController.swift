@@ -352,7 +352,7 @@ private extension MoneytreeIdViewController {
 
 extension MTLAuthenticationMethod: @retroactive CaseIterable {
   public static var allCases: [MTLAuthenticationMethod] {
-    [.credentials, .passwordless, .singleSignOn]
+    [.credentials, .passwordless, .otp, .singleSignOn]
   }
 
   var localizedString: String {
@@ -360,6 +360,7 @@ extension MTLAuthenticationMethod: @retroactive CaseIterable {
     switch self {
     case .credentials: outputKey = "moneytree_id.authorize.authentication_method.credentials"
     case .passwordless: outputKey = "moneytree_id.authorize.authentication_method.passwordless"
+    case .otp: outputKey = "moneytree_id.authorize.authentication_method.otp"
     case .singleSignOn: outputKey = "moneytree_id.authorize.authentication_method.sso"
     default:
       fatalError("Invalid authentication method: \(String(describing: self))")

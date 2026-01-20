@@ -137,9 +137,10 @@ configuration.authenticationMethod = .credentials
 
 #### Choosing Your Authentication Method
 
-The `authenticationMethod` determines which Moneytree authentication page will appear. We provide three (3) authentication methods:
+The `authenticationMethod` determines which Moneytree authentication page will appear. We provide four (4) authentication methods:
 - Credentials: You will see the usual page where you can sign up or log in using your email and password.
-- Passwordless: For log-in, the user needs to enter their email address where they will receive their authentication link. For sign-up the flow is executed by calling `onboard()` (see [Authorizing with Passwordless Sign Up/Login and Login Link](./Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link)).
+- Passwordless: For log-in, the user needs to enter their email address where they will receive their authentication link. For sign-up the flow is executed by calling `onboard()` (see [Authorizing with Passwordless Sign Up/Login and Login Link or OTP](./Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link-or-otp)).
+- OTP: For log-in, the user needs to enter their email address where they will receive their one-time password. They must then enter the one-time password in the same browser they requested it from. For sign-up the flow is executed by calling `onboard()` (see [Authorizing with Passwordless Sign Up/Login and Login Link or OTP](./Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link-or-otp)).
 - Single Sign On (SSO): When configured, your users will authenticate to Moneytree via the Identity Provider (IdP) that you have specified.
 
 > :warning: SSO requires configuration of the Identity Provider (IdP) you want to use, so that our system can connect to it. If you want to use SSO please contact our customer success team and they will work with you to get the needed configuration done.
@@ -239,7 +240,7 @@ func application(
 
 ### Additional configuration for Passwordless Sign Up/Login and Login Link
 
-See [Authorizing with Passwordless Sign Up/Login and Login Link](Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link) for how to finish configuring these features.
+See [Authorizing with Passwordless Sign Up/Login and Login Link or OTP](Documentation/Features.md#authorizing-with-passwordless-sign-uplogin-and-login-link-or-otp) for how to finish configuring these features.
 
 ### Configuring the MTLinkClientDelegate (optional)
 
