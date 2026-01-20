@@ -9,9 +9,10 @@ Please make sure you have followed the steps in the [integration guide](../READM
     - [Authorizing your app](#authorizing-your-app)
       - [PKCE](#pkce)
       - [Code Grant (Deprecated)](#code-grant-deprecated)
-    - [Authorizing with Passwordless Sign Up/Login and Login Link](#authorizing-with-passwordless-sign-uplogin-and-login-link)
+    - [Authorizing with Passwordless Sign Up/Login and Login Link or OTP](#authorizing-with-passwordless-sign-uplogin-and-login-link-or-otp)
       - [Passwordless Sign Up/Login](#passwordless-sign-uplogin)
-    - [Login Link](#login-link)
+      - [Login Link](#login-link)
+      - [OTP Login](#otp-login)
   - [Getting an Access Token](#getting-an-access-token)
   - [Check Login Status](#check-login-status)
   - [Removing authorization or logging out](#removing-authorization-or-logging-out)
@@ -64,7 +65,7 @@ MTLinkClient.shared.authorize(self, authOptions: options, animated: true) { cred
 
 > :warning: The `authorize()` flow has some combinations that force specific flows.
 > Specifically:
-> - When `mode` is `.signup` and `authenticationMethod` is `.passwordless`, `authenticationMethod` is disregarded and you will still get the credentials screen. Passwordless Signup is handled by the `onboard()` entry point.
+> - When `mode` is `.signup` and `authenticationMethod` is `.passwordless` or `.otp`, `authenticationMethod` is disregarded and you will still get the credentials screen. Passwordless/OTP Signup is handled by the `onboard()` entry point.
 > - When `authenticationMethod` is `.singleSignOn`, then `authorize()` disregards `mode`, as there is no concept of Signup or Login in the SSO method.
 
 #### Code Grant (Deprecated)
@@ -84,13 +85,19 @@ MTLinkClient.shared.authorizeUsingCodeGrant(
 }
 ```
 
-### Authorizing with Passwordless Sign Up/Login and Login Link
+### Authorizing with Passwordless Sign Up/Login and Login Link or OTP
 
-_Passwordless Sign Up/Login and Login Link_ are new secure, passwordless registration and login features offered from v6 in order to allow your customers easier access to Moneytree services. These features are email based. When _Passwordless Sign Up/Login_ is requested, the user will receive a one-time url capable of creating an account. When a _Login Link_ is requested, the user will receive a one-time url that can log them in or navigate to their account settings.
+_Passwordless Sign Up/Login and Login Link_ are new secure, passwordless registration and login features offered from v6 in order to allow your customers easier access to Moneytree services. Additionally, OTP login was added with v6.6.0. These features are email based. 
+
+When _Passwordless Sign Up/Login_ is requested, the user will receive a one-time url capable of creating an account. 
+
+When a _Login Link_ is requested, the user will receive a one-time url that can log them in or navigate to their account settings.
+
+When _OTP Login_ is requests, the user will receive a one-time password which can be entered to log them in and navigate to their account settings.
 
 > :warning: Please make sure to complete [Configuring Universal Links for navigation](../README.md#configuring-universal-links-for-navigation) steps first.
 
-You must inform Moneytree's customer success team if you want to support either or both Passwordless Sign Up/Login and Login Link. When doing so, please provide your client ID, the appID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
+You must inform Moneytree's customer success team if you want to support any of Passwordless Sign Up/Login, OTP Login or Login Link. When doing so, please provide your client ID, the appID of your iOS app and the SHA-1 fingerprint certificate of your Android app, as well as whether it is for the test environment, production, or both.
 
 > :warning: The appID can be found by following these instructions from [Apple documentation](https://developer.apple.com/documentation/Xcode/supporting-associated-domains).
 >
@@ -118,7 +125,7 @@ Once this is setup in your app, your users will see the new registration and log
 
 #### Passwordless Sign Up/Login
 
-Passwordless Sign Up/Login is similar to [authorizing your app normally](#authorizing-your-app) except that it allows guests to sign up for a Moneytree account **without a password**. Only an email address is required.
+Passwordless Sign Up/Login is similar to [authorizing your app normally](#authorizing-your-app) except that it allows guests to sign up for a Moneytree account **without a password**. Only an email address is required. It can be used with either OTP login or login links.
 
 - PKCE
 
@@ -141,7 +148,7 @@ MTLinkClient.shared.onboard(
   from: self,
   authorizationType: .codeGrant,
   email: "guest's email",
-  state: "random Genenrated state",
+  state: "random generated state",
   region: .japan,
   animated: true
 ) { _, error in
@@ -149,11 +156,17 @@ MTLinkClient.shared.onboard(
 }
 ```
 
-### Login Link
+#### Login Link
 
 Your users may choose to use the Login Link to log into an existing account after you have requested authorization via the SDK. If your app supports universal links from the SDK, as noted above, no additional code is necessary to support this. You may also wish to support navigating to Account Settings via Login Link.
 
 > :warning: ***Don't let users close the browser from the top-left `Close` button after they requested email to login.*** It can't guarantee it works as expected even if they tap a link in a mail, especially if the next step is to request scopes.
+
+#### OTP Login
+
+Your users may choose to use a one-time password to log into an existing account after you have requested authorization via the SDK. If your app supports universal links from the SDK, as noted above, no additional code is necessary to support this.
+
+> :warning: One-time passwords must be entered in the same browser they were requested from.
 
 ## Getting an Access Token
 

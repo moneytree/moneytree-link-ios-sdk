@@ -2,6 +2,12 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.6.0
+
+- Added OTP login as an option to avoid issues with Microsoft Outlook's "SafeLinks"
+  - can be configured globally for your client ID or per request with `authenticationMethod`
+- Added support for OTP login to our sample application, "AwesomeApp".
+
 ## v6.5.0
 
 - Ensured URL parsing stays consistent with pre-iOS 17 behaviour by dropping invalid characters rather than encoding them

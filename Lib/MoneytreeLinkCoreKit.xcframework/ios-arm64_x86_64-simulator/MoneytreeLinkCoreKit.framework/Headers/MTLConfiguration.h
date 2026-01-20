@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// The Moneytree server will check feature availability and fall back as needed.
 /// Please make sure that your Client ID supports the available features.
 /// If the parameter is not provided the server will fall back to backwards compatibility mode,
-/// selecting Passwordless if configured, otherwise presenting the Credentials flow.
+/// selecting Passwordless or OTP if configured, otherwise presenting the Credentials flow.
 @property (nonatomic, copy, nullable) MTLAuthenticationMethod authenticationMethod;
 
 
