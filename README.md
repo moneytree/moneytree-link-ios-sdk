@@ -193,7 +193,9 @@ MTLinkClient(configuration: configuration)
 
 ### Configuring Deep Links for authorization
 
-Configure your app delegate to forward callbacks via the URL schemes you configured in your project's `Info.plist` to the Moneytree LINK SDK. This is **required** for critical functionality of the SDK, such as authorization, to function.
+Configure your app to forward callbacks via the URL schemes you configured in your project's `Info.plist` to the Moneytree LINK SDK. This is **required** for critical functionality of the SDK, such as authorization, to function.
+
+**App-based lifecycle (UIApplicationDelegate)**
 
 ```swift
 func application(
@@ -208,6 +210,12 @@ func application(
   }
 }
 ```
+**Scene-based lifecycle (UIWindowSceneDelegate)**
+```swift
+func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+  MTLApplicationDelegate.shared.scene(scene, openURLContexts: URLContexts)
+}
+```
 
 ### Configuring Universal Links for navigation
 
@@ -217,6 +225,8 @@ This allows the SDK to handle the universal links sent from the Moneytree LINK s
 - Opening Moneytree LINK Account Settings.
 
 > :warning: Please make sure your `apple-app-site-association` is properly hosted, if you are not sure, please contact Moneytree.
+
+**App-based lifecycle (UIApplicationDelegate)**
 
 ```swift
 func application(
@@ -233,6 +243,18 @@ func application(
   }
   // If Moneytree cannot handle this user activity, check if other party can
   return canMoneytreeHandleUserActivity
+}
+```
+**Scene-based lifecycle (UIWindowSceneDelegate)**
+```swift
+func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+  MTLApplicationDelegate.shared.scene(
+    scene,
+    continue: userActivity,
+    presentFrom: viewController
+  ) { error in
+    // Handle universal link handling result/error if necessary
+  }
 }
 ```
 

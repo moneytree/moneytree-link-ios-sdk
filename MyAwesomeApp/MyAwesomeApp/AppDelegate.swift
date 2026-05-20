@@ -32,13 +32,11 @@ struct LinkSDKScopes {
   ]
 }
 
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-  var window: UIWindow?
-
-  private let consoleView = ConsoleView(frame: .zero)
-  private lazy var rootViewController = MainViewController(consoleView: consoleView)
+  let consoleView = ConsoleView(frame: .zero)
+  lazy var rootViewController = MainViewController(consoleView: consoleView)
 
   func application(
     _ application: UIApplication,
@@ -58,8 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     UIApplication.shared.registerForRemoteNotifications()
 
-    setupWindow()
-
     return true
   }
 
@@ -68,26 +64,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     open url: URL,
     options: [UIApplication.OpenURLOptionsKey: Any] = [:]
   ) -> Bool {
-    // Check if a given URL is for the LINK SDK
-    guard url.scheme?.starts(with: "mtlink") ?? false else {
-      // You may consume a given URL if you have other schemes.
-      return true
-    }
-    if url.absoluteString.contains(MTWebRunActionKeyAction),
-       let queryKey = url.query?.split(separator: "=").first,
-       queryKey == MTWebRunActionKeyAction,
-       let queryValue = url.query?.split(separator: "=").last {
-      print("Detected user action: \(queryValue)")
-      switch queryValue {
-      case MTWebRunActionKeyActionRevokeApplication, // When user revokes any connected apps
-        MTWebRunActionKeyActionLogout, // When user gets logout from MyAccount website
-      MTWebRunActionKeyActionDeleteAccount: // When user deletes Moneytree Account
-        print("User left from MyAccount.")
-      default:
-        break
-      }
-    }
-    return MTLApplicationDelegate.shared.application(app, open: url, options: options)
+    // This method is only called in app-based lifecycle (no UIApplicationSceneManifest in Info.plist).
+    // In a scene-based app, iOS routes URL callbacks to SceneDelegate instead — this method is never called.
+    // See `scene(_:openURLContexts:)` in SceneDelegate.swift for the scene-based implementation.
+    return true
   }
 
   func application(
@@ -95,37 +75,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     continue userActivity: NSUserActivity,
     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void
   ) -> Bool {
-    guard userActivity.webpageURL?.host?.contains("getmoneytree.com") ?? false else {
-      // If a given universal link doesn't have something to do with LINK SDK, just ignores.
-      return false
-    }
-    return MTLApplicationDelegate.shared.application(
-      application,
-      userActivity: userActivity,
-      presentFrom: rootViewController
-    ) { error in
-      if let error {
-        print(
-          """
-            Error handling universal link: \(String(describing: userActivity.webpageURL))
-            Error: \(error)
-          """
-        )
-      } else {
-        print(
-          """
-            Successfully handled universal link: \(String(describing: userActivity.webpageURL))
-          """
-        )
-      }
-    }
+    // This method is only called in app-based lifecycle (no UIApplicationSceneManifest in Info.plist).
+    // In a scene-based app, iOS routes universal link callbacks to SceneDelegate instead — this method is never called.
+    // See `scene(_:continue:)` in SceneDelegate.swift for the scene-based implementation.
+    return false
   }
 
-  private func setupWindow() {
-    window = UIWindow(frame: UIScreen.main.bounds)
-    window?.rootViewController = rootViewController
-    window?.makeKeyAndVisible()
-  }
 }
 
 // MARK: - MTLinkClientDelegate

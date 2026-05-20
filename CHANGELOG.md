@@ -2,6 +2,12 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.7.0
+
+- Added scene-based lifecycle support to `MTLApplicationDelegate`
+  - `scene(_:openURLContexts:)` for handling deep link callbacks in apps using `UIWindowSceneDelegate`
+  - `scene(_:continue:presentFrom:completion:)` for handling universal links in apps using `UIWindowSceneDelegate`
+
 ## v6.6.0
 
 - Added OTP login as an option to avoid issues with Microsoft Outlook's "SafeLinks"
