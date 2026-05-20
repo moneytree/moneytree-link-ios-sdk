@@ -39,6 +39,8 @@
 		D6A5766A292632D000A0E602 /* DebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57669292632D000A0E602 /* DebugConsole.swift */; };
 		D6A5766B2926330000A0E602 /* DebugConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A57669292632D000A0E602 /* DebugConsole.swift */; };
 		D6BC2A3628FE827D00B92E9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC2A3528FE827D00B92E9C /* MainViewController.swift */; };
+		D6DF427A2FB3105D00364B29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF42792FB3105800364B29 /* SceneDelegate.swift */; };
+		D6DF427B2FB3105D00364B29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DF42792FB3105800364B29 /* SceneDelegate.swift */; };
 		D6F0CE7628FE87A900478E02 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC2A3528FE827D00B92E9C /* MainViewController.swift */; };
 		D6F0CE7828FE89C500478E02 /* MoneytreeIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */; };
 		D6F0CE7928FE89DB00478E02 /* MoneytreeIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */; };
@@ -112,6 +114,7 @@
 		D6A576662926244700A0E602 /* ConsoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleView.swift; sourceTree = "<group>"; };
 		D6A57669292632D000A0E602 /* DebugConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugConsole.swift; sourceTree = "<group>"; };
 		D6BC2A3528FE827D00B92E9C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D6DF42792FB3105800364B29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D6F0CE7728FE89C500478E02 /* MoneytreeIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneytreeIdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +183,7 @@
 				92990C97256CE10C005C3D37 /* CHANGELOG.md */,
 				24BD874D1EC931F800F2A510 /* Info.plist */,
 				24BD873E1EC931F800F2A510 /* AppDelegate.swift */,
+				D6DF42792FB3105800364B29 /* SceneDelegate.swift */,
 				D6A576662926244700A0E602 /* ConsoleView.swift */,
 				D6A57669292632D000A0E602 /* DebugConsole.swift */,
 				D64B235A29358D8A0053FF46 /* LinkKitViewController.swift */,
@@ -365,6 +369,7 @@
 				D6F0CE7828FE89C500478E02 /* MoneytreeIdViewController.swift in Sources */,
 				D6A576672926244700A0E602 /* ConsoleView.swift in Sources */,
 				D6A576612924971F00A0E602 /* ServicesViewController.swift in Sources */,
+				D6DF427A2FB3105D00364B29 /* SceneDelegate.swift in Sources */,
 				D64B235B29358D8A0053FF46 /* LinkKitViewController.swift in Sources */,
 				24BD873F1EC931F800F2A510 /* AppDelegate.swift in Sources */,
 				D6BC2A3628FE827D00B92E9C /* MainViewController.swift in Sources */,
@@ -417,7 +422,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260120054047;
+				CURRENT_PROJECT_VERSION = 20260520011949;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
@@ -452,7 +457,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260120054047;
+				CURRENT_PROJECT_VERSION = 20260520011949;
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				INFOPLIST_FILE = MyAwesomeApp/Info.plist;
@@ -606,7 +611,7 @@
 				CODE_SIGN_ENTITLEMENTS = MyAwesomeApp/MyAwesomeApp.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260120054047;
+				CURRENT_PROJECT_VERSION = 20260520011949;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
@@ -641,7 +646,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 20260120054047;
+				CURRENT_PROJECT_VERSION = 20260520011949;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";

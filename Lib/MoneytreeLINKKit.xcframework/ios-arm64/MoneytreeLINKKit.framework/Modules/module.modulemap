@@ -7,5 +7,4 @@ framework module MoneytreeLINKKit {
 
 module MoneytreeLINKKit.Swift {
   header "MoneytreeLINKKit-Swift.h"
-  requires objc
 }
