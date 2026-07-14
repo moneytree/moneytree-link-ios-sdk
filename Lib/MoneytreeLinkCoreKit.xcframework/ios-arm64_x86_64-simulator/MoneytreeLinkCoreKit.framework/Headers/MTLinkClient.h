@@ -119,6 +119,30 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
                            animated:(BOOL)animated
                               email:(NSString *_Nullable)email
                          completion:(MTLinkCompletionBlock)completion;
+/**
+ Present an instance of `SFSafariViewController` to open Universal Vault's custom onboarding flow.
+
+ If guest is not logged in then it will show a login screen, after successful login it will show Vault's custom onboarding flow.
+ If the guest hasn't authorized your client then it will also show an authorization screen after login, then show Vault's custom onboarding flow.
+
+ Vault will redirect its home page if a custom onboarding flow is not configured for your client.
+ Reach out to Moneytree to configure a custom onboarding flow.
+
+ The whole process is redirected back to the main app through:
+ `UIApplicationDelegate`'s method `- application:openURL:options:`
+
+ @param viewController The view controller that is used to present the vault
+ @param animated An option to present with animation
+ @param email The email to be populated on the login screen if the guest needs to be authorized
+ @param completion A closure that is always called when Safari is dismissed.
+ Closure contains client MTCredential on successful authorization, or error if there is any.
+ (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
+ credential is always nil when authorization code grant mode is in use).
+*/
+- (void)openVaultOnboardingFromViewController:(UIViewController *)viewController
+																		 animated:(BOOL)animated
+																		    email:(NSString *_Nullable)email
+																   completion:(MTLinkCompletionBlock)completion;
 
 /**
  Present an instance of `SFSafariViewController` to open Universal Vault's services page. The list of services displayed can be customized by the `options` parameter

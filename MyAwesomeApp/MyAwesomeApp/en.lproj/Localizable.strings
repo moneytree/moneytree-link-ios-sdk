@@ -79,6 +79,7 @@
 "services.connection_settings.title" = "Financial Service Settings";
 "services.description" = "Vault is a flexible, web-based service that can be integrated into any web-based or native product, that helps guests find, register and manage their financial services with minimal friction.";
 "services.list.description" = "Open the list of financial services page. Optionally define the filtering for the page by type, group, or search, in any combination.\n\nType is the financial institution ID and group refers to the account group. Please refer to the API documentation for more details.";
+"services.list.open_vault_onboarding" = "Open Custom Onboarding Flow";
 "services.list.open_service_list" = "Open Financial Services List";
 "services.list.search_placeholder" = "Keyword e.g., Aeon";
 "services.list.select_group" = "Select a group";
@@ -91,6 +92,7 @@
 "services.output.service_list_opened" = "Opened Service List";
 "services.output.vault_closed" = "Closed Vault";
 "services.output.vault_opened" = "Opened Vault";
+"services.output.vault_onboarding_opened" = "Opened Vault Onboarding";
 "services.service_connection.connect_service" = "Connect Financial Service";
 "services.service_connection.description" = "Opens Financial service connection page by providing the entity key.";
 "services.service_connection.entity_key_placeholder" = "Entity key e.g., mitsubishi_trust_bank";

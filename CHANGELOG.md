@@ -2,6 +2,12 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v6.8.0
+
+- Add support for using the SDK to open the Universal Vault Custom Onboarding Flow
+  - Please reach out to Moneytree to configure this flow for your client
+  - If this flow is not configured for your client attempting to open it will redirect the user to the financial institution search page
+
 ## v6.7.0
 
 - Added scene-based lifecycle support to `MTLApplicationDelegate`

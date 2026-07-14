@@ -79,6 +79,7 @@
 "services.connection_settings.title" = "金融サービス設定";
 "services.description" = "ユーザが金融サービスを手間をかけず検索、登録、管理などの機能。Webアプリ、ネイティブアプリなど環境を問わず柔軟に連携および実装ができます。";
 "services.list.description" = "金融サービス一覧を表示します。\n種類またはグループを選択していただくか、キーワードを指定してください。\n種類は金融機関IDを、groupはアカウントグループを指しますが、詳細はAPI仕様書をご確認ください。";
+"services.list.open_vault_onboarding" = "カスタムオンボーディングフローを開く";
 "services.list.open_service_list" = "金融サービスリストを開く";
 "services.list.search_placeholder" = "キーワード（例：Aeon";
 "services.list.select_group" = "グループで指定";
@@ -91,6 +92,7 @@
 "services.output.service_list_opened" = "サービス一覧を開きました";
 "services.output.vault_closed" = "Vault を閉じました";
 "services.output.vault_opened" = "Vault を開きました";
+"services.output.vault_onboarding_opened" = "Vault Onboarding を開きました";
 "services.service_connection.connect_service" = "金融サービスを登録";
 "services.service_connection.description" = "API仕様書の金融機関一覧にあるentity_keyを指定して登録ページに移動できます。";
 "services.service_connection.entity_key_placeholder" = "金融サービスのエンティティキー（例：mitsubishi_trust_bank）";
