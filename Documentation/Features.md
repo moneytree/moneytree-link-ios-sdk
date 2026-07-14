@@ -213,6 +213,18 @@ MTLinkClient.shared.openVault(from: self, animated: true, email: "sample@email.c
 }
 ```
 
+### Open Custom Onboarding Flow
+
+This opens Vault to the custom onboarding flow configured for your client. Please reach out to Moneytree's customer service team if you want to set up a custom onboarding flow.
+
+If no custom onboarding flow is configured, it will just navigate to the home page of the Vault.
+
+```swift
+MTLinkClient.shared.openVaultOnboarding(from: self, animated: true, email: "sample@email.com") { error in
+  // Handle the error, if any.
+}
+```
+
 ### Filter services
 
 Shows a list of services available in the Vault that meet the filter options. The options are a dictionary that may contain the following keys and values:

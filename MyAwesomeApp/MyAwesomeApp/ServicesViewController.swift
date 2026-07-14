@@ -26,6 +26,14 @@ final class ServicesViewController: UIViewController {
     return button
   }()
 
+  private lazy var openVaultOnboardingButton: UIButton = {
+    let button = UIComponents.button(
+      title: NSLocalizedString("services.list.open_vault_onboarding", comment: "")
+    )
+    button.addTarget(self, action: #selector(openVaultOnboarding), for: .touchUpInside)
+    return button
+  }()
+
   private lazy var openServicesButton: UIButton = {
     let button = UIComponents.button(
       title: NSLocalizedString("services.list.open_service_list", comment: "")
@@ -99,6 +107,21 @@ final class ServicesViewController: UIViewController {
     ) { error in
       guard let error else {
         self.debugConsole.log(message: NSLocalizedString("services.output.vault_opened", comment: ""))
+        return
+      }
+      self.debugConsole.log(error: error)
+    }
+  }
+
+  @objc
+  private func openVaultOnboarding() {
+    MTLinkClient.shared.openVaultOnboarding(
+      from: self,
+      animated: true,
+      email: nil
+    ) { error in
+      guard let error else {
+        self.debugConsole.log(message: NSLocalizedString("services.output.vault_onboarding_opened", comment: ""))
         return
       }
       self.debugConsole.log(error: error)
@@ -264,6 +287,8 @@ private extension ServicesViewController {
     stackView.addArrangedSubview(vaultSubtitleLabel)
     stackView.addArrangedSubview(openVaultButton)
     stackView.setCustomSpacing(48.0, after: openVaultButton)
+    stackView.addArrangedSubview(openVaultOnboardingButton)
+    stackView.setCustomSpacing(48.0, after: openVaultOnboardingButton)
     stackView.addArrangedSubview(serviceListLabel)
     stackView.addArrangedSubview(serviceListSubtitleLabel)
     stackView.addArrangedSubview(serviceListFilterStackView)

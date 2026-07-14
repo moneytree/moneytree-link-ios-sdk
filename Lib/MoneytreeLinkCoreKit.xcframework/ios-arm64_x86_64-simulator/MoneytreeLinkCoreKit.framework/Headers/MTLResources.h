@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provides URL to open the upgrade authorization page for LinkKit.
-
+ 
  @param codeVerifier to configure url
  @param mtToken The MT token (from previous ISTC use) to upgrade.
  @return An absolute url that can be used for any browsers
@@ -46,7 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provides URL to open the authorization page with a specific grant type
-
+ 
  @param codeVerifier to configure url
  @param authOptions to configure parameters of the authorization flow
  @return An absolute url that can be used for any browsers
@@ -56,34 +56,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provides URL to open the fastonboarding page with PKCE authorization
-
+ 
  @param codeVerifier to configure url
- @param email the user's email to be pre-filled on the onboarding page
+ @param emailToken the token representing user's email to be pre-filled on the onboarding page, retrieved from cache
  @return An absolute url that can take the user to the onboarding flow
-*/
+ */
 - (NSURL *)onboardUrlWithCodeVerifier:(MTOAuthCodeVerifier *_Nonnull)codeVerifier
-                                email:(NSString *_Nonnull)email;
+                           emailToken:(NSString *_Nonnull)emailToken;
 
 /**
  Provides URL to open the vault
-
+ 
  @param accessToken to open the vault
  @return An absolute url that can be used for any browsers
  */
 - (NSURL *)vaultUrlWithAccessToken:(NSString *)accessToken relativePath:(NSString *_Nullable)relativePath parameters:(NSDictionary *_Nullable)parameters;
 
 /**
- Provides URL to open the settings page, including an email address to pre-fill.
-
- @param email The guest's email address
+ Provides URL to open the settings page, including an email token which can be exchanged for an email address to pre-fill.
+ 
+ @param emailToken the token representing user's email to be pre-filled on the onboarding page, retrieved from cache
  @return An absolute url that can be used for any browsers
  */
-- (NSURL *)settingsUrlWithPrefilledEmail:(NSString *_Nullable)email;
+- (NSURL *)settingsUrlWithPrefilledEmailToken:(NSString *_Nullable)emailToken;
 
 /**
  Provides URL to open the page where guest can authorize
  Only for AuthorizationCodeGrant, that is non PKCE
-
+ 
  @param state to append to url, state helps mitigate CSRF attacks
  @param region An extensible enum that represents the region of the authorization process
  @return URL
@@ -92,13 +92,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Provides URL to open the fastonboarding page with Code Grant authorization
-
+ 
  @param state to append to url, state helps mitigate CSRF attacks
- @param email the user's email to be pre-filled on the onboarding page
+ @param emailToken the token representing user's email to be pre-filled on the onboarding page, retrieved from cache
  @return An absolute url that can take the user to the onboarding flow
-*/
+ */
 - (NSURL *)onboardUrlWithState:(NSString *_Nonnull)state
-                         email:(NSString *_Nonnull)email;
+                    emailToken:(NSString *_Nonnull)emailToken;
 
 - (NSURL *_Nullable)authUrlWithBaseUrl:(NSURL *)baseUrl
                           codeVerifier:(MTOAuthCodeVerifier *)code;

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The authentication mode that should initially be displayed to a user.
-
+ 
  - MTLAuthenticationModeSignup: Sign up for a new account
  - MTLAuthenticationModeLogin: Log in to an existing account
  */
@@ -32,11 +32,12 @@ typedef NS_ENUM(NSUInteger, MTLAuthenticationMode) {
 @property (nonatomic, readonly) BOOL allowModeChange;
 @property (nonatomic, copy, readonly, nullable) MTAuthRegion region;
 @property (nonatomic, copy, readonly, nullable) NSString *email;
+@property (nonatomic, copy, readonly, nullable) NSString *emailToken;
 @property (nonatomic, readonly) BOOL forceLogout;
 
 @end
 
-#pragma mark - 
+#pragma mark -
 
 /**
  A set of configuration options for the authentication process via My Account.
@@ -66,6 +67,12 @@ typedef NS_ENUM(NSUInteger, MTLAuthenticationMode) {
 @property (nonatomic, copy, nullable, readonly) NSString *email;
 
 /**
+ The email_token to be sent as `email_token` in the authorization query.
+ Is obtained automatically by the SDK when relevant  and used in the query string rather than `email`
+ */
+@property (nonatomic, copy, nullable, readonly) NSString *emailToken;
+
+/**
  When set to true, it forces the server to ignore the current login session, if it exists.
  */
 @property (nonatomic, readonly) BOOL forceLogout;
@@ -82,7 +89,7 @@ typedef NS_ENUM(NSUInteger, MTLAuthenticationMode) {
                 allowModeChange:(BOOL)allowModeChange
                           email:(NSString *_Nullable)email
                     forceLogout:(BOOL)forceLogout
-                  NS_SWIFT_NAME(options(mode:allowModeChange:email:forceLogout:));
+NS_SWIFT_NAME(options(mode:allowModeChange:email:forceLogout:));
 
 /**
  @return Your custom configuration options.
@@ -92,7 +99,7 @@ typedef NS_ENUM(NSUInteger, MTLAuthenticationMode) {
                          region:(NSString *_Nullable)region
                           email:(NSString *_Nullable)email
                     forceLogout:(BOOL)forceLogout
-                  NS_SWIFT_NAME(options(mode:allowModeChange:region:email:forceLogout:))
+NS_SWIFT_NAME(options(mode:allowModeChange:region:email:forceLogout:))
 DEPRECATED_MSG_ATTRIBUTE("Please use options(mode:allowModeChange:email:forceLogout) instead.");
 
 /**
@@ -103,7 +110,7 @@ DEPRECATED_MSG_ATTRIBUTE("Please use options(mode:allowModeChange:email:forceLog
                      regionType:(MTAuthRegion _Nullable)region
                           email:(NSString *_Nullable)email
                     forceLogout:(BOOL)forceLogout
-                  NS_SWIFT_NAME(options(mode:allowModeChange:regionType:email:forceLogout:))
+NS_SWIFT_NAME(options(mode:allowModeChange:regionType:email:forceLogout:))
 DEPRECATED_MSG_ATTRIBUTE("Please use options(mode:allowModeChange:email:forceLogout) instead.");
 
 - (instancetype)init __attribute__((unavailable("Call +defaultOptions or +optionsWithMode:::: instead.")));
