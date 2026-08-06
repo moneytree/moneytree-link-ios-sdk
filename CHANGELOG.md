@@ -2,11 +2,19 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
-## v6.8.0
+## v6.8.1
+
+**Released to remove breaking changes included in `6.8.0` which removed the ability to directly construct settings & onboard URLs.
+**Use this release rather than `6.8.0`.**
 
 - Add support for using the SDK to open the Universal Vault Custom Onboarding Flow
   - Please reach out to Moneytree to configure this flow for your client
   - If this flow is not configured for your client attempting to open it will redirect the user to the financial institution search page
+
+## v6.8.0
+
+**This release included breaking changes which removed the ability to directly construct settings & onboard URLs.**
+**`6.8.1` includes the changes intended for this release without those breaking changes, use that release instead.**
 
 ## v6.7.0
 
