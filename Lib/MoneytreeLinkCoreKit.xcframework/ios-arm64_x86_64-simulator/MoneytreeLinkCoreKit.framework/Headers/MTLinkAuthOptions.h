@@ -50,7 +50,6 @@ __deprecated_msg("Please use MTLAuthenticationOptions instead.")
 @property (nonatomic, readonly) BOOL allowModeChange;
 @property (nonatomic, copy, readonly, nullable) MTAuthRegion region;
 @property (nonatomic, copy, readonly, nullable) NSString *email;
-@property (nonatomic, copy, readonly, nullable) NSString *emailToken;
 
 @end
 
