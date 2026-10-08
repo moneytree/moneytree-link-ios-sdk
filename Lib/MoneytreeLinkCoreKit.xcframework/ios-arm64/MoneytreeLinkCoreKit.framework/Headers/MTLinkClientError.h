@@ -45,26 +45,5 @@ typedef NS_ENUM(NSInteger, MTLinkClientError) {
   /**
    * The user has not yet authorized your app to access Moneytree LINK on their behalf.
    */
-  MTLinkClientErrorGuestNotLinked = 888,
-
-  /**
-   * This functionality is not available to configurations authenticating via PKCE.
-   *
-   * Currently, there is no functionality that is only available in Code Grant without PKCE mode, so clients should never see this error.
-   *
-   * If you encounter this error, please contact Moneytree.
-   */
-  MTLinkClientErrorUnavailableInPKCEMode = 901,
-
-  /**
-   * This functionality is not available to configurations authenticating via Code Grant without PKCE.
-   *
-   * Functionality limited to authenticating via PKCE configurations include:
-   * - Registering and unregistering a device for push notifications
-   * - LINK Kit
-   *
-   * If you intended to use PKCE, please ensure that your `MTLConfiguration.redirectURI` is `nil`.
-   * If your use case requires Code Grant without PKCE, as well as this functionality, please contact Moneytree.
-   */
-  MTLinkClientErrorUnavailableInAuthorizationCodeGrantMode = 902
+  MTLinkClientErrorGuestNotLinked = 888
 };

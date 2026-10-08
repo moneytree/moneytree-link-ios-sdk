@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MTAPI.h</key>
 		<data>
-		F5WcAWDzn0F1ukCpys/YaOuUHIU=
+		xQkQN8ALbEA4tkP8gqo6vi77i/A=
 		</data>
 		<key>Headers/MTAPIComponents.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/MTLAuthenticationOptions.h</key>
 		<data>
-		vs+qi9Hv+2zHykiAdQ6M7GnITw8=
+		SBV5Mtv8eLvFqq7jDyghDpOMK98=
 		</data>
 		<key>Headers/MTLCompletions.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/MTLConfiguration.h</key>
 		<data>
-		ar3eFeUa3JZwtmlXX80EjzYDac0=
+		9iAwC3ev1MXUgu2kugGkNVHn0f8=
 		</data>
 		<key>Headers/MTLConstants.h</key>
 		<data>
@@ -54,19 +54,11 @@
 		</data>
 		<key>Headers/MTLResources.h</key>
 		<data>
-		AFaaCmY1mHqypyYxgK4LSzZTBAE=
-		</data>
-		<key>Headers/MTLinkAuthOptions.h</key>
-		<data>
-		hEji0etO9vB8lieGl8ZCU1HEEw0=
-		</data>
-		<key>Headers/MTLinkAuthorizationType.h</key>
-		<data>
-		4v4lf2D68ap5YQAYN3OI+cjzKTU=
+		+jkBijURAJjukv8dpclssApcGx4=
 		</data>
 		<key>Headers/MTLinkClient.h</key>
 		<data>
-		hVRL9WCWM2ze1iV5yJ0OjLjpF0I=
+		cyZvaxuoUBs0cHOxU1Ba/XdC9lc=
 		</data>
 		<key>Headers/MTLinkClientDelegate.h</key>
 		<data>
@@ -74,15 +66,11 @@
 		</data>
 		<key>Headers/MTLinkClientError.h</key>
 		<data>
-		OliiCGFAhNHRifwZkp7cYHzNbL0=
+		IjjKGxXW3CbeL5y3tcS3DVYyOBo=
 		</data>
 		<key>Headers/MTLinkClientStatus.h</key>
 		<data>
 		GvT+ZJwNrvdiJ+mTO8vdP8KBTVY=
-		</data>
-		<key>Headers/MTLinkPkceAuthOptions.h</key>
-		<data>
-		ICvQYrYnTLF2vgknr6cXHHMl314=
 		</data>
 		<key>Headers/MTLog.h</key>
 		<data>
@@ -114,7 +102,7 @@
 		</data>
 		<key>Headers/MTUrlHandler.h</key>
 		<data>
-		PA9bQWPx7wrExk3ed+dv9y8UGZ4=
+		WflKWc8ee0Hlr6CONE6VPmEeaTw=
 		</data>
 		<key>Headers/MTWebRunActions.h</key>
 		<data>
@@ -122,11 +110,11 @@
 		</data>
 		<key>Headers/MoneytreeLinkCoreKit-Swift.h</key>
 		<data>
-		QWjcUDcJTjsgI16lar3078bUqHY=
+		oZXGVC6utsS5U4XqaWy3ckze4Ew=
 		</data>
 		<key>Headers/MoneytreeLinkCoreKit.h</key>
 		<data>
-		8shjpiRgEBxfF5LQoNxXgBWxN9A=
+		/YfrPuECL1TXSorin5YvFCKSCbA=
 		</data>
 		<key>Headers/NSBundle+Version.h</key>
 		<data>
@@ -138,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/mAgmlTEedKoXrPmxaR9b2wrdXY=
+		zrzURiZFz3Fk3WYwo8VLIo43mzs=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -146,19 +134,19 @@
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4I7u0pxJfkYgD1ZOd1zaIaq9imA=
+		geRzYQJvGq/4jKYDH5lD+FQroSk=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		s41fukU0KbOZVOxvRxi3mi7ACgU=
+		ZK91NyukVLtq9bg6VXKcxFjXDCI=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4I7u0pxJfkYgD1ZOd1zaIaq9imA=
+		geRzYQJvGq/4jKYDH5lD+FQroSk=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OTiO4CdSbq21LYiGLKIx8+dhBDI=
+		Eq8triyewOgLiPZZqquAEvAHlic=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -166,19 +154,19 @@
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		umWO562qWo3twPNiamVO8PSPwaI=
+		DQ0Rdh1LV3eCRB43oYa8JmQLjnI=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0Ez4Y1kzXJxXId2JPdDa6ncLHoc=
+		0nnBvTKmoYbSy2gx9y7pZ60ajJk=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		umWO562qWo3twPNiamVO8PSPwaI=
+		DQ0Rdh1LV3eCRB43oYa8JmQLjnI=
 		</data>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BBnNaPyAmIWDXjO42ULxhR/mXlY=
+		eK3o+N0E/n7jyAlv3dcV2MBfjNs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -203,7 +191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cSJMMdhHNIcyekXNs9EToLPuik1ckyLoxhKUm6suiHA=
+			ZI2r85Zf7vaHNwJFuhU9ESPfKF3oS8HKjGB4aIhQjAA=
 			</data>
 		</dict>
 		<key>Headers/MTAPIComponents.h</key>
@@ -252,7 +240,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GwDxDUFpvEi1xN2mLAcwZXoEfknm1GlqsXZ7ZVSk56U=
+			bDfRUXykXKWexkNDy2VxTRJW0jLU5w1guBHMWVDV08I=
 			</data>
 		</dict>
 		<key>Headers/MTLCompletions.h</key>
@@ -266,7 +254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WR4NdP3Yzg5LksUoic17Dwv8O3w/u9i2N56V9XfnUsU=
+			IljBR8+ge7AmF5/cjAWI8BNxySRWZuZ5e5MlhrFtDM0=
 			</data>
 		</dict>
 		<key>Headers/MTLConstants.h</key>
@@ -287,28 +275,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pDoUXYUhNMPhSzXTjTx3x6886wSwnzHroJrQPZppUmo=
-			</data>
-		</dict>
-		<key>Headers/MTLinkAuthOptions.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2gHkzu3wNSdJE7u2M1Aw2L8lYXJG9Y3/DROmUeXj6h0=
-			</data>
-		</dict>
-		<key>Headers/MTLinkAuthorizationType.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			o75+iS2dwt/ADaI/DzAlIY6YuBnbHpN7E/z8HDT/Wq4=
+			uabuaesWGU6KbFDgYXX337pDKR5tzcyI8/ZNZ31vbNI=
 			</data>
 		</dict>
 		<key>Headers/MTLinkClient.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			01q1absc/IshKAcuFwGOd9Jzp0retv+0dbyN5HXxTuM=
+			YWzytZxZVIw+X/0JMP2/Sj6Vpel3Js+1aTYEi6hV+yA=
 			</data>
 		</dict>
 		<key>Headers/MTLinkClientDelegate.h</key>
@@ -322,7 +296,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			StbiCkyhhEcYyKTSKwlEr+S54OpiFnIli0Jvf5rCAqs=
+			CksJrLaKGPaR/EtF7WPdItCI4IXs68RoqlKzcDzHpck=
 			</data>
 		</dict>
 		<key>Headers/MTLinkClientStatus.h</key>
@@ -330,13 +304,6 @@
 			<key>hash2</key>
 			<data>
 			Qj5HBcfq4QbcwnJ8TqGE1YwtmouSJPHa/5azz5VX/kU=
-			</data>
-		</dict>
-		<key>Headers/MTLinkPkceAuthOptions.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4I3Dei4zcY4xp2DtCr5PJE6AxHJ9uFonRbLKqHrUG6s=
 			</data>
 		</dict>
 		<key>Headers/MTLog.h</key>
@@ -392,7 +359,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YveLj8W4cmM7KYGmjPYEJiNzjFnJEV0XFPz+7ve1PJQ=
+			AgwCkDJEz5pA79a9HtYC1zUkfv9sArBhdL5LB8rdA2I=
 			</data>
 		</dict>
 		<key>Headers/MTWebRunActions.h</key>
@@ -406,14 +373,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iy8jEzui8D+Os0pT5yRoU1aAgvhiQnx0BHNDu8vFMEI=
+			pusg1vXit/wRy0qG8zWJvVM2PfkiG4pWTpJC7c2miv8=
 			</data>
 		</dict>
 		<key>Headers/MoneytreeLinkCoreKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RLKpMKdooXUHklxID7323HwWxxT2KoCPf9l5N6KPeX8=
+			aK1i0OWmbZDDES8rqmXaMbf+UPcobHoEa+qZc5/TlB4=
 			</data>
 		</dict>
 		<key>Headers/NSBundle+Version.h</key>
@@ -441,28 +408,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LtqzQj8OZjPr4/UatuKM185aJN6XWsLPY71Jgg4IIck=
+			3Ueos7/dGv4hEpiYhaEpPcoKEC3eyW5N+YaeYD/cERk=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P5MT1y0RAAaHKOJo8qm6YXEDMg6NwcB0lPHR9BnApPc=
+			Lj9K/3cXSg/KDejhA18F+31k21NRN12nTNPi6Y7jWiI=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LtqzQj8OZjPr4/UatuKM185aJN6XWsLPY71Jgg4IIck=
+			3Ueos7/dGv4hEpiYhaEpPcoKEC3eyW5N+YaeYD/cERk=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROKxZI5XWcG3opa/VxsBQhUc0ZK+Ck82/uCjoWMQo/w=
+			T6Cd8I6YigEhdmMLI0irH0VJqBcANcX570OQ7QgVJ1s=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -476,28 +443,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oWHGBC/YpUiI9YtBN8d2kgcZLZsvfjKtbWjNfYMsutQ=
+			QZeh5jYNZnDTiEtZ9l4C9fCeor1fi3f5B+dpa77PZA0=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xsx6JfhwX1PGYTgJHb+YWUgd2gbs00gzKapLEui51eQ=
+			wj4q8cRd/i9BQR7V1bRyEmgsxnTApYJ5uMciq3Q4lJs=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oWHGBC/YpUiI9YtBN8d2kgcZLZsvfjKtbWjNfYMsutQ=
+			QZeh5jYNZnDTiEtZ9l4C9fCeor1fi3f5B+dpa77PZA0=
 			</data>
 		</dict>
 		<key>Modules/MoneytreeLinkCoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kFfgZIGU5cdUh5199e+gxKfbVD2/tzXsmHgPKIgiPfY=
+			kAe/+Rn4QtKMTLkGthUXgOkrQJyOTDZo+if3FQfVBgU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

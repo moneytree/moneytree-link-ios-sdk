@@ -16,7 +16,7 @@
 #import <MoneytreeLinkCoreKit/MTLConfiguration.h>
 #import <MoneytreeLinkCoreKit/MTLCompletions.h>
 #import <MoneytreeLinkCoreKit/MTLAuthenticationOptions.h>
-#import <MoneytreeLinkCoreKit/MTLinkAuthorizationType.h>
+
 #import <MoneytreeLinkCoreKit/MTMagicLinkDestination.h>
 
 
@@ -112,8 +112,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param email The email to be populated on the login screen if the guest needs to be authorized
  @param completion A closure that is always called when Safari is dismissed.
                    Closure contains client MTCredential on successful authorization, or error if there is any.
-                   (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
-                   credential is always nil when authorization code grant mode is in use).
 */
 - (void)openVaultFromViewController:(UIViewController *)viewController
                            animated:(BOOL)animated
@@ -136,8 +134,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param email The email to be populated on the login screen if the guest needs to be authorized
  @param completion A closure that is always called when Safari is dismissed.
  Closure contains client MTCredential on successful authorization, or error if there is any.
- (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
- credential is always nil when authorization code grant mode is in use).
 */
 - (void)openVaultOnboardingFromViewController:(UIViewController *)viewController
 																		 animated:(BOOL)animated
@@ -161,8 +157,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param options Dictionary of parameters `type`, `group` and `search`
  @param completion A closure that is always called when Safari is dismissed.
  Closure contains client MTCredential on successful authorization, or error if there is any.
- (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
- credential is always nil when authorization code grant mode is in use).
 */
 - (void)openServicesFromViewController:(UIViewController *)viewController
                               animated:(BOOL)animated
@@ -187,8 +181,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param entityKey The service's Entity Key
  @param completion A closure that is always called when Safari is dismissed.
  Closure contains client MTCredential on successful authorization, or error if there is any.
- (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
- credential is always nil when authorization code grant mode is in use).
 */
 - (void)connectServiceFromViewController:(UIViewController *)viewController
                                 animated:(BOOL)animated
@@ -213,8 +205,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param credentialId The credential's ID
  @param completion A closure that is always called when Safari is dismissed.
  Closure contains client MTCredential on successful authorization, or error if there is any.
- (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
- credential is always nil when authorization code grant mode is in use).
 */
 - (void)serviceSettingsFromViewController:(UIViewController *)viewController
                                  animated:(BOOL)animated
@@ -236,8 +226,6 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
  @param email The email to be populated on the login screen if the guest needs to be authorized
  @param completion A closure that is always called when Safari is dismissed.
  Closure contains client MTCredential on successful authorization, or error if there is any.
- (credential only exists in closure when sdk is in pkce mode and authorization screen is shown,
- credential is always nil when authorization code grant mode is in use).
 */
 - (void)openCustomerSupportFromViewController:(UIViewController *)viewController
                                      animated:(BOOL)animated
@@ -307,99 +295,9 @@ NS_SWIFT_NAME(onboard(_:email:animated:completion:));
 
 /**
  @abstract
- Only for PKCE authorization flow.
- Nil when using Code Grant authorization flow.
-
- @discussion
  Returns an API instance that can be used to execute api requests.
  */
-@property (nonatomic, copy, readonly, nullable) MTAPI *api;
-
-#pragma mark - Deprecated
-
-/**
- @abstract
- Only for General Auth flow
-
- @discussion
- Present an instance of `SFSafariViewController` to open authorize screen where a guest has credentials
-
- If not logged in then it will show login and authorize screen.
- If logged in already then it will show authorize screen.
-
- The whole process is redirected back to the main app through:
- `UIApplicationDelegate`'s method `- application:openURL:options:`
-
- @param viewController The view controller that is used to present the vault
- @param authOptions to configure authorization process
- @param animated An option to present with animation
- @param completion A closure that contains partner credential, or error when authrorization or login failed.
-        A closure that is always called when Safari is dismissed (either guest dismiss it or sdk dismiss it on auth completion)
- */
-- (void)authorizeUsingPkceFrom:(UIViewController *)viewController
-                   authOptions:(id<AuthenticationOptions>)authOptions
-                      animated:(BOOL)animated
-                    completion:(MTLinkClientCredentialFetchCompletionBlock)completion
-DEPRECATED_MSG_ATTRIBUTE("Please use authorizeFrom:options:animated:completion: instead.");
-
-/**
- @abstract
- Only for AuthorizationCodeGrant flow
-
- @discussion
- Present an instance of `SFSafariViewController` to open authorize screen where a guest has credentials
-
- If not logged in then it will show login and authorize screen.
- If logged in already then it will show authorize screen.
-
- This must be use only when using AuthorizationCodeGrant
-
- The whole process is redirected back to the main app through:
- `UIApplicationDelegate`'s method `- application:openURL:options:`
-
- @param viewController The view controller that is used to present the vault
- @param state will be appended in redirect url for mitigating CSRF attacks
- @param authOptions to configure authorization process
- @param animated An option to present with animation
- @param completion A closure that contain error when authorization or login failed.
-        A closure that is always called when Safari is dismissed (either guest dismiss it or sdk dismiss it on auth completion)
- */
-- (void)authorizeUsingCodeGrantFrom:(UIViewController *)viewController
-                              state:(NSString *)state
-                        authOptions:(id<AuthenticationOptions>)authOptions
-                           animated:(BOOL)animated
-                         completion:(MTLinkCompletionBlock)completion
-DEPRECATED_MSG_ATTRIBUTE("Code Grant without PKCE is not supported anymore. Will be removed in the next major version. Migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce");
-
-/**
- Present an instance of `SFSafariViewController` to open the onboarding authorization page pre-filled with
- the specified email address.
-
- @param viewController The view controller that is used to present the onboarding screen.
- @param authorizationType The authorization type you wish to go with. (PKCE or Code Grant).
- @param email The user's email address.
- @param state will be appended in redirect url for mitigating CSRF attacks,
-              this parameter should NOT be nil for Code Grant authorization type.
- @param region An extensible enum that represents the region of the authorization process
- @param animated An option to present with animation.
- @param completion A closure that is always called when Safari is dismissed.
-                   Closure contains non-null MTCredential on successful authorization via PKCE.
-                   Closure contains null MTCredential on successful authorization via Code Grant.
-                   Closure contains an error if the authorization errors out.
-*/
-- (void)onboardFrom:(UIViewController *)viewController
-  authorizationType:(MTLinkAuthorizationType)authorizationType
-              email:(NSString *)email
-              state:(NSString *_Nullable)state
-             region:(MTAuthRegion)region
-           animated:(BOOL)animated
-         completion:(MTLinkClientCredentialFetchCompletionBlock)completion
-DEPRECATED_MSG_ATTRIBUTE("Use onboardFrom:email:animated:completion instead. Code Grant without PKCE is not supported anymore. It will be removed in the next major version. Migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce");
-
-- (void)requestForMagicLinkForEmail:(NSString *)email
-                                 to:(MTMagicLinkDestination)destination
-                         completion:(MTLinkCompletionBlock)completion
-DEPRECATED_MSG_ATTRIBUTE("Use requestForLoginLinkForEmail:to:completion instead.");
+@property (nonatomic, copy, readonly, nonnull) MTAPI *api;
 
 #pragma mark - Internal - Do not use
 
