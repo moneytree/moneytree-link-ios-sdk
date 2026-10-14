@@ -84,28 +84,6 @@ typedef NS_ENUM(NSUInteger, MTLAuthenticationMode) {
                     forceLogout:(BOOL)forceLogout
                   NS_SWIFT_NAME(options(mode:allowModeChange:email:forceLogout:));
 
-/**
- @return Your custom configuration options.
- */
-+ (instancetype)optionsWithMode:(MTLAuthenticationMode)mode
-                allowModeChange:(BOOL)allowModeChange
-                         region:(NSString *_Nullable)region
-                          email:(NSString *_Nullable)email
-                    forceLogout:(BOOL)forceLogout
-                  NS_SWIFT_NAME(options(mode:allowModeChange:region:email:forceLogout:))
-DEPRECATED_MSG_ATTRIBUTE("Please use options(mode:allowModeChange:email:forceLogout) instead.");
-
-/**
- @return Your custom configuration options.
- */
-+ (instancetype)optionsWithMode:(MTLAuthenticationMode)mode
-                allowModeChange:(BOOL)allowModeChange
-                     regionType:(MTAuthRegion _Nullable)region
-                          email:(NSString *_Nullable)email
-                    forceLogout:(BOOL)forceLogout
-                  NS_SWIFT_NAME(options(mode:allowModeChange:regionType:email:forceLogout:))
-DEPRECATED_MSG_ATTRIBUTE("Please use options(mode:allowModeChange:email:forceLogout) instead.");
-
 - (instancetype)init __attribute__((unavailable("Call +defaultOptions or +optionsWithMode:::: instead.")));
 
 @end

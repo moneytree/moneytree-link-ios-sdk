@@ -10,7 +10,7 @@
 @class MTOAuthCodeVerifier;
 
 #import <MoneytreeLinkCoreKit/MTLConfiguration.h>
-#import <MoneytreeLinkCoreKit/MTLinkPkceAuthOptions.h>
+#import <MoneytreeLinkCoreKit/MTLAuthenticationOptions.h>
 #import <MoneytreeLinkCoreKit/MTAuthRegion.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -45,24 +45,24 @@ NS_ASSUME_NONNULL_BEGIN
                    mtToken:(NSString *)mtToken;
 
 /**
- Provides URL to open the authorization page with a specific grant type
+ Provides URL to open the authorization page
 
  @param codeVerifier to configure url
  @param authOptions to configure parameters of the authorization flow
  @return An absolute url that can be used for any browsers
  */
-- (NSURL *)authorizationUrlWithCodeVerifier:(MTOAuthCodeVerifier *)codeVerifier
-                                authOptions:(id<AuthenticationOptions>)authOptions;
+- (NSURL *)authorizationUrl:(MTOAuthCodeVerifier *)codeVerifier
+                authOptions:(id<AuthenticationOptions>)authOptions;
 
 /**
- Provides URL to open the fastonboarding page with PKCE authorization
+ Provides URL to open the fastonboarding page
 
  @param codeVerifier to configure url
  @param email the user's email to be pre-filled on the onboarding page
  @return An absolute url that can take the user to the onboarding flow
 */
-- (NSURL *)onboardUrlWithCodeVerifier:(MTOAuthCodeVerifier *_Nonnull)codeVerifier
-                                email:(NSString *_Nonnull)email;
+- (NSURL *)onboardUrl:(MTOAuthCodeVerifier *_Nonnull)codeVerifier
+                email:(NSString *_Nonnull)email;
 
 /**
  Provides URL to open the vault
@@ -79,26 +79,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return An absolute url that can be used for any browsers
  */
 - (NSURL *)settingsUrlWithPrefilledEmail:(NSString *_Nullable)email;
-
-/**
- Provides URL to open the page where guest can authorize
- Only for AuthorizationCodeGrant, that is non PKCE
-
- @param state to append to url, state helps mitigate CSRF attacks
- @param region An extensible enum that represents the region of the authorization process
- @return URL
- */
-- (NSURL *)partnerModeAuthorizationUrlWithState:(NSString *)state region:(MTAuthRegion _Nullable)region;
-
-/**
- Provides URL to open the fastonboarding page with Code Grant authorization
-
- @param state to append to url, state helps mitigate CSRF attacks
- @param email the user's email to be pre-filled on the onboarding page
- @return An absolute url that can take the user to the onboarding flow
-*/
-- (NSURL *)onboardUrlWithState:(NSString *_Nonnull)state
-                         email:(NSString *_Nonnull)email;
 
 - (NSURL *_Nullable)authUrlWithBaseUrl:(NSURL *)baseUrl
                           codeVerifier:(MTOAuthCodeVerifier *)code;

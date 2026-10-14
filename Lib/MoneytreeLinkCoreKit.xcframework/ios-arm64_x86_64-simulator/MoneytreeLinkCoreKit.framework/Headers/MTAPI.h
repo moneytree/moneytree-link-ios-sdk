@@ -76,34 +76,6 @@ typedef NS_ENUM(NSUInteger, MTAPIError) {
  */
 - (void)sendRequestForSwift:(id)genericRequest NS_SWIFT_NAME(sendRequest(_:));
 
-
-#pragma mark - Deprecated
-
-/**
- Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
- from the Moneytree Link API.
-
- This method is unavailable to Swift clients because `MTAPIRequest` has associated generics that do not work in Swift.
- Use `sendAuthenticatedRequestForSwift:` instead.
-
- @param apiRequest The API Request object.
- */
-- (void)sendAuthenticatedRequest:(MTAPIRequest *)apiRequest
-NS_SWIFT_UNAVAILABLE("Not Available")
-DEPRECATED_MSG_ATTRIBUTE("Use sendRequest: instead.");
-
-/**
- Send a request to the Moneytree Link API. Any necessary authorization will be performed before getting any resources
- from the Moneytree Link API.
-
- Use this method only if you are using Swift.
-
- @param genericRequest The API Request object.
- */
-- (void)sendAuthenticatedRequestForSwift:(id)genericRequest
-NS_SWIFT_NAME(sendAuthenticatedRequest(_:))
-DEPRECATED_MSG_ATTRIBUTE("Use sendRequestForSwift: instead.");
-
 @end
 
 NS_ASSUME_NONNULL_END

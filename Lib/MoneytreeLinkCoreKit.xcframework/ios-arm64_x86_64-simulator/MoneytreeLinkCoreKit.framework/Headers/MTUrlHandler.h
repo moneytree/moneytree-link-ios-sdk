@@ -73,17 +73,6 @@ Called to handle the `universal link url`.
  */
 - (void)mt_urlHandlerUserCancelled;
 
-/**
- SDK Validates State on completion (Safari dismiss).
- Default value is YES.
-
- In Authorization code grant mode Client server redirects Safari to mtlink<clientid5digit>:// after token exchange.
- That's why SDK doesn't get(or need) final state for validation.
-
- @return NO to ignore state check on Safari dimiss.
- */
-- (BOOL)validateStateOnCompletion;
-
 /// This method should be called when a Login Link is sent
 /// To allow the url opener handler to perform Login Link related logic accordingly
 - (void)mt_urlHandlerAwaitingLoginLink;
