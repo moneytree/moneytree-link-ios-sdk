@@ -43,8 +43,8 @@ LINK Kit is a web-based PFM service and is available as an SDK module to simplif
 
 > :warning:
 >
-> - The SDK requires a minimum deployment target of iOS 9.0.
-> - The minimum Xcode version supported for development is 12.0.
+> - The SDK requires a minimum deployment target of iOS 15.0.
+> - The minimum Xcode version supported for development is 13.0.
 
 We strongly recommend using Swift Package Manager. There are several other installation methods available, but we will best be able to support you via SPM.
 
@@ -113,12 +113,7 @@ We recommend initializing the SDK in your app delegate, so that the SDK can be a
 Initialize the configuration object as appropriate for your authorization type. Then configure it according to your needs.
 
 ```swift
-// PKCE requires no arguments.
 let configuration = MTLConfiguration()
-
-// Note: Code Grant without PKCE is not supported anymore. Will be removed in the next major version. Migration guide at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
-// Code Grant requires the redirect URI of your code grant server.
-let configuration = MTLConfiguration(redirectUri: "https://your.server.com/token-exchange-endpoint")
 
 // Set environment to `.staging` for development builds or `.production` for production builds.
 configuration.environment = .staging

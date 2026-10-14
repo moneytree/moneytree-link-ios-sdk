@@ -7,8 +7,6 @@ Please make sure you have followed the steps in the [integration guide](../READM
 - [Using the SDK](#using-the-sdk)
   - [Authorization](#authorization)
     - [Authorizing your app](#authorizing-your-app)
-      - [PKCE](#pkce)
-      - [Code Grant (Deprecated)](#code-grant-deprecated)
     - [Authorizing with Passwordless Sign Up/Login and Login Link or OTP](#authorizing-with-passwordless-sign-uplogin-and-login-link-or-otp)
       - [Passwordless Sign Up/Login](#passwordless-sign-uplogin)
       - [Login Link](#login-link)
@@ -38,11 +36,8 @@ First, create an instance of `MTLAuthenticationOptions`. Here you decide whether
 
 You can also optionally force a log out of all existing sessions before logging in the user, if you are encountering caching issues.
 
-You should also choose your authentication method here. See [Choosing your Authentication method](#choosing-your-authentication-method) below. We support `nil` here for backwards compatibility but we strongly recommend explicitly specifying the authentication method you wish to use.
-
 ```swift
 let options = MTLAuthenticationOptions.options(
-      authenticationMethod: .credentials, // .passwordless, .singleSignOn
       mode: .signup, // .login
       allowModeChange: true,
       email: "your-email@example.com",
@@ -50,14 +45,20 @@ let options = MTLAuthenticationOptions.options(
     )
 ```
 
-You can authorize your app to connect to the Moneytree LINK API server. This enables you to retrieve the guest's account information, their registered financial institutions, and transaction data via Moneytree LINK REST APIs.
+The options above control how the login page opens: sign up or log in, a pre-filled email, and whether to force a logout. They do not control *which* login method the user sees (email and password, passwordless, OTP, or single sign on). That is the authentication method, and it is set on `MTLConfiguration` as part of your SDK configuration:
 
-Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
+```swift
+configuration.authenticationMethod = .credentials // .passwordless, .otp, .singleSignOn
+```
+
+It applies to every flow that can lead to a login, not only `authorize`. If you don't set it, the default order of methods configured for your client ID is used. We recommend setting it explicitly so the behavior is predictable. See [Choosing Your Authentication Method](../README.md#choosing-your-authentication-method) for what each method does.
+
+You can authorize your app to connect to the Moneytree LINK API server. This enables you to retrieve the guest's account information, their registered financial institutions, and transaction data via Moneytree LINK REST APIs.
 
 The OAuth flow is presented in an `SFSafariViewController`.
 
 ```swift
-MTLinkClient.shared.authorize(self, authOptions: options, animated: true) { credential, error in
+MTLinkClient.shared.authorize(self, options: options, animated: true) { credential, error in
   // Store the credential, if available.
   // Handle the error, if any.
 }
@@ -67,23 +68,6 @@ MTLinkClient.shared.authorize(self, authOptions: options, animated: true) { cred
 > Specifically:
 > - When `mode` is `.signup` and `authenticationMethod` is `.passwordless` or `.otp`, `authenticationMethod` is disregarded and you will still get the credentials screen. Passwordless/OTP Signup is handled by the `onboard()` entry point.
 > - When `authenticationMethod` is `.singleSignOn`, then `authorize()` disregards `mode`, as there is no concept of Signup or Login in the SSO method.
-
-#### Code Grant (Deprecated)
-
-Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
-
-Similar to PKCE flow above, but the authorization method also requires a state string for the OAuth process. This state needs to be unique per request. For more information refer to [the OAuth guidelines](https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/).
-
-```swift
-MTLinkClient.shared.authorizeUsingCodeGrant(
-  from: self,
-  state: "<your-random-state-string>",
-  authOptions: authOption,
-  animated: true
-) { error in
-  // Handle the error, if any.
-}
-```
 
 ### Authorizing with Passwordless Sign Up/Login and Login Link or OTP
 
@@ -127,8 +111,6 @@ Once this is setup in your app, your users will see the new registration and log
 
 Passwordless Sign Up/Login is similar to [authorizing your app normally](#authorizing-your-app) except that it allows guests to sign up for a Moneytree account **without a password**. Only an email address is required. It can be used with either OTP login or login links.
 
-- PKCE
-
 ```swift
 MTLinkClient.shared.onboard(
   self,
@@ -136,23 +118,6 @@ MTLinkClient.shared.onboard(
   animated: true
 ) { credential, error in
   // Handle credential or error if necessary
-}
-```
-
-- Code Grant (Deprecated)
-
-Please note that Code Grant without PKCE is not supported anymore. It will be removed in the next major version. A migration guide is available at https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce
-
-```swift
-MTLinkClient.shared.onboard(
-  from: self,
-  authorizationType: .codeGrant,
-  email: "guest's email",
-  state: "random generated state",
-  region: .japan,
-  animated: true
-) { _, error in
-  // Handle result/error if necessary
 }
 ```
 
@@ -170,9 +135,7 @@ Your users may choose to use a one-time password to log into an existing account
 
 ## Getting an Access Token
 
-> :warning: This functionality is only available when using the PKCE OAuth flow. From the next major version of the SDK, this will be the only OAuth flow available.
-
-Once you have authorized via PKCE, you can obtain an access token to query data from the Moneytree LINK REST API depending on what scopes you have configured.
+Once you have authorized, you can obtain an access token to query data from the Moneytree LINK REST API depending on what scopes you have configured.
 
 ```swift
 MTLinkClient.shared.getTokenAndRefreshAsNeeded { clientCredential: MTOAuthCredential, error in
@@ -319,7 +282,7 @@ MTLinkClient.shared.requestForLoginLink(forEmail: "email@addr.ess", to: .setting
 
 ## LINK Kit
 
-LINK Kit is hosted in a UIViewController that you can present in your app. If you are using LINK Kit, [you must be using PKCE for authorization](#authorization).
+LINK Kit is hosted in a UIViewController that you can present in your app.
 
 Import `MoneytreeLinkKit` in the file responsible for presenting it.
 
@@ -337,11 +300,9 @@ MTLinkKit.shared.makeViewController { viewController, error in
 
 ## Push Notifications
 
-> :warning: Available only via PKCE authorization flow.
-
 You can register your app to receive notifications from Moneytree Link about large transactions and other important financial events.
 
-Make sure your app has been [configured for PKCE](../README.md#initializing-the-sdk).
+Make sure your app has been [configured](../README.md#initializing-the-sdk).
 
 Please review [Apple's programming guide](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/HandlingRemoteNotifications.html) on best practices for setting up devices for push notifications.
 
@@ -378,7 +339,7 @@ Please review [Apple's programming guide](https://developer.apple.com/library/co
     // Handle the error, if any.
   }
 
-  MTLinkClient.shared.api.sendAuthenticatedRequest(deviceTokenRequest)
+  MTLinkClient.shared.api.sendRequest(deviceTokenRequest)
   ```
 
   Deregistration uses `MTDeregisterDeviceTokenAPI` instead.

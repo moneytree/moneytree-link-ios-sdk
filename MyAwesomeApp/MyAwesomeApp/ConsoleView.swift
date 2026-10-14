@@ -90,9 +90,6 @@ extension ConsoleView: DebugConsole {
       errorMessage = "Authorization is in progress."
     case .errorGuestNotLinked:
       errorMessage = NSLocalizedString("error.unauthorized", comment: "")
-    case .errorUnavailableInPKCEMode,
-        .errorUnavailableInAuthorizationCodeGrantMode:
-      errorMessage = "That operation is unavailable in this auth mode."
     case .errorUnknown:
       errorMessage = "Unknown error. Probably user closed WebView."
     @unknown default:

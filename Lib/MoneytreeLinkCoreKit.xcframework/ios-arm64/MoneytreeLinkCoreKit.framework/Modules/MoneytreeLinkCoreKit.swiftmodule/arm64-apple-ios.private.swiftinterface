@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MoneytreeLinkCoreKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MoneytreeLinkCoreKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import Foundation
 @_exported import MoneytreeLinkCoreKit
 import Swift
@@ -9,24 +9,24 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc public class NativeActionUrlHandler : ObjectiveC.NSObject {
-  @objc public var vaultClosedHandler: (() -> Swift.Void)?
-  @objc public var closeHandler: (() -> Swift.Void)?
-  @objc public var logoutHandler: (() -> Swift.Void)?
-  @objc public var completion: (() -> Swift.Void)?
-  @objc(initWithViewControllerForPresentation:accessToken:) public init(viewController: UIKit.UIViewController, accessToken: Swift.String)
+@objc public class NativeActionUrlHandler : ObjectiveC::NSObject {
+  @objc public var vaultClosedHandler: (() -> Swift::Void)?
+  @objc public var closeHandler: (() -> Swift::Void)?
+  @objc public var logoutHandler: (() -> Swift::Void)?
+  @objc public var completion: (() -> Swift::Void)?
+  @objc(initWithViewControllerForPresentation:accessToken:) public init(viewController: UIKit::UIViewController, accessToken: Swift::String)
   @objc deinit
 }
-@objc extension MoneytreeLinkCoreKit.NativeActionUrlHandler : MoneytreeLinkCoreKit.MTUrlHandler {
-  @objc dynamic public func mt_urlHandlerCanHandle(_ url: Foundation.URL) -> Swift.Bool
-  @objc dynamic public func mt_urlHandler(toHandle url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any] = [:], completion: @escaping (Swift.Bool) -> Swift.Void)
+@objc extension MoneytreeLinkCoreKit::NativeActionUrlHandler : MoneytreeLinkCoreKit::MTUrlHandler {
+  @objc dynamic public func mt_urlHandlerCanHandle(_ url: Foundation::URL) -> Swift::Bool
+  @objc dynamic public func mt_urlHandler(toHandle url: Foundation::URL, options: [UIKit::UIApplication.UIKit::OpenURLOptionsKey : Any] = [:], completion: @escaping (Swift::Bool) -> Swift::Void)
   @objc dynamic public func mt_urlHandlerUserCancelled()
-  @objc dynamic public func mt_urlHandlerCanHandleUniversalLink(_ url: Foundation.URL?) -> Swift.Bool
-  @objc dynamic public func mt_urlHandler(toHandleUniversalLink url: Foundation.URL?, originalState: Swift.String?, presentFrom viewController: UIKit.UIViewController, completion: @escaping MoneytreeLinkCoreKit.MTLinkCompletionBlock)
+  @objc dynamic public func mt_urlHandlerCanHandleUniversalLink(_ url: Foundation::URL?) -> Swift::Bool
+  @objc dynamic public func mt_urlHandler(toHandleUniversalLink url: Foundation::URL?, originalState: Swift::String?, presentFrom viewController: UIKit::UIViewController, completion: @escaping MoneytreeLinkCoreKit::MTLinkCompletionBlock)
 }
-extension MoneytreeLinkCoreKit.NativeActionUrlHandler : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+extension MoneytreeLinkCoreKit::NativeActionUrlHandler : WebKit::WKNavigationDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit::WKWebView, decidePolicyFor navigationAction: WebKit::WKNavigationAction, decisionHandler: @escaping (WebKit::WKNavigationActionPolicy) -> Swift::Void)
 }
-extension MoneytreeLinkCoreKit.NativeActionUrlHandler : WebKit.WKScriptMessageHandler {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+extension MoneytreeLinkCoreKit::NativeActionUrlHandler : WebKit::WKScriptMessageHandler {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit::WKUserContentController, didReceive message: WebKit::WKScriptMessage)
 }

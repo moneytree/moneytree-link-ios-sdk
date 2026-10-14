@@ -133,7 +133,7 @@ final class OtherFunctionsViewController: UIViewController {
         self.debugConsole.log(error: error)
       }
     }
-    MTLinkClient.shared.api?.sendRequest(request)
+    MTLinkClient.shared.api.sendRequest(request)
   }
 
   @objc
@@ -157,7 +157,7 @@ final class OtherFunctionsViewController: UIViewController {
         self.debugConsole.log(error: error)
       }
     }
-    MTLinkClient.shared.api?.sendRequest(request)
+    MTLinkClient.shared.api.sendRequest(request)
   }
 
   @objc

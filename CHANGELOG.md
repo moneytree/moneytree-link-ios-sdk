@@ -2,6 +2,52 @@
 
 All notable changes to the Moneytree Link iOS SDK will be documented in this file.
 
+## v7.0.0
+
+### Breaking Changes
+
+- Raised the SDK's minimum deployment target to iOS 15.0 (previously iOS 12.0/13.0), to support building the SDK with Xcode 27. If your app still supports iOS 12–14, please stay on `6.8.1` until you're able to raise your own app's deployment target.
+- Removed `Authorization Code Grant` (without PKCE) support, as previously announced starting in `v6.3.0`. If you're still using any of the APIs below, see the [migration guide](https://docs.link.getmoneytree.com/docs/migrate-auth-to-pkce) before upgrading.
+- PKCE is now the only supported authorization flow. As a result, some related APIs have been renamed or removed. See **Changed** and **Removed** below for details.
+- Removed several long deprecated public APIs that have existing replacements. See **Removed** below for details.
+
+### Changed
+
+- `MTLinkClient.api` is no longer optional. It was previously `MTAPI?` and could be `nil` with Code Grant configurations. Since Code Grant is no longer supported, it is now always available. Remove any `?`, `if let`, or `guard let` unwrapping around it.
+- Updated `MTLResources` URL methods to remove the `CodeVerifier` qualifier, as PKCE is now the only supported authorization flow:
+  - `authorizationUrl(with:authOptions:)` → `authorizationUrl(_:authOptions:)`
+  - `onboardUrl(with:email:)` → `onboardUrl(_:email:)`
+
+### Removed
+
+**Authorization Code Grant (without PKCE)**
+
+`MTLinkClient.authorizeUsingPkce(from:authOptions:animated:completion:)`
+`MTLinkClient.authorizeUsingCodeGrant(from:state:authOptions:animated:completion:)`
+`MTLinkClient.onboard(from:authorizationType:email:state:region:animated:completion:)`
+`MTLinkAuthorizationType`
+`MTLConfiguration.init(redirectUri:)`
+`MTLConfiguration.redirectUri`
+`MTLinkClientError.errorUnavailableInAuthorizationCodeGrantMode`
+`MTLinkClientError.errorUnavailableInPKCEMode`
+`MTUrlHandler.validateStateOnCompletion()`
+`MTLinkPkceAuthOptions`
+
+**Other deprecated APIs** (unrelated to Code Grant, each has an existing replacement)
+
+- Removed `requestForMagicLinkForEmail(_:to:completion:)` in the MTLinkClient.
+  - Please call `requestForLoginLinkForEmail(_:to:completion:)` instead.
+- Removed `sendAuthenticatedRequest(_:)` in the MTAPI.
+  - Please call `sendRequest(_:)` instead.
+- Removed `sendAuthenticatedRequest(_:)` (Swift-only overload) in the MTAPI.
+  - Please call `sendRequestForSwift(_:)` instead.
+- Removed `options(mode:allowModeChange:region:email:forceLogout:)` in MTLAuthenticationOptions.
+  - Please call `options(mode:allowModeChange:email:forceLogout:)` instead.
+- Removed `options(mode:allowModeChange:regionType:email:forceLogout:)` in MTLAuthenticationOptions.
+  - Please call `options(mode:allowModeChange:email:forceLogout:)` instead.
+- Removed `MTLinkAuthOptions`.
+  - Please use `MTLAuthenticationOptions` instead.
+
 ## v6.8.1
 
 **Released to remove breaking changes included in `6.8.0` which removed the ability to directly construct settings & onboard URLs.
